@@ -1,7 +1,21 @@
-div {
+body {
+	display : table;
+	width: 100%;
+}
+.row div {
     margin-top : 30px;
 }
 img {
     max-width : 90%;
     max-height : 80%;
+}
+h1 {
+  font-size : 2vw;
+  color : red;
+  text-align : right;
+}
+h2 {
+  font-size : 3em;
+  color : blue;
+  text-align : center;
 }

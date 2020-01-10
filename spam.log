@@ -359,3 +359,448 @@ jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', 
 2020-01-10 11:26:39,791 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
 2020-01-10 11:26:39,811 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
 2020-01-10 11:27:03,322 __main__     INFO     Application end without exception
+2020-01-10 11:47:30,464 __main__     INFO     Application starting
+2020-01-10 11:47:30,481 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:47:33,008 controleur   DEBUG    connection starts
+2020-01-10 11:47:33,059 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:47:33] "GET / HTTP/1.1" 200 -
+2020-01-10 11:48:28,324 controleur   DEBUG    connection starts
+2020-01-10 11:48:28,328 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:48:28] "GET / HTTP/1.1" 200 -
+2020-01-10 11:51:19,446 __main__     INFO     Application end without exception
+2020-01-10 11:51:22,320 __main__     INFO     Application starting
+2020-01-10 11:51:22,339 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:51:23,938 controleur   DEBUG    connection starts
+2020-01-10 11:51:23,983 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:51:23] "GET / HTTP/1.1" 200 -
+2020-01-10 11:51:24,165 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:51:24] "GET /static/images/fond_elephant.css HTTP/1.1" 404 -
+2020-01-10 11:51:30,198 controleur   DEBUG    connection starts
+2020-01-10 11:51:30,199 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:51:30] "GET / HTTP/1.1" 200 -
+2020-01-10 11:51:30,329 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:51:30] "GET /static/images/fond_elephant.css HTTP/1.1" 404 -
+2020-01-10 11:52:38,377 __main__     INFO     Application end without exception
+2020-01-10 11:52:40,172 __main__     INFO     Application starting
+2020-01-10 11:52:40,189 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:52:41,729 controleur   DEBUG    connection starts
+2020-01-10 11:52:41,789 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:52:41] "GET / HTTP/1.1" 200 -
+2020-01-10 11:52:41,992 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:52:41] "GET /static/images/fond_elephant.css HTTP/1.1" 404 -
+2020-01-10 11:53:41,983 controleur   DEBUG    connection starts
+2020-01-10 11:53:41,984 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:41] "GET / HTTP/1.1" 200 -
+2020-01-10 11:53:42,080 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:53:42,084 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:53:42,115 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 11:53:42,127 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 11:53:42,228 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 11:53:42,238 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 11:53:42,245 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 11:53:42,372 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /static/images/fond_elephant.css HTTP/1.1" 404 -
+2020-01-10 11:53:42,482 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:42] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 11:53:45,144 controleur   DEBUG    connection starts
+2020-01-10 11:53:45,146 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:45] "GET / HTTP/1.1" 200 -
+2020-01-10 11:53:45,300 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:45] "GET /static/images/fond_elephant.css HTTP/1.1" 404 -
+2020-01-10 11:53:51,803 __main__     INFO     Application end without exception
+2020-01-10 11:53:53,692 __main__     INFO     Application starting
+2020-01-10 11:53:53,711 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:53:55,795 controleur   DEBUG    connection starts
+2020-01-10 11:53:55,831 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:55] "GET / HTTP/1.1" 200 -
+2020-01-10 11:53:56,027 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:53:56] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 13:02:12,712 __main__     INFO     Application end without exception
+2020-01-10 13:02:15,425 __main__     INFO     Application starting
+2020-01-10 13:02:15,464 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:02:16,900 controleur   DEBUG    connection starts
+2020-01-10 13:02:16,968 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:02:16] "GET / HTTP/1.1" 200 -
+2020-01-10 13:03:05,818 controleur   DEBUG    connection starts
+2020-01-10 13:03:05,823 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:05] "GET / HTTP/1.1" 200 -
+2020-01-10 13:03:07,113 controleur   DEBUG    connection starts
+2020-01-10 13:03:07,113 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:07] "GET / HTTP/1.1" 200 -
+2020-01-10 13:03:09,382 controleur   DEBUG    connection starts
+2020-01-10 13:03:09,386 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET / HTTP/1.1" 200 -
+2020-01-10 13:03:09,453 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 13:03:09,460 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 13:03:09,460 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 13:03:09,554 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 13:03:09,576 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 13:03:09,589 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 13:03:09,633 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 13:03:09,787 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:09] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 13:03:10,322 controleur   DEBUG    connection starts
+2020-01-10 13:03:10,343 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:10] "GET / HTTP/1.1" 200 -
+2020-01-10 13:03:15,819 __main__     INFO     Application end without exception
+2020-01-10 13:03:17,706 __main__     INFO     Application starting
+2020-01-10 13:03:17,725 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:03:19,495 controleur   DEBUG    connection starts
+2020-01-10 13:03:19,579 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:03:19] "GET / HTTP/1.1" 200 -
+2020-01-10 13:04:58,572 __main__     INFO     Application end without exception
+2020-01-10 13:05:01,189 __main__     INFO     Application starting
+2020-01-10 13:05:01,207 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:05:04,540 controleur   DEBUG    connection starts
+2020-01-10 13:05:04,572 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:05:04] "GET / HTTP/1.1" 200 -
+2020-01-10 13:06:13,089 __main__     INFO     Application end without exception
+2020-01-10 13:06:28,741 __main__     INFO     Application starting
+2020-01-10 13:06:28,759 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:06:30,000 controleur   DEBUG    connection starts
+2020-01-10 13:06:30,063 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:06:30] "GET / HTTP/1.1" 200 -
+2020-01-10 13:07:07,872 controleur   DEBUG    connection starts
+2020-01-10 13:07:07,878 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:07:07] "GET / HTTP/1.1" 200 -
+2020-01-10 13:07:13,806 controleur   DEBUG    connection starts
+2020-01-10 13:07:13,808 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:07:13] "GET / HTTP/1.1" 200 -
+2020-01-10 13:07:24,206 controleur   DEBUG    connection starts
+2020-01-10 13:07:24,207 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:07:24] "GET / HTTP/1.1" 200 -
+2020-01-10 13:07:53,725 __main__     INFO     Application end without exception
+2020-01-10 13:08:04,969 __main__     INFO     Application starting
+2020-01-10 13:08:04,988 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:08:06,639 controleur   DEBUG    connection starts
+2020-01-10 13:08:06,666 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:08:06] "GET / HTTP/1.1" 200 -
+2020-01-10 13:08:22,664 controleur   DEBUG    connection starts
+2020-01-10 13:08:22,667 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:08:22] "GET / HTTP/1.1" 200 -
+2020-01-10 13:08:51,690 __main__     INFO     Application end without exception
+2020-01-10 13:09:12,789 __main__     INFO     Application starting
+2020-01-10 13:09:12,808 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:09:14,652 controleur   DEBUG    connection starts
+2020-01-10 13:09:14,687 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:09:14] "GET / HTTP/1.1" 200 -
+2020-01-10 13:11:37,243 __main__     INFO     Application end without exception
+2020-01-10 13:11:39,141 __main__     INFO     Application starting
+2020-01-10 13:11:39,157 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:11:41,382 controleur   DEBUG    connection starts
+2020-01-10 13:11:41,451 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:11:41] "GET / HTTP/1.1" 200 -
+2020-01-10 13:18:15,686 __main__     INFO     Application end without exception
+2020-01-10 13:18:17,548 __main__     INFO     Application starting
+2020-01-10 13:18:17,565 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:18:18,929 controleur   DEBUG    connection starts
+2020-01-10 13:18:19,002 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:18:19] "GET / HTTP/1.1" 200 -
+2020-01-10 13:18:51,830 controleur   DEBUG    connection starts
+2020-01-10 13:18:51,831 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:18:51] "GET / HTTP/1.1" 200 -
+2020-01-10 13:19:34,859 __main__     INFO     Application end without exception
+2020-01-10 13:19:36,726 __main__     INFO     Application starting
+2020-01-10 13:19:36,742 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:19:37,964 controleur   DEBUG    connection starts
+2020-01-10 13:19:38,051 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:19:38] "GET / HTTP/1.1" 200 -
+2020-01-10 13:20:25,996 __main__     INFO     Application end without exception
+2020-01-10 13:20:27,678 __main__     INFO     Application starting
+2020-01-10 13:20:27,695 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:20:30,168 controleur   DEBUG    connection starts
+2020-01-10 13:20:30,219 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:20:30] "GET / HTTP/1.1" 200 -
+2020-01-10 13:21:13,705 __main__     INFO     Application end without exception
+2020-01-10 13:21:15,939 __main__     INFO     Application starting
+2020-01-10 13:21:15,956 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:21:18,374 controleur   DEBUG    connection starts
+2020-01-10 13:21:18,468 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:21:18] "GET / HTTP/1.1" 200 -
+2020-01-10 13:22:14,412 __main__     INFO     Application end without exception
+2020-01-10 13:22:16,485 __main__     INFO     Application starting
+2020-01-10 13:22:16,529 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:22:18,213 controleur   DEBUG    connection starts
+2020-01-10 13:22:18,278 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:22:18] "GET / HTTP/1.1" 200 -
+2020-01-10 13:24:13,307 __main__     INFO     Application end without exception
+2020-01-10 13:24:18,116 __main__     INFO     Application starting
+2020-01-10 13:24:18,135 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:24:19,609 controleur   DEBUG    connection starts
+2020-01-10 13:24:19,686 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:24:19] "GET / HTTP/1.1" 200 -
+2020-01-10 13:24:19,873 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:24:19] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 13:25:13,893 __main__     INFO     Application end without exception
+2020-01-10 13:26:03,713 __main__     INFO     Application starting
+2020-01-10 13:26:03,730 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:26:04,803 controleur   DEBUG    connection starts
+2020-01-10 13:26:04,833 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:26:04] "GET / HTTP/1.1" 200 -
+2020-01-10 13:27:57,381 __main__     INFO     Application end without exception
+2020-01-10 13:27:59,417 __main__     INFO     Application starting
+2020-01-10 13:27:59,436 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:28:01,461 controleur   DEBUG    connection starts
+2020-01-10 13:28:01,519 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:28:01] "GET / HTTP/1.1" 200 -
+2020-01-10 13:30:31,086 __main__     INFO     Application end without exception
+2020-01-10 13:30:33,607 __main__     INFO     Application starting
+2020-01-10 13:30:33,627 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:30:34,609 controleur   DEBUG    connection starts
+2020-01-10 13:30:34,670 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:30:34] "GET / HTTP/1.1" 200 -
+2020-01-10 13:31:27,652 __main__     INFO     Application end without exception
+2020-01-10 13:31:29,766 __main__     INFO     Application starting
+2020-01-10 13:31:29,786 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:31:32,367 controleur   DEBUG    connection starts
+2020-01-10 13:31:32,414 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:31:32] "GET / HTTP/1.1" 200 -
+2020-01-10 13:32:38,919 __main__     INFO     Application end without exception
+2020-01-10 13:32:40,746 __main__     INFO     Application starting
+2020-01-10 13:32:40,766 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:32:42,114 controleur   DEBUG    connection starts
+2020-01-10 13:32:42,155 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:32:42] "GET / HTTP/1.1" 200 -
+2020-01-10 13:33:44,156 __main__     INFO     Application end without exception
+2020-01-10 13:33:46,194 __main__     INFO     Application starting
+2020-01-10 13:33:46,210 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:33:49,468 controleur   DEBUG    connection starts
+2020-01-10 13:33:49,508 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:33:49] "GET / HTTP/1.1" 200 -
+2020-01-10 13:35:31,546 __main__     INFO     Application end without exception
+2020-01-10 13:35:33,705 __main__     INFO     Application starting
+2020-01-10 13:35:33,727 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:35:36,107 controleur   DEBUG    connection starts
+2020-01-10 13:35:36,174 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:35:36] "GET / HTTP/1.1" 200 -
+2020-01-10 13:35:48,115 __main__     INFO     Application end without exception
+2020-01-10 13:37:31,561 __main__     INFO     Application starting
+2020-01-10 13:37:31,578 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:37:38,385 controleur   DEBUG    connection starts
+2020-01-10 13:37:38,440 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:37:38] "GET / HTTP/1.1" 200 -
+2020-01-10 13:37:49,892 __main__     INFO     Application end without exception
+2020-01-10 13:39:43,117 __main__     INFO     Application starting
+2020-01-10 13:39:43,135 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:39:46,075 controleur   DEBUG    connection starts
+2020-01-10 13:39:46,108 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:39:46] "GET / HTTP/1.1" 200 -
+2020-01-10 13:40:22,097 __main__     INFO     Application end without exception
+2020-01-10 13:40:23,797 __main__     INFO     Application starting
+2020-01-10 13:40:23,816 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:40:25,397 controleur   DEBUG    connection starts
+2020-01-10 13:40:25,445 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:40:25] "GET / HTTP/1.1" 200 -
+2020-01-10 13:42:20,962 __main__     INFO     Application end without exception
+2020-01-10 13:44:31,569 __main__     INFO     Application starting
+2020-01-10 13:44:31,588 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:44:32,713 controleur   DEBUG    connection starts
+2020-01-10 13:44:32,767 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:44:32] "GET / HTTP/1.1" 200 -
+2020-01-10 13:45:13,742 __main__     INFO     Application end without exception
+2020-01-10 13:45:16,270 __main__     INFO     Application starting
+2020-01-10 13:45:16,315 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:45:24,435 controleur   DEBUG    connection starts
+2020-01-10 13:45:24,520 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:45:24] "GET / HTTP/1.1" 200 -
+2020-01-10 13:47:56,565 __main__     INFO     Application end without exception
+2020-01-10 13:47:58,878 __main__     INFO     Application starting
+2020-01-10 13:47:58,895 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:47:59,909 controleur   DEBUG    connection starts
+2020-01-10 13:47:59,963 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:47:59] "GET / HTTP/1.1" 200 -
+2020-01-10 13:49:03,960 __main__     INFO     Application end without exception
+2020-01-10 13:49:06,206 __main__     INFO     Application starting
+2020-01-10 13:49:06,226 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:49:07,030 controleur   DEBUG    connection starts
+2020-01-10 13:49:07,065 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:49:07] "GET / HTTP/1.1" 200 -
+2020-01-10 13:49:30,991 controleur   DEBUG    connection starts
+2020-01-10 13:49:30,995 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:49:30] "GET / HTTP/1.1" 200 -
+2020-01-10 13:49:39,997 __main__     INFO     Application end without exception
+2020-01-10 13:49:42,502 __main__     INFO     Application starting
+2020-01-10 13:49:42,522 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:49:43,640 controleur   DEBUG    connection starts
+2020-01-10 13:49:43,708 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:49:43] "GET / HTTP/1.1" 200 -
+2020-01-10 13:50:17,661 __main__     INFO     Application end without exception
+2020-01-10 13:50:21,516 __main__     INFO     Application starting
+2020-01-10 13:50:21,534 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:50:22,519 controleur   DEBUG    connection starts
+2020-01-10 13:50:22,560 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:50:22] "GET / HTTP/1.1" 200 -
+2020-01-10 13:51:00,550 __main__     INFO     Application end without exception
+2020-01-10 13:51:02,414 __main__     INFO     Application starting
+2020-01-10 13:51:02,432 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:51:04,655 controleur   DEBUG    connection starts
+2020-01-10 13:51:04,703 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:51:04] "GET / HTTP/1.1" 200 -
+2020-01-10 13:51:47,686 __main__     INFO     Application end without exception
+2020-01-10 13:51:49,792 __main__     INFO     Application starting
+2020-01-10 13:51:49,808 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:51:50,963 controleur   DEBUG    connection starts
+2020-01-10 13:51:51,041 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:51:51] "GET / HTTP/1.1" 200 -
+2020-01-10 13:52:44,500 __main__     INFO     Application end without exception
+2020-01-10 13:52:45,836 __main__     INFO     Application starting
+2020-01-10 13:52:45,856 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:52:46,950 controleur   DEBUG    connection starts
+2020-01-10 13:52:47,030 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:52:47] "GET / HTTP/1.1" 200 -
+2020-01-10 13:53:26,975 __main__     INFO     Application end without exception
+2020-01-10 13:53:29,060 __main__     INFO     Application starting
+2020-01-10 13:53:29,077 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:53:30,149 controleur   DEBUG    connection starts
+2020-01-10 13:53:30,238 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:53:30] "GET / HTTP/1.1" 200 -
+2020-01-10 13:54:33,198 __main__     INFO     Application end without exception
+2020-01-10 13:54:35,015 __main__     INFO     Application starting
+2020-01-10 13:54:35,036 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:54:35,900 controleur   DEBUG    connection starts
+2020-01-10 13:54:35,966 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:54:35] "GET / HTTP/1.1" 200 -
+2020-01-10 13:57:31,529 __main__     INFO     Application end without exception
+2020-01-10 13:57:33,435 __main__     INFO     Application starting
+2020-01-10 13:57:33,452 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:57:34,522 controleur   DEBUG    connection starts
+2020-01-10 13:57:34,558 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:57:34] "GET / HTTP/1.1" 200 -
+2020-01-10 13:58:25,062 __main__     INFO     Application end without exception
+2020-01-10 13:58:26,725 __main__     INFO     Application starting
+2020-01-10 13:58:26,743 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:58:27,789 controleur   DEBUG    connection starts
+2020-01-10 13:58:27,840 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:58:27] "GET / HTTP/1.1" 200 -
+2020-01-10 13:58:53,808 __main__     INFO     Application end without exception
+2020-01-10 13:58:55,888 __main__     INFO     Application starting
+2020-01-10 13:58:55,904 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:58:57,932 controleur   DEBUG    connection starts
+2020-01-10 13:58:57,987 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:58:57] "GET / HTTP/1.1" 200 -
+2020-01-10 13:59:27,951 __main__     INFO     Application end without exception
+2020-01-10 13:59:30,207 __main__     INFO     Application starting
+2020-01-10 13:59:30,225 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 13:59:31,577 controleur   DEBUG    connection starts
+2020-01-10 13:59:31,627 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 13:59:31] "GET / HTTP/1.1" 200 -
+2020-01-10 14:00:30,616 __main__     INFO     Application end without exception
+2020-01-10 14:00:32,230 __main__     INFO     Application starting
+2020-01-10 14:00:32,246 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:00:33,364 controleur   DEBUG    connection starts
+2020-01-10 14:00:33,399 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:33] "GET / HTTP/1.1" 200 -
+2020-01-10 14:00:47,069 controleur   DEBUG    connection starts
+2020-01-10 14:00:47,070 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:47] "GET / HTTP/1.1" 200 -
+2020-01-10 14:00:49,087 controleur   DEBUG    connection starts
+2020-01-10 14:00:49,088 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET / HTTP/1.1" 200 -
+2020-01-10 14:00:49,205 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:00:49,227 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:00:49,232 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:00:49,261 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:00:49,311 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:00:49,313 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:00:49,371 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:00:49,464 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:00:49,493 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:00:49,638 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:00:49] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:01:31,170 __main__     INFO     Application end without exception
+2020-01-10 14:01:34,629 __main__     INFO     Application starting
+2020-01-10 14:01:34,646 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:01:35,935 controleur   DEBUG    connection starts
+2020-01-10 14:01:35,985 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:35] "GET / HTTP/1.1" 200 -
+2020-01-10 14:01:39,176 controleur   DEBUG    connection starts
+2020-01-10 14:01:39,177 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET / HTTP/1.1" 200 -
+2020-01-10 14:01:39,263 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:01:39,303 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:01:39,313 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:01:39,341 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:01:39,393 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:01:39,427 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:01:39,441 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:01:39,459 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:01:39,481 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:01:39,807 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:01:39] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:07:02,030 __main__     INFO     Application end without exception
+2020-01-10 14:07:03,833 __main__     INFO     Application starting
+2020-01-10 14:07:03,853 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:07:05,014 controleur   DEBUG    connection starts
+2020-01-10 14:07:05,059 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:07:05] "GET / HTTP/1.1" 200 -
+2020-01-10 14:07:51,541 __main__     INFO     Application end without exception
+2020-01-10 14:07:54,184 __main__     INFO     Application starting
+2020-01-10 14:07:54,203 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:07:55,646 controleur   DEBUG    connection starts
+2020-01-10 14:07:55,682 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:07:55] "GET / HTTP/1.1" 200 -
+2020-01-10 14:10:08,651 controleur   DEBUG    connection starts
+2020-01-10 14:10:08,652 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET / HTTP/1.1" 200 -
+2020-01-10 14:10:08,775 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:10:08,813 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:10:08,840 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:10:08,860 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:10:08,892 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:10:08,934 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:10:08,977 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:08] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:10:09,116 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:09] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:10:09,152 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:09] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:10:09,627 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:10:09] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:11:15,174 __main__     INFO     Application end without exception
+2020-01-10 14:11:17,281 __main__     INFO     Application starting
+2020-01-10 14:11:17,298 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:11:19,430 controleur   DEBUG    connection starts
+2020-01-10 14:11:19,542 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:11:19] "GET / HTTP/1.1" 200 -
+2020-01-10 14:14:46,072 __main__     INFO     Application end without exception
+2020-01-10 14:14:47,621 __main__     INFO     Application starting
+2020-01-10 14:14:47,639 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:14:49,196 controleur   DEBUG    connection starts
+2020-01-10 14:14:49,253 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:49] "GET / HTTP/1.1" 200 -
+2020-01-10 14:14:58,206 controleur   DEBUG    connection starts
+2020-01-10 14:14:58,211 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET / HTTP/1.1" 200 -
+2020-01-10 14:14:58,305 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:14:58,327 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:14:58,382 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:14:58,385 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:14:58,399 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:14:58,404 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:14:58,433 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:14:58,510 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:14:58,523 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:14:58,922 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:14:58] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:16:18,478 __main__     INFO     Application end without exception
+2020-01-10 14:16:19,845 __main__     INFO     Application starting
+2020-01-10 14:16:19,863 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:16:21,351 controleur   DEBUG    connection starts
+2020-01-10 14:16:21,415 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:21] "GET / HTTP/1.1" 200 -
+2020-01-10 14:16:24,218 controleur   DEBUG    connection starts
+2020-01-10 14:16:24,220 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET / HTTP/1.1" 200 -
+2020-01-10 14:16:24,306 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:16:24,321 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:16:24,355 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:16:24,386 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:24,426 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:24,468 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:16:24,494 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:24,519 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:24,535 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:24,892 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:24] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:16:31,941 controleur   DEBUG    connection starts
+2020-01-10 14:16:31,942 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:31] "GET / HTTP/1.1" 200 -
+2020-01-10 14:16:32,028 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:16:32,045 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:16:32,083 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:16:32,114 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:32,131 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:32,153 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:16:32,181 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:32,200 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:32,219 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:16:32,521 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:16:32] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:20:19,195 __main__     INFO     Application end without exception
+2020-01-10 14:20:21,740 __main__     INFO     Application starting
+2020-01-10 14:20:21,757 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:20:23,454 controleur   DEBUG    connection starts
+2020-01-10 14:20:23,501 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:23] "GET / HTTP/1.1" 200 -
+2020-01-10 14:20:26,279 controleur   DEBUG    connection starts
+2020-01-10 14:20:26,281 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET / HTTP/1.1" 200 -
+2020-01-10 14:20:26,363 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:20:26,389 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:20:26,410 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:20:26,435 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:20:26,450 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:20:26,484 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:20:26,507 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:20:26,612 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:20:26,627 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:20:26,999 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:20:26] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:20:59,021 __main__     INFO     Application end without exception
+2020-01-10 14:21:00,561 __main__     INFO     Application starting
+2020-01-10 14:21:00,580 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:21:01,933 controleur   DEBUG    connection starts
+2020-01-10 14:21:01,996 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:01] "GET / HTTP/1.1" 200 -
+2020-01-10 14:21:04,194 controleur   DEBUG    connection starts
+2020-01-10 14:21:04,196 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET / HTTP/1.1" 200 -
+2020-01-10 14:21:04,290 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:21:04,291 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:21:04,319 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:21:04,323 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:21:04,335 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:21:04,357 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:21:04,460 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:21:04,482 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:21:04,494 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:21:04,839 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:21:04] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:22:29,974 controleur   DEBUG    connection starts
+2020-01-10 14:22:29,979 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:29] "GET / HTTP/1.1" 200 -
+2020-01-10 14:22:30,127 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:22:30,149 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:22:30,164 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:22:30,189 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:30,220 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:30,249 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:22:30,267 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:30,395 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:30,429 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:30,964 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:30] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:22:45,303 controleur   DEBUG    connection starts
+2020-01-10 14:22:45,305 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET / HTTP/1.1" 200 -
+2020-01-10 14:22:45,483 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:22:45,529 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:22:45,557 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:22:45,593 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:45,665 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:45,707 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:22:45,734 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:45,753 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:45,767 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:45] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:22:46,248 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:22:46] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 14:24:46,353 __main__     INFO     Application end without exception
+2020-01-10 14:24:48,049 __main__     INFO     Application starting
+2020-01-10 14:24:48,066 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 14:24:49,226 controleur   DEBUG    connection starts
+2020-01-10 14:24:49,263 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:49] "GET / HTTP/1.1" 200 -
+2020-01-10 14:24:52,006 controleur   DEBUG    connection starts
+2020-01-10 14:24:52,008 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET / HTTP/1.1" 200 -
+2020-01-10 14:24:52,111 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 14:24:52,113 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 14:24:52,124 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 14:24:52,126 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 14:24:52,157 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 14:24:52,176 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 14:24:52,220 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 14:24:52,355 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 14:24:52,376 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 14:24:52,592 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:08:36,832 __main__     INFO     Application end without exception
