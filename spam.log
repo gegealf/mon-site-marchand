@@ -1,0 +1,5 @@
+2020-01-10 10:24:40,104 __main__     INFO     Application starting
+2020-01-10 10:24:40,122 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 10:24:42,828 controleur   DEBUG    connection starts
+2020-01-10 10:24:42,848 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:24:42] "GET / HTTP/1.1" 200 -
+2020-01-10 10:24:55,837 __main__     INFO     Application end without exception
