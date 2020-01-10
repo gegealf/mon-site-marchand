@@ -3,3 +3,359 @@
 2020-01-10 10:24:42,828 controleur   DEBUG    connection starts
 2020-01-10 10:24:42,848 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:24:42] "GET / HTTP/1.1" 200 -
 2020-01-10 10:24:55,837 __main__     INFO     Application end without exception
+2020-01-10 10:59:35,421 __main__     INFO     Application starting
+2020-01-10 10:59:35,440 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 10:59:39,142 controleur   DEBUG    connection starts
+2020-01-10 10:59:39,164 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET / HTTP/1.1" 200 -
+2020-01-10 10:59:39,308 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET /images/2gb_sandisk_sdcard.png HTTP/1.1" 404 -
+2020-01-10 10:59:39,320 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 10:59:39,347 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 10:59:39,385 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 10:59:39,414 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 10:59:39,452 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:39] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 10:59:50,611 controleur   DEBUG    connection starts
+2020-01-10 10:59:50,612 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET / HTTP/1.1" 200 -
+2020-01-10 10:59:50,685 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET /images/2gb_sandisk_sdcard.png HTTP/1.1" 404 -
+2020-01-10 10:59:50,725 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 10:59:50,742 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 10:59:50,758 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 10:59:50,769 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 10:59:50,790 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 10:59:50] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:00:01,295 __main__     INFO     Application end without exception
+2020-01-10 11:03:16,844 __main__     INFO     Application starting
+2020-01-10 11:03:16,866 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:03:18,985 controleur   DEBUG    connection starts
+2020-01-10 11:03:19,072 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET / HTTP/1.1" 200 -
+2020-01-10 11:03:19,243 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:03:19,258 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /images/2gb_sandisk_sdcard.png HTTP/1.1" 404 -
+2020-01-10 11:03:19,279 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:03:19,286 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:03:19,322 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:03:19,330 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:03:19,347 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:03:19] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:04:16,891 __main__     INFO     Application end without exception
+2020-01-10 11:08:13,596 __main__     INFO     Application starting
+2020-01-10 11:08:13,614 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:08:14,761 controleur   DEBUG    connection starts
+2020-01-10 11:08:14,791 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 9, in page_d_accueil
+    return render_template("page_d_accueil.html")  # lien vers la page d'accueil
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 26, in template
+    <img src="{{ url_for('images', filename='2gb_sandisk_sdcard.png') width='200' height='250' alt='1111' }}"/>
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'width'
+2020-01-10 11:08:14,839 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:08:14] "GET / HTTP/1.1" 500 -
+2020-01-10 11:09:45,705 __main__     INFO     Application starting
+2020-01-10 11:09:45,722 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:09:46,923 controleur   DEBUG    connection starts
+2020-01-10 11:09:47,020 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 9, in page_d_accueil
+    return render_template("page_d_accueil.html")  # lien vers la page d'accueil
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 26, in top-level template code
+    <img src="{{ url_for('images', filename='2gb_sandisk_sdcard.png')}}"/>
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'images' with values ['filename']. Did you mean 'page_d_accueil' instead?
+2020-01-10 11:09:47,087 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:09:47] "GET / HTTP/1.1" 500 -
+2020-01-10 11:11:09,958 __main__     INFO     Application starting
+2020-01-10 11:11:09,978 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:11:14,247 controleur   DEBUG    connection starts
+2020-01-10 11:11:14,274 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET / HTTP/1.1" 200 -
+2020-01-10 11:11:14,433 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:11:14,434 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:11:14,469 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:11:14,485 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:11:14,520 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:11:14,536 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:14] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:11:53,564 __main__     INFO     Application end without exception
+2020-01-10 11:11:56,304 __main__     INFO     Application starting
+2020-01-10 11:11:56,322 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:11:58,008 controleur   DEBUG    connection starts
+2020-01-10 11:11:58,079 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 9, in page_d_accueil
+    return render_template("page_d_accueil.html")  # lien vers la page d'accueil
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 26, in template
+    <img src="{{ url_for('static', filename='images/2gb_sandisk_sdcard.png') width='200' height='250' alt='1111'}}"/>
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'width'
+2020-01-10 11:11:58,128 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:11:58] "GET / HTTP/1.1" 500 -
+2020-01-10 11:12:42,359 controleur   DEBUG    connection starts
+2020-01-10 11:12:42,373 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET / HTTP/1.1" 200 -
+2020-01-10 11:12:42,459 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET /static/images/2gb_sandisk_sdcard.png%20width='200'%20height='250'%20alt='1111' HTTP/1.1" 404 -
+2020-01-10 11:12:42,488 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:12:42,496 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:12:42,518 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:12:42,533 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:12:42,557 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:12:42] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:17,788 controleur   DEBUG    connection starts
+2020-01-10 11:13:17,790 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:17] "GET / HTTP/1.1" 200 -
+2020-01-10 11:13:17,896 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:17] "GET /static/images/2gb_sandisk_sdcard.png%20width='200'%20height='250'%20alt='1111' HTTP/1.1" 404 -
+2020-01-10 11:13:17,932 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:17] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:17,947 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:17] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:13:17,991 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:17] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:18,022 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:18] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:18,032 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:18] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:13:19,043 controleur   DEBUG    connection starts
+2020-01-10 11:13:19,044 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET / HTTP/1.1" 200 -
+2020-01-10 11:13:19,110 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /static/images/2gb_sandisk_sdcard.png%20width='200'%20height='250'%20alt='1111' HTTP/1.1" 404 -
+2020-01-10 11:13:19,159 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:13:19,177 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:19,194 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:19,209 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:13:19,228 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:19,875 controleur   DEBUG    connection starts
+2020-01-10 11:13:19,876 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET / HTTP/1.1" 200 -
+2020-01-10 11:13:19,954 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:13:19,957 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:19,960 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:13:19,993 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:19] "GET /static/images/2gb_sandisk_sdcard.png%20width='200'%20height='250'%20alt='1111' HTTP/1.1" 404 -
+2020-01-10 11:13:20,002 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:20] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:20,008 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:20] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:29,514 __main__     INFO     Application end without exception
+2020-01-10 11:13:32,155 __main__     INFO     Application starting
+2020-01-10 11:13:32,173 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:13:33,624 controleur   DEBUG    connection starts
+2020-01-10 11:13:33,654 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:33] "GET / HTTP/1.1" 200 -
+2020-01-10 11:13:33,789 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:33] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:13:33,794 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:33] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:33,804 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:33] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:33,806 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:33] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:13:33,876 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:33] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:57,461 controleur   DEBUG    connection starts
+2020-01-10 11:13:57,463 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:57] "GET / HTTP/1.1" 200 -
+2020-01-10 11:13:57,495 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:57] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:13:57,504 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:57] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:57,588 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:57] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:57,606 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:57] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:13:57,614 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:57] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:59,180 controleur   DEBUG    connection starts
+2020-01-10 11:13:59,182 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:59] "GET / HTTP/1.1" 200 -
+2020-01-10 11:13:59,253 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:59] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:13:59,284 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:59] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:59,304 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:59] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:13:59,325 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:59] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:13:59,343 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:13:59] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:04,636 controleur   DEBUG    connection starts
+2020-01-10 11:14:04,637 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET / HTTP/1.1" 200 -
+2020-01-10 11:14:04,739 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:14:04,756 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:14:04,771 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:14:04,816 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:04,828 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:04,874 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:14:04,897 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:04] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:05,130 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:05] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 11:14:07,244 controleur   DEBUG    connection starts
+2020-01-10 11:14:07,245 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET / HTTP/1.1" 200 -
+2020-01-10 11:14:07,300 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:14:07,346 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:14:07,373 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:14:07,424 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:07,493 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:07,518 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:14:07,524 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:07,707 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:07] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 11:14:08,232 controleur   DEBUG    connection starts
+2020-01-10 11:14:08,233 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET / HTTP/1.1" 200 -
+2020-01-10 11:14:08,300 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:14:08,336 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:14:08,356 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:14:08,365 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:08,380 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:08,414 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:14:08,458 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:08,560 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:08] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 11:14:15,063 __main__     INFO     Application end without exception
+2020-01-10 11:14:17,083 __main__     INFO     Application starting
+2020-01-10 11:14:17,100 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:14:18,464 controleur   DEBUG    connection starts
+2020-01-10 11:14:18,549 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET / HTTP/1.1" 200 -
+2020-01-10 11:14:18,648 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET /static/images/2gb_sandisk_sdcard.png%20width='200'%20height='250'%20alt='1111' HTTP/1.1" 404 -
+2020-01-10 11:14:18,689 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:14:18,719 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:18,736 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:14:18,761 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:14:18,798 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:14:18] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:15:09,333 __main__     INFO     Application end without exception
+2020-01-10 11:15:12,177 __main__     INFO     Application starting
+2020-01-10 11:15:12,194 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:15:14,527 controleur   DEBUG    connection starts
+2020-01-10 11:15:14,563 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:15:14] "GET / HTTP/1.1" 200 -
+2020-01-10 11:15:14,670 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:15:14] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:15:14,678 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:15:14] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:15:14,680 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:15:14] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:15:14,708 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:15:14] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:15:14,717 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:15:14] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:17:14,291 __main__     INFO     Application end without exception
+2020-01-10 11:17:16,778 __main__     INFO     Application starting
+2020-01-10 11:17:16,797 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:17:18,243 controleur   DEBUG    connection starts
+2020-01-10 11:17:18,280 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:17:18] "GET / HTTP/1.1" 200 -
+2020-01-10 11:17:18,409 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:17:18] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:17:18,426 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:17:18] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:17:18,430 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:17:18] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:17:18,459 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:17:18] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:17:18,488 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:17:18] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:50,422 controleur   DEBUG    connection starts
+2020-01-10 11:20:50,425 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:50] "GET / HTTP/1.1" 200 -
+2020-01-10 11:20:50,546 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:50] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:20:50,581 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:50] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:50,592 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:50] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:50,615 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:50] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:20:50,634 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:50] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:53,833 controleur   DEBUG    connection starts
+2020-01-10 11:20:53,834 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET / HTTP/1.1" 200 -
+2020-01-10 11:20:53,895 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:20:53,902 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:20:53,903 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:53,906 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:20:53,912 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:53,918 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:20:53,971 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:53] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:20:54,231 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:20:54] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 11:21:05,738 __main__     INFO     Application end without exception
+2020-01-10 11:21:08,034 __main__     INFO     Application starting
+2020-01-10 11:21:08,052 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:21:09,767 controleur   DEBUG    connection starts
+2020-01-10 11:21:09,798 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:21:09] "GET / HTTP/1.1" 200 -
+2020-01-10 11:21:09,936 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:21:09] "GET /images/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:21:09,985 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:21:09] "GET /images/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:21:10,001 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:21:10] "GET /images/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:21:10,016 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:21:10] "GET /images/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:21:10,038 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:21:10] "GET /images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:15,198 __main__     INFO     Application end without exception
+2020-01-10 11:25:19,763 __main__     INFO     Application starting
+2020-01-10 11:25:19,780 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:25:22,389 controleur   DEBUG    connection starts
+2020-01-10 11:25:22,423 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:22] "GET / HTTP/1.1" 200 -
+2020-01-10 11:25:22,596 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:22] "GET /static/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:25:22,604 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:22] "GET /static/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:22,638 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:22] "GET /static/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:22,639 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:22] "GET /static/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:25:22,640 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:22] "GET /static/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:30,551 controleur   DEBUG    connection starts
+2020-01-10 11:25:30,553 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET / HTTP/1.1" 200 -
+2020-01-10 11:25:30,650 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/32gb_sandisk_sdhc.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:30,651 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/16gb_sandisk_sdhc_card.png HTTP/1.1" 404 -
+2020-01-10 11:25:30,655 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/64gb_noname_sdxc.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:30,657 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/128gb_sandisk_extreme.png HTTP/1.1" 404 -
+2020-01-10 11:25:30,665 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 11:25:30,673 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 11:25:30,730 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /static/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 404 -
+2020-01-10 11:25:30,872 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:25:30] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 11:25:40,377 __main__     INFO     Application end without exception
+2020-01-10 11:26:35,535 __main__     INFO     Application starting
+2020-01-10 11:26:35,553 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 11:26:39,544 controleur   DEBUG    connection starts
+2020-01-10 11:26:39,587 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET / HTTP/1.1" 200 -
+2020-01-10 11:26:39,673 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 11:26:39,705 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 11:26:39,767 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 11:26:39,791 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 11:26:39,811 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 11:26:39] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 11:27:03,322 __main__     INFO     Application end without exception
