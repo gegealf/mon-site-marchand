@@ -804,3 +804,730 @@ jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', 
 2020-01-10 14:24:52,376 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
 2020-01-10 14:24:52,592 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 14:24:52] "GET /favicon.ico HTTP/1.1" 404 -
 2020-01-10 15:08:36,832 __main__     INFO     Application end without exception
+2020-01-10 15:18:25,779 __main__     INFO     Application starting
+2020-01-10 15:18:25,797 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:18:29,184 controleur   DEBUG    connection starts
+2020-01-10 15:18:29,235 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:29] "GET / HTTP/1.1" 200 -
+2020-01-10 15:18:40,849 controleur   DEBUG    connection starts
+2020-01-10 15:18:40,851 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:40] "GET / HTTP/1.1" 200 -
+2020-01-10 15:18:40,947 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:40] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:18:40,949 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:40] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:18:40,950 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:40] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:18:40,951 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:40] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:18:40,980 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:40] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:18:41,002 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:41] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:18:41,074 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:41] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:18:41,179 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:41] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:18:41,365 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:18:41] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:19:12,385 __main__     INFO     Application end without exception
+2020-01-10 15:19:14,118 __main__     INFO     Application starting
+2020-01-10 15:19:14,156 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:19:15,883 controleur   DEBUG    connection starts
+2020-01-10 15:19:15,959 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:15] "GET / HTTP/1.1" 200 -
+2020-01-10 15:19:18,883 controleur   DEBUG    connection starts
+2020-01-10 15:19:18,884 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:18] "GET / HTTP/1.1" 200 -
+2020-01-10 15:19:18,951 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:18] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:19:18,981 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:18] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:19:19,006 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:19:19,040 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:19:19,079 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:19:19,103 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:19:19,138 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:19:19,179 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:19:19,273 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:19:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:20:07,307 __main__     INFO     Application end without exception
+2020-01-10 15:20:09,525 __main__     INFO     Application starting
+2020-01-10 15:20:09,563 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:20:12,353 controleur   DEBUG    connection starts
+2020-01-10 15:20:12,386 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:12] "GET / HTTP/1.1" 200 -
+2020-01-10 15:20:14,813 controleur   DEBUG    connection starts
+2020-01-10 15:20:14,814 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:14] "GET / HTTP/1.1" 200 -
+2020-01-10 15:20:14,911 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:14] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:20:14,927 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:14] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:20:14,934 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:14] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:20:14,965 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:14] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:20:14,997 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:14] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:20:15,064 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:15] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:20:15,094 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:15] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:20:15,150 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:15] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:20:15,209 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:20:15] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:22:13,296 __main__     INFO     Application end without exception
+2020-01-10 15:22:14,761 __main__     INFO     Application starting
+2020-01-10 15:22:14,807 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:22:19,190 controleur   DEBUG    connection starts
+2020-01-10 15:22:19,212 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET / HTTP/1.1" 200 -
+2020-01-10 15:22:19,289 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:22:19,313 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:22:19,338 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:22:19,380 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:22:19,429 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:22:19,436 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:22:19,451 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:22:19,580 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:22:19,587 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:22:19,994 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:22:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:24:03,062 __main__     INFO     Application end without exception
+2020-01-10 15:24:05,021 __main__     INFO     Application starting
+2020-01-10 15:24:05,041 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:24:07,187 controleur   DEBUG    connection starts
+2020-01-10 15:24:07,214 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET / HTTP/1.1" 200 -
+2020-01-10 15:24:07,302 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:24:07,304 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:24:07,311 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:24:07,354 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:07,364 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:07,403 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:24:07,414 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:07,533 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:07,569 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:07,973 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:07] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:24:36,492 __main__     INFO     Application end without exception
+2020-01-10 15:24:38,339 __main__     INFO     Application starting
+2020-01-10 15:24:38,356 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:24:40,450 controleur   DEBUG    connection starts
+2020-01-10 15:24:40,510 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET / HTTP/1.1" 200 -
+2020-01-10 15:24:40,690 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:24:40,693 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:24:40,704 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:24:40,733 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:40,832 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:40,847 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:24:40,878 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:40,894 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:40,928 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:40] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:24:41,244 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:24:41] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:25:45,790 __main__     INFO     Application end without exception
+2020-01-10 15:25:47,427 __main__     INFO     Application starting
+2020-01-10 15:25:47,444 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:25:49,762 controleur   DEBUG    connection starts
+2020-01-10 15:25:49,799 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET / HTTP/1.1" 200 -
+2020-01-10 15:25:49,896 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:25:49,930 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:25:49,952 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:25:49,961 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:25:49,999 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:25:50,000 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:49] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:25:50,006 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:50] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:25:50,247 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:50] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:25:50,284 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:50] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:25:50,607 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:25:50] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:26:13,624 __main__     INFO     Application end without exception
+2020-01-10 15:26:15,084 __main__     INFO     Application starting
+2020-01-10 15:26:15,103 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:26:16,256 controleur   DEBUG    connection starts
+2020-01-10 15:26:16,290 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET / HTTP/1.1" 200 -
+2020-01-10 15:26:16,407 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:26:16,449 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:26:16,466 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:26:16,510 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:26:16,532 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:26:16,571 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:26:16,585 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:26:16,591 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:26:16,607 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:26:16,909 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:26:16] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:31:27,130 __main__     INFO     Application end without exception
+2020-01-10 15:31:29,939 __main__     INFO     Application starting
+2020-01-10 15:31:29,963 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:31:59,986 __main__     INFO     Application end without exception
+2020-01-10 15:32:01,682 __main__     INFO     Application starting
+2020-01-10 15:32:01,699 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:32:06,987 controleur   DEBUG    connection starts
+2020-01-10 15:32:07,017 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET / HTTP/1.1" 200 -
+2020-01-10 15:32:07,114 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:32:07,119 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:32:07,120 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:32:07,120 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:07,121 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:07,149 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:32:07,241 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:07,379 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:07,734 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:07] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:32:12,270 controleur   DEBUG    connection starts
+2020-01-10 15:32:12,275 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET / HTTP/1.1" 200 -
+2020-01-10 15:32:12,358 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:32:12,376 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:32:12,404 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:32:12,422 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:12,468 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:12,486 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:32:12,513 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:12,526 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:12,824 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:12] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:32:39,840 __main__     INFO     Application end without exception
+2020-01-10 15:32:42,236 __main__     INFO     Application starting
+2020-01-10 15:32:42,254 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:32:44,626 controleur   DEBUG    connection starts
+2020-01-10 15:32:44,659 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET / HTTP/1.1" 200 -
+2020-01-10 15:32:44,780 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:32:44,816 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:32:44,860 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:32:44,891 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:44,910 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:44,943 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:32:44,960 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:44,988 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:44] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:45,024 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:45] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:32:45,426 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:32:45] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:34:21,987 __main__     INFO     Application end without exception
+2020-01-10 15:34:23,579 __main__     INFO     Application starting
+2020-01-10 15:34:23,595 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:34:25,228 controleur   DEBUG    connection starts
+2020-01-10 15:34:25,256 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET / HTTP/1.1" 200 -
+2020-01-10 15:34:25,393 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:34:25,415 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:34:25,441 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:34:25,465 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:25,501 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:25,535 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:34:25,537 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:25,623 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:25,646 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:25,887 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:25] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:34:41,896 __main__     INFO     Application end without exception
+2020-01-10 15:34:45,160 __main__     INFO     Application starting
+2020-01-10 15:34:45,181 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:34:47,915 controleur   DEBUG    connection starts
+2020-01-10 15:34:47,953 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:47] "GET / HTTP/1.1" 200 -
+2020-01-10 15:34:48,033 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:34:48,064 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:34:48,094 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:34:48,151 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:48,153 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:48,179 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:34:48,217 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:48,223 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:48,250 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:34:48,555 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:34:48] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:35:15,070 __main__     INFO     Application end without exception
+2020-01-10 15:35:17,261 __main__     INFO     Application starting
+2020-01-10 15:35:17,283 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:35:20,101 controleur   DEBUG    connection starts
+2020-01-10 15:35:20,156 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:20] "GET / HTTP/1.1" 200 -
+2020-01-10 15:35:23,344 controleur   DEBUG    connection starts
+2020-01-10 15:35:23,345 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:23] "GET / HTTP/1.1" 200 -
+2020-01-10 15:35:25,285 controleur   DEBUG    connection starts
+2020-01-10 15:35:25,286 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET / HTTP/1.1" 200 -
+2020-01-10 15:35:25,405 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:35:25,407 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:35:25,434 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:35:25,449 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:35:25,475 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:35:25,510 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:35:25,548 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:35:25,558 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:35:25,593 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:35:25,931 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:35:25] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:36:07,957 __main__     INFO     Application end without exception
+2020-01-10 15:54:14,272 __main__     INFO     démarrage de l'application
+2020-01-10 15:54:14,289 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-10 15:54:15,351 controleur   DEBUG    connexion à la page d'accueil
+2020-01-10 15:54:15,413 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:15] "GET / HTTP/1.1" 200 -
+2020-01-10 15:54:19,140 controleur   DEBUG    connexion à la page d'authentification
+2020-01-10 15:54:19,147 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:19] "GET /authentification HTTP/1.1" 200 -
+2020-01-10 15:54:33,631 controleur   DEBUG    connexion à la page d'accueil
+2020-01-10 15:54:33,633 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET / HTTP/1.1" 200 -
+2020-01-10 15:54:33,729 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-10 15:54:33,770 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-10 15:54:33,804 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-10 15:54:33,815 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-10 15:54:33,841 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-10 15:54:33,851 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-10 15:54:33,866 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-10 15:54:33,972 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-10 15:54:33,983 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:33] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-10 15:54:34,352 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:54:34] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-10 15:57:05,054 controleur   DEBUG    connexion à la page d'authentification
+2020-01-10 15:57:05,056 werkzeug     INFO     127.0.0.1 - - [10/Jan/2020 15:57:05] "GET /authentification HTTP/1.1" 200 -
+2020-01-13 13:31:26,430 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:31:28,883 __main__     INFO     démarrage de l'application
+2020-01-13 13:31:28,903 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:31:34,292 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:31:34,340 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET / HTTP/1.1" 200 -
+2020-01-13 13:31:34,420 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/page_d_accueil.css HTTP/1.1" 304 -
+2020-01-13 13:31:34,422 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 304 -
+2020-01-13 13:31:34,423 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 304 -
+2020-01-13 13:31:34,429 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 304 -
+2020-01-13 13:31:34,453 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 304 -
+2020-01-13 13:31:34,462 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 304 -
+2020-01-13 13:31:34,474 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 304 -
+2020-01-13 13:31:34,578 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/fond_elephant.jpg HTTP/1.1" 304 -
+2020-01-13 13:31:34,593 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:34] "GET /static/images/jungle1.jpg HTTP/1.1" 304 -
+2020-01-13 13:31:59,463 controleur   DEBUG    connexion à la page d'authentification
+2020-01-13 13:31:59,479 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:31:59] "GET /authentification HTTP/1.1" 200 -
+2020-01-13 13:34:25,579 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:34:28,714 __main__     INFO     démarrage de l'application
+2020-01-13 13:34:28,731 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:34:30,489 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:34:30,604 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:34:30] "GET / HTTP/1.1" 200 -
+2020-01-13 13:35:10,124 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:35:10,128 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET / HTTP/1.1" 200 -
+2020-01-13 13:35:10,240 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 13:35:10,247 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 13:35:10,248 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 13:35:10,259 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 13:35:10,274 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 13:35:10,293 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 13:35:10,372 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 13:35:10,469 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 13:35:10,484 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 13:35:10,873 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:10] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 13:35:20,379 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:35:22,141 __main__     INFO     démarrage de l'application
+2020-01-13 13:35:22,159 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:35:24,782 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:35:24,869 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:24] "GET / HTTP/1.1" 200 -
+2020-01-13 13:35:35,888 controleur   DEBUG    connexion à la page d'authentification
+2020-01-13 13:35:35,890 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:35:35] "GET /authentification HTTP/1.1" 200 -
+2020-01-13 13:42:56,734 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:42:59,036 __main__     INFO     démarrage de l'application
+2020-01-13 13:42:59,052 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:43:00,598 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:43:00,636 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:43:00] "GET / HTTP/1.1" 200 -
+2020-01-13 13:44:14,663 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:44:17,247 __main__     INFO     démarrage de l'application
+2020-01-13 13:44:17,264 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:44:21,678 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:44:21,712 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:44:21] "GET / HTTP/1.1" 200 -
+2020-01-13 13:45:32,229 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:45:34,330 __main__     INFO     démarrage de l'application
+2020-01-13 13:45:34,350 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:45:35,931 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:45:36,007 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:45:36] "GET / HTTP/1.1" 200 -
+2020-01-13 13:49:05,102 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:49:06,822 __main__     INFO     démarrage de l'application
+2020-01-13 13:49:06,839 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:49:08,126 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:49:08,176 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:08] "GET / HTTP/1.1" 200 -
+2020-01-13 13:49:13,741 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:49:13,745 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET / HTTP/1.1" 200 -
+2020-01-13 13:49:13,853 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 13:49:13,862 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 13:49:13,881 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 13:49:13,894 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 13:49:13,918 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 13:49:13,937 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 13:49:13,950 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:13] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 13:49:14,111 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:14] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 13:49:14,143 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:14] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 13:49:14,481 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:49:14] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 13:50:15,525 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:50:18,197 __main__     INFO     démarrage de l'application
+2020-01-13 13:50:18,215 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:50:19,906 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:50:19,967 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:50:19] "GET / HTTP/1.1" 200 -
+2020-01-13 13:51:00,939 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:51:02,460 __main__     INFO     démarrage de l'application
+2020-01-13 13:51:02,476 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:51:04,635 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:51:04,662 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET / HTTP/1.1" 200 -
+2020-01-13 13:51:04,755 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 13:51:04,759 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 13:51:04,797 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 13:51:04,805 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 13:51:04,817 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 13:51:04,842 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 13:51:04,873 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:04] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 13:51:05,067 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:05] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 13:51:05,097 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:05] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 13:51:05,419 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:51:05] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 13:51:56,449 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:51:58,516 __main__     INFO     démarrage de l'application
+2020-01-13 13:51:58,537 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:52:01,717 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:52:01,746 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET / HTTP/1.1" 200 -
+2020-01-13 13:52:01,832 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 13:52:01,865 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 13:52:01,873 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 13:52:01,903 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 13:52:01,922 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 13:52:01,951 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 13:52:01,977 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:01] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 13:52:02,096 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:02] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 13:52:02,106 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:02] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 13:52:02,484 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:52:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 13:53:12,023 __main__     INFO     arrêt normal de l'application
+2020-01-13 13:53:13,948 __main__     INFO     démarrage de l'application
+2020-01-13 13:53:13,979 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 13:53:16,772 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 13:53:16,803 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:16] "GET / HTTP/1.1" 200 -
+2020-01-13 13:53:16,952 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:16] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 13:53:16,978 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:16] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 13:53:17,006 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 13:53:17,017 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 13:53:17,031 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 13:53:17,054 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 13:53:17,070 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 13:53:17,237 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 13:53:17,258 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 13:53:17,643 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 13:53:17] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:01:57,531 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:01:59,477 __main__     INFO     démarrage de l'application
+2020-01-13 14:01:59,493 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:02:01,234 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:02:01,263 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:01] "GET / HTTP/1.1" 200 -
+2020-01-13 14:02:07,952 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:02:07,955 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:07] "GET / HTTP/1.1" 200 -
+2020-01-13 14:02:08,077 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:02:08,078 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:02:08,081 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:02:08,117 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:02:08,129 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:02:08,150 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:02:08,183 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:02:08,350 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:02:08,369 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:02:08,801 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:02:08] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:03:13,845 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:03:15,575 __main__     INFO     démarrage de l'application
+2020-01-13 14:03:15,593 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:03:16,802 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:03:16,829 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:16] "GET / HTTP/1.1" 200 -
+2020-01-13 14:03:20,129 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:03:20,130 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET / HTTP/1.1" 200 -
+2020-01-13 14:03:20,233 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:03:20,282 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:03:20,292 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:03:20,306 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:03:20,339 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:03:20,354 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:03:20,374 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:03:20,455 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:03:20,511 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:03:20,891 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:03:20] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:04:28,938 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:04:31,965 __main__     INFO     démarrage de l'application
+2020-01-13 14:04:31,981 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:04:33,111 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:04:33,156 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:04:33] "GET / HTTP/1.1" 200 -
+2020-01-13 14:08:49,776 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:08:51,319 __main__     INFO     démarrage de l'application
+2020-01-13 14:08:51,342 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:08:52,352 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:08:52,418 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:52] "GET / HTTP/1.1" 200 -
+2020-01-13 14:08:56,285 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:08:56,287 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET / HTTP/1.1" 200 -
+2020-01-13 14:08:56,371 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:08:56,419 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:08:56,439 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:08:56,491 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:08:56,504 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:08:56,538 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:08:56,549 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:08:56,646 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:08:56,663 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:56] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:08:57,016 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:08:57] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:10:36,094 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:10:37,817 __main__     INFO     démarrage de l'application
+2020-01-13 14:10:37,834 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:10:39,185 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:10:39,220 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:39] "GET / HTTP/1.1" 200 -
+2020-01-13 14:10:42,645 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:10:42,647 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET / HTTP/1.1" 200 -
+2020-01-13 14:10:42,744 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:10:42,790 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:10:42,796 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:10:42,817 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:10:42,827 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:10:42,858 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:10:42,870 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:42] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:10:43,017 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:43] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:10:43,032 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:43] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:10:43,388 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:10:43] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:11:31,921 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:11:33,611 __main__     INFO     démarrage de l'application
+2020-01-13 14:11:33,641 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:11:39,221 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:11:39,257 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET / HTTP/1.1" 200 -
+2020-01-13 14:11:39,390 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:11:39,392 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:11:39,413 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:11:39,436 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:11:39,447 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:11:39,464 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:11:39,493 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:11:39,538 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:11:39,574 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:11:39,978 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:11:39] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:15:17,620 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:15:19,816 __main__     INFO     démarrage de l'application
+2020-01-13 14:15:19,834 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:15:28,061 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:15:28,097 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET / HTTP/1.1" 200 -
+2020-01-13 14:15:28,191 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:15:28,223 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:15:28,246 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:15:28,272 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:28,278 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:28,286 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:15:28,316 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:28,521 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:28,544 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:28,917 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:28] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:15:37,419 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:15:39,664 __main__     INFO     démarrage de l'application
+2020-01-13 14:15:39,680 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:15:40,989 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:15:41,044 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:41] "GET / HTTP/1.1" 200 -
+2020-01-13 14:15:46,794 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:15:46,796 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:46] "GET / HTTP/1.1" 200 -
+2020-01-13 14:15:46,886 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:46] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:15:46,909 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:46] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:15:46,927 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:46] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:15:46,952 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:46] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:46,975 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:46] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:47,010 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:47] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:15:47,062 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:47] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:47,125 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:47] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:47,158 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:47] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:15:47,506 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:15:47] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:16:05,516 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:16:07,331 __main__     INFO     démarrage de l'application
+2020-01-13 14:16:07,350 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:16:09,693 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:16:09,730 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:09] "GET / HTTP/1.1" 200 -
+2020-01-13 14:16:12,617 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:16:12,619 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET / HTTP/1.1" 200 -
+2020-01-13 14:16:12,722 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:16:12,739 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:16:12,743 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:16:12,772 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:16:12,797 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:16:12,808 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:16:12,846 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:16:12,919 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:16:12,939 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:12] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:16:13,345 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:16:13] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:17:10,886 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:17:12,341 __main__     INFO     démarrage de l'application
+2020-01-13 14:17:12,359 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:17:13,841 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:17:13,920 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:13] "GET / HTTP/1.1" 200 -
+2020-01-13 14:17:16,873 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:17:16,874 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:16] "GET / HTTP/1.1" 200 -
+2020-01-13 14:17:16,972 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:16] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:17:16,993 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:16] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:17:16,998 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:16] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:17:17,027 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:17] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:17:17,071 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:17] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:17:17,097 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:17] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:17:17,114 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:17] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:17:19,560 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:19] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:17:19,571 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:19] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:17:19,877 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:17:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:18:17,921 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:18:19,972 __main__     INFO     démarrage de l'application
+2020-01-13 14:18:19,988 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:18:21,645 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:18:21,720 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:21] "GET / HTTP/1.1" 200 -
+2020-01-13 14:18:24,790 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:18:24,791 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET / HTTP/1.1" 200 -
+2020-01-13 14:18:24,888 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:18:24,889 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:18:24,928 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:18:24,938 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:18:24,965 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:18:24,989 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:24] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:18:25,013 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:25] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:18:25,133 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:25] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:18:25,157 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:25] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:18:25,506 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:18:25] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:19:23,552 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:19:25,610 __main__     INFO     démarrage de l'application
+2020-01-13 14:19:25,630 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:19:26,634 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:19:26,677 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:26] "GET / HTTP/1.1" 200 -
+2020-01-13 14:19:30,223 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:19:30,225 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET / HTTP/1.1" 200 -
+2020-01-13 14:19:30,354 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:19:30,363 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:19:30,385 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:19:30,400 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:19:30,425 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:19:30,436 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:19:30,459 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:19:30,605 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:19:30,615 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:19:30,979 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:19:30] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:50:06,194 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:50:11,039 __main__     INFO     démarrage de l'application
+2020-01-13 14:50:11,056 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:50:27,278 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:50:27,296 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET / HTTP/1.1" 200 -
+2020-01-13 14:50:27,372 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:50:27,373 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:50:27,382 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:50:27,406 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:50:27,407 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:50:27,410 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:50:27,481 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:50:27,544 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:50:27,555 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:50:27,929 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:50:27] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:52:16,500 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:52:19,571 __main__     INFO     démarrage de l'application
+2020-01-13 14:52:19,588 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:52:21,497 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:52:21,532 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET / HTTP/1.1" 200 -
+2020-01-13 14:52:21,624 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:52:21,626 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:52:21,641 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:52:21,644 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:52:21,646 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:52:21,683 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:52:21,736 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:52:21,881 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:52:21,908 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:21] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:52:22,253 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:52:22] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:53:58,838 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:54:00,464 __main__     INFO     démarrage de l'application
+2020-01-13 14:54:00,483 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:54:03,243 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:54:03,267 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET / HTTP/1.1" 200 -
+2020-01-13 14:54:03,340 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:03,341 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:54:03,354 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:03,357 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:54:03,359 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:54:03,364 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:54:03,424 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:03,538 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:03,543 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:03,875 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:03] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:54:37,896 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:54:39,351 __main__     INFO     démarrage de l'application
+2020-01-13 14:54:39,369 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:54:42,556 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:54:42,582 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET / HTTP/1.1" 200 -
+2020-01-13 14:54:42,673 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:54:42,708 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:54:42,713 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:54:42,730 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:42,768 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:42,837 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:54:42,856 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:42,898 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:42,925 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:42] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:54:43,236 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:54:43] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:55:29,263 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:55:30,961 __main__     INFO     démarrage de l'application
+2020-01-13 14:55:30,978 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:55:34,003 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:55:34,029 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET / HTTP/1.1" 200 -
+2020-01-13 14:55:34,127 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:55:34,137 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:55:34,186 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:55:34,219 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:55:34,249 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:55:34,272 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:55:34,292 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:55:34,485 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:55:34,512 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:55:34,890 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:55:34] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:56:09,416 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:56:11,213 __main__     INFO     démarrage de l'application
+2020-01-13 14:56:11,257 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:56:14,067 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:56:14,092 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET / HTTP/1.1" 200 -
+2020-01-13 14:56:14,237 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:56:14,238 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:56:14,264 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:56:14,285 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:56:14,318 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:56:14,371 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:56:14,464 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:56:14,479 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:56:14,486 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:56:14,823 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:56:14] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:58:41,417 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:58:43,321 __main__     INFO     démarrage de l'application
+2020-01-13 14:58:43,338 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:58:46,941 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:58:47,024 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:58:47] "GET / HTTP/1.1" 200 -
+2020-01-13 14:59:01,512 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:59:01,514 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET / HTTP/1.1" 200 -
+2020-01-13 14:59:01,564 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:59:01,607 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:59:01,613 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:59:01,624 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:01,636 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:01,651 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:59:01,663 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:01,814 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:01,815 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:01] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:02,097 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 14:59:37,118 __main__     INFO     arrêt normal de l'application
+2020-01-13 14:59:38,616 __main__     INFO     démarrage de l'application
+2020-01-13 14:59:38,653 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 14:59:40,938 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:59:40,957 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:40] "GET / HTTP/1.1" 200 -
+2020-01-13 14:59:42,120 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 14:59:42,121 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET / HTTP/1.1" 200 -
+2020-01-13 14:59:42,167 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 14:59:42,190 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 14:59:42,192 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 14:59:42,229 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:42,234 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:42,245 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 14:59:42,260 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:42,351 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:42,369 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 14:59:42,666 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 14:59:42] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 15:00:56,226 __main__     INFO     arrêt normal de l'application
+2020-01-13 15:00:57,681 __main__     INFO     démarrage de l'application
+2020-01-13 15:00:57,717 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 15:00:59,660 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 15:00:59,687 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET / HTTP/1.1" 200 -
+2020-01-13 15:00:59,795 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 15:00:59,798 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 15:00:59,815 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 15:00:59,821 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 15:00:59,837 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 15:00:59,842 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 15:00:59,881 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:00:59] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 15:01:00,021 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:01:00] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 15:01:00,042 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:01:00] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 15:01:00,408 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:01:00] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 15:01:57,451 __main__     INFO     arrêt normal de l'application
+2020-01-13 15:01:58,873 __main__     INFO     démarrage de l'application
+2020-01-13 15:01:58,891 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 15:02:01,422 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 15:02:01,448 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET / HTTP/1.1" 200 -
+2020-01-13 15:02:01,541 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 15:02:01,558 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 15:02:01,567 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 15:02:01,586 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:01,591 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:01,625 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 15:02:01,637 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:01,763 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:01,783 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:01] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:02,110 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 15:02:10,894 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 15:02:10,896 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET / HTTP/1.1" 200 -
+2020-01-13 15:02:10,938 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 15:02:10,953 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 15:02:10,957 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:10,966 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 15:02:10,977 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:10,988 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:10] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 15:02:11,027 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:11] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:11,079 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:11] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:11,108 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:11] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 15:02:11,430 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:02:11] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 15:03:18,975 __main__     INFO     arrêt normal de l'application
+2020-01-13 15:03:20,661 __main__     INFO     démarrage de l'application
+2020-01-13 15:03:20,680 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-13 15:03:23,462 controleur   DEBUG    connexion à la page d'accueil
+2020-01-13 15:03:23,480 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET / HTTP/1.1" 200 -
+2020-01-13 15:03:23,533 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-13 15:03:23,545 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-13 15:03:23,563 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-13 15:03:23,576 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-13 15:03:23,588 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-13 15:03:23,598 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-13 15:03:23,608 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-13 15:03:23,723 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-13 15:03:23,736 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:23] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-13 15:03:24,042 werkzeug     INFO     127.0.0.1 - - [13/Jan/2020 15:03:24] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-13 15:38:58,445 __main__     INFO     arrêt normal de l'application

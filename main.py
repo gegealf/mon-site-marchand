@@ -16,11 +16,13 @@ if __name__ == "__main__":  # python main.py
     import controleur
 
     app.add_url_rule('/', 'page_d_accueil', view_func=controleur.page_d_accueil)
+    app.add_url_rule('/authentification', 'authentification', view_func=controleur.authentification)
+
     try:
-        log.info('Application starting')
+        log.info('démarrage de l\'application')
         app.run(host='127.0.0.1', port=8000)  # lancement de l'application en local
         # app.run(host='0.0.0.0', port=4001)
-        log.info('Application end without exception')
+        log.info('arrêt normal de l\'application')
     except Exception as ex:
-        log.exception('Application end because of uncatching exception')
+        log.exception('l\'application s\'est arretée à cause d\'une exception')
         pass
