@@ -15,19 +15,33 @@
 </head>
 <body>
 <div class="container-fluid">
+    <!-- titre -->
     <div class="row">
-        <div class="col-15 col-sm-9 col-lg-8">
+        <!-- partie gauche -->
+        <div class="col-15 col-sm-9 col-lg-10">
             <div class="d-flex flex-column text-center height100">
-                <p class="titre"> MEMOIRES D'ELEPHANT </p>
+                <div class="image1">
+                    <img class=img-responsive src="{{ url_for('static', filename='images/jungle1.jpg') }}" alt="jungle1" style="width:100%;">
+                    <p class="titre" > MEMOIRES D'ELEPHANT </p>
+                </div>
             </div>
         </div>
-        <div class="col-3 col-lg-4">
+        <!-- partie droite -->
+        <div class="col-3 col-sm-3 col-lg-2">
             <div class="d-flex flex-column text-center height100">
-                <h2> ZONE LOGIN </h2>
-                <a href="{{ url_for('authentification') }}"> Cliquer pour continuer </a>
+                <div class="image2" style="width:100%">
+                    <img class=img-responsive src="{{ url_for('static', filename='images/singe.jpg') }}" alt="singe" style="width:100%;">
+                    <div class="zone_login">
+                        <p> ZONE LOGIN </p>
+                        <a href="{{ url_for('authentification') }}"> Cliquer pour continuer </a>
+                        <p> panier </p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <!-- barre de recherche -->
     <div class="container h-100">
         <div class="d-flex justify-content-center h-100">
             <div class="searchbar">
@@ -36,73 +50,93 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <!-- Gallery Item 1 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="d-flex flex-column text-center border height100">
-                <div>
-                    <img src="{{ url_for('static', filename='images/2gb_sandisk_sdcard.png') }}" width="200"
-                         height="250" alt="1111"/>
+    <!-- onglets -->
+    <nav class="nav nav-pills">
+        <a class="nav-item nav-link active" href="#p1" data-toggle="tab">Onglet 1</a>
+        <a class="nav-item nav-link" href="#p2" data-toggle="tab">Onglet 2</a>
+        <a class="nav-item nav-link" href="#p3" data-toggle="tab">Onglet 3</a>
+        <a class="nav-item nav-link" href="#p4" data-toggle="tab">Onglet 4</a>
+        <a class="nav-item nav-link" href="#p5" data-toggle="tab">Onglet 5</a>
+        <a class="nav-item nav-link" href="#p6" data-toggle="tab">Onglet 6</a>
+    </nav>
+    <!-- onglets -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="p1">
+            <div class="row">
+                <!-- Gallery Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
+                        <div>
+                            <img class="image_galerie" src="{{ url_for('static', filename='images/2gb_sandisk_sdcard.png') }}" width="200"
+                                 height="250" alt="1111"/>
+                        </div>
+                        <h2>1111</h2>
+                        <p>Info..</p>
+                    </div>
                 </div>
-                <h2>1111</h2>
-                <p>Info..</p>
+                <!-- Gallery Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
+                        <div>
+                            <img class="image_galerie" src="{{ url_for('static', filename='images/16gb_sandisk_sdhc_card.png') }}" width="200"
+                                 height="250" alt="2222"/>
+                        </div>
+                        <h2>2222</h2>
+                        <p>Info..</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
+                        <div>
+                            <img class="image_galerie" src="{{ url_for('static', filename='images/32gb_sandisk_sdhc.jpg') }}" width="200" height="250"
+                                 alt="3333"/>
+                        </div>
+                        <h2>3333</h2>
+                        <p>Info..</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
+                        <div>
+                            <img class="image_galerie" src="{{ url_for('static', filename='images/64gb_noname_sdxc.jpg') }}" width="200" height="250"
+                                 alt="4444"/>
+                        </div>
+                        <h2>4444</h2>
+                        <p>Info..</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
+                        <div>
+                            <img class="image_galerie" src="{{ url_for('static', filename='images/128gb_sandisk_extreme.png') }}" width="200"
+                                 height="250" alt="5555"/>
+                        </div>
+                        <h2>5555</h2>
+                        <p>Info..</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
+                        <div>
+                            <img class="image_galerie" src="{{ url_for('static', filename='images/128gb_sandisk_sdxc_extremepro.jpg') }}" width="200"
+                                 height="250" alt="6666"/>
+                        </div>
+                        <h2>6666</h2>
+                        <p>Info..</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Gallery Item 2 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="d-flex flex-column text-center border height100">
-                <div>
-                    <img src="{{ url_for('static', filename='images/16gb_sandisk_sdhc_card.png') }}" width="200"
-                         height="250" alt="2222"/>
-                </div>
-                <h2>2222</h2>
-                <p>Info..</p>
-            </div>
-        </div>
-        <!-- Gallery Item 3 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="d-flex flex-column text-center border height100">
-                <div>
-                    <img src="{{ url_for('static', filename='images/32gb_sandisk_sdhc.jpg') }}" width="200" height="250"
-                         alt="3333"/>
-                </div>
-                <h2>3333</h2>
-                <p>Info..</p>
-            </div>
-        </div>
-        <!-- Gallery Item 4 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="d-flex flex-column text-center border height100">
-                <div>
-                    <img src="{{ url_for('static', filename='images/64gb_noname_sdxc.jpg') }}" width="200" height="250"
-                         alt="4444"/>
-                </div>
-                <h2>4444</h2>
-                <p>Info..</p>
-            </div>
-        </div>
-        <!-- Gallery Item 5 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="d-flex flex-column text-center border height100">
-                <div>
-                    <img src="{{ url_for('static', filename='images/128gb_sandisk_extreme.png') }}" width="200"
-                         height="250" alt="5555"/>
-                </div>
-                <h2>5555</h2>
-                <p>Info..</p>
-            </div>
-        </div>
-        <!-- Gallery Item 6 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="d-flex flex-column text-center border height100">
-                <div>
-                    <img src="{{ url_for('static', filename='images/128gb_sandisk_sdxc_extremepro.jpg') }}" width="200"
-                         height="250" alt="6666"/>
-                </div>
-                <h2>6666</h2>
-                <p>Info..</p>
-            </div>
-        </div>
+    <div class="tab-pane" id="p2">Panneau 2</div>
+    <div class="tab-pane" id="p3">Panneau 3</div>
+    <div class="tab-pane" id="p4">Panneau 4</div>
+    <div class="tab-pane" id="p5">Panneau 5</div>
+    <div class="tab-pane" id="p6">Panneau 6</div>
+
     </div>
 </div>
 <!-- Optional JavaScript -->

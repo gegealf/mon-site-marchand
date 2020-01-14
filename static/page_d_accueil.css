@@ -5,39 +5,53 @@ body {
 	background-size: cover;
 }
 
-.row div {
-    margin-top : 5%;
+.image1, .image2 {
+    margin-top : 10px;
 }
 
-img {
+.image_galerie {
+    margin-top: 2%;
     max-width : 90%;
     max-height : 90%;
 }
 
-.titre {
-    float: right;
-    font-size : 2.5vw;
-    color : red;
-    text-align : right;
-}
-
-h2 {
-    float: right;
+/* Container holding the image and the text */
+.image1 {
+    position: relative;
+    text-align: center;
     font-size : 3vw;
-    color : blue;
-    text-align : center;
+    color: white;
 }
 
-.row:first-of-type {
-    height: 200px;
-    margin: 20px;
-    background: url('/static/images/jungle1.jpg') no-repeat center;
-    background-size: 100%;
+/* Centered text */
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+/* Container holding the image and the text */
+.image2 {
+    position: relative;
+    text-align: center;
+    font-size : 2vw;
+}
+
+/* Top left text */
+.zone_login {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* */
+
+
+/* barre de recherche */
 .searchbar{
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 5%;
     height: 60px;
     background-color: green;
     border-radius: 30px;
@@ -78,3 +92,6 @@ h2 {
     color:white;
     text-decoration:none;
 }
+
+/*    */
+
