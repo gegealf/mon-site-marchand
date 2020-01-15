@@ -1,5 +1,7 @@
 from flask import render_template
 import logging
+from modele import session as db
+
 
 log = logging.getLogger(__name__)
 

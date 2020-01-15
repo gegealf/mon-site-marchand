@@ -3853,3 +3853,6 @@ jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', 
 2020-01-15 09:18:51,715 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 09:18:51] "GET /authentification HTTP/1.1" 200 -
 2020-01-15 09:18:51,787 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 09:18:51] "GET /static/page_d_authentification.css HTTP/1.1" 200 -
 2020-01-15 09:19:27,306 __main__     INFO     arrêt normal de l'application
+2020-01-15 09:58:53,808 __main__     INFO     démarrage de l'application
+2020-01-15 09:58:53,867 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 09:59:20,894 __main__     INFO     arrêt normal de l'application

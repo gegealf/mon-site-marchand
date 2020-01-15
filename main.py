@@ -4,6 +4,7 @@ from flask import Flask  # pip install flask
 from os import path
 import logging.config
 import logging
+from modele import session as db
 
 # pour le fichier de config :
 log_file_path = path.join(path.dirname(path.abspath(__file__)), 'log.config')
