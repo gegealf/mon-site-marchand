@@ -1,26 +1,31 @@
 body {
-	display : table;
+	display: table;
 	width: 100%;
 	background: url('/static/images/fond_elephant.jpg') no-repeat center fixed;
 	background-size: cover;
 }
 
 .image1, .image2 {
-    margin-top : 10px;
+    margin-top: 10px;
 }
 
 .image_galerie {
     margin-top: 2%;
-    max-width : 90%;
-    max-height : 90%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 /* Container holding the image and the text */
 .image1 {
     position: relative;
     text-align: center;
-    font-size : 3vw;
+    font-size: 3vw;
     color: white;
+}
+#logo1 {
+    position: absolute;
+    top: 2px;
+    left: 16px;
 }
 
 /* Centered text */
@@ -31,11 +36,17 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#logo2 {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+}
+
 /* Container holding the image and the text */
 .image2 {
     position: relative;
     text-align: center;
-    font-size : 2vw;
+    font-size: 2vw;
 }
 
 /* Top left text */
@@ -44,9 +55,6 @@ body {
     top: 8px;
     left: 16px;
 }
-
-/* */
-
 
 /* barre de recherche */
 .searchbar{
@@ -93,5 +101,5 @@ body {
     text-decoration:none;
 }
 
-/*    */
+
 
