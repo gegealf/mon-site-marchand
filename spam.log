@@ -3856,3 +3856,95 @@ jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', 
 2020-01-15 09:58:53,808 __main__     INFO     démarrage de l'application
 2020-01-15 09:58:53,867 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
 2020-01-15 09:59:20,894 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:01:00,428 __main__     INFO     démarrage de l'application
+2020-01-15 13:01:00,448 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:01:02,659 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:01:02,746 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:01:02] "GET / HTTP/1.1" 200 -
+2020-01-15 13:01:06,402 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:01:06] "GET /authentification HTTP/1.1" 405 -
+2020-01-15 13:01:54,929 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:01:56,556 __main__     INFO     démarrage de l'application
+2020-01-15 13:01:56,574 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:01:57,560 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:01:57,623 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:01:57] "GET / HTTP/1.1" 200 -
+2020-01-15 13:02:00,666 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:02:00] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:02:04,826 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:02:04] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:02:40,342 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:02:42,179 __main__     INFO     démarrage de l'application
+2020-01-15 13:02:42,194 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:02:43,426 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:02:43,494 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:02:43] "GET / HTTP/1.1" 200 -
+2020-01-15 13:02:48,377 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:02:48,382 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:02:48] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:03:17,397 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:03:19,140 __main__     INFO     démarrage de l'application
+2020-01-15 13:03:19,158 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:04:28,718 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:04:30,686 __main__     INFO     démarrage de l'application
+2020-01-15 13:04:30,702 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:04:31,727 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:04:31,795 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:31] "GET / HTTP/1.1" 200 -
+2020-01-15 13:04:35,500 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:04:35,507 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:35] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:04:35,597 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:35] "GET /static/page_d_authentification.css HTTP/1.1" 200 -
+2020-01-15 13:04:35,944 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:35] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-15 13:04:49,621 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:04:49,624 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET / HTTP/1.1" 200 -
+2020-01-15 13:04:49,696 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-15 13:04:49,735 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-15 13:04:49,739 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-15 13:04:49,763 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-15 13:04:49,786 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-15 13:04:49,823 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-15 13:04:49,861 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-15 13:04:49,900 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-15 13:04:49,939 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-15 13:04:49,974 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-15 13:04:49,995 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:49] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-15 13:04:50,439 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:50] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-15 13:04:51,793 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:04:51,795 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:04:51] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:05:59,341 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:06:01,203 __main__     INFO     démarrage de l'application
+2020-01-15 13:06:01,218 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:06:04,169 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:06:04,253 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:06:04] "GET / HTTP/1.1" 200 -
+2020-01-15 13:06:07,032 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:06:07,039 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:06:07] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:10:16,708 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:10:18,573 __main__     INFO     démarrage de l'application
+2020-01-15 13:10:18,589 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:10:20,014 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:10:20,084 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:10:20] "GET / HTTP/1.1" 200 -
+2020-01-15 13:10:22,169 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:10:22,174 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:10:22] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:13:06,782 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:13:08,288 __main__     INFO     démarrage de l'application
+2020-01-15 13:13:08,332 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:13:09,412 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:13:09,471 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:13:09] "GET / HTTP/1.1" 200 -
+2020-01-15 13:13:12,012 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:13:12,017 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:13:12] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:13:15,970 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:13:15,972 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:13:15] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:13:16,025 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:13:16] "GET /static/page_d_authentification.css HTTP/1.1" 200 -
+2020-01-15 13:13:16,211 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:13:16] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-15 13:13:16,420 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:13:16] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-15 13:14:32,976 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:14:34,602 __main__     INFO     démarrage de l'application
+2020-01-15 13:14:34,618 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:14:36,409 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:14:36,472 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:14:36] "GET / HTTP/1.1" 200 -
+2020-01-15 13:14:38,519 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:14:38,524 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:14:38] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:14:40,589 controleur   DEBUG    connexion à la page d'authentification
+2020-01-15 13:14:40,590 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:14:40] "GET /authentification HTTP/1.1" 200 -
+2020-01-15 13:14:40,693 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:14:40] "GET /static/page_d_authentification.css HTTP/1.1" 200 -
+2020-01-15 13:14:40,878 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:14:40] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-15 13:14:41,247 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:14:41] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-15 13:15:08,762 __main__     INFO     arrêt normal de l'application
+2020-01-15 13:15:11,191 __main__     INFO     démarrage de l'application
+2020-01-15 13:15:11,207 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-15 13:15:12,797 controleur   DEBUG    connexion à la page d'accueil
+2020-01-15 13:15:12,871 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:15:12] "GET / HTTP/1.1" 200 -
+2020-01-15 13:15:15,301 werkzeug     INFO     127.0.0.1 - - [15/Jan/2020 13:15:15] "GET /authentification HTTP/1.1" 405 -
+2020-01-15 13:18:07,448 __main__     INFO     arrêt normal de l'application
