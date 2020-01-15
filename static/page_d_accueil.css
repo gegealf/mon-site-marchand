@@ -1,0 +1,105 @@
+body {
+	display: table;
+	width: 100%;
+	background: url('/static/images/fond_elephant.jpg') no-repeat center fixed;
+	background-size: cover;
+}
+
+.image1, .image2 {
+    margin-top: 10px;
+}
+
+.image_galerie {
+    margin-top: 2%;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Container holding the image and the text */
+.image1 {
+    position: relative;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+}
+#logo1 {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+}
+
+/* Centered text */
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo2 {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+}
+
+/* Container holding the image and the text */
+.image2 {
+    position: relative;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* Top left text */
+.zone_login {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* barre de recherche */
+.searchbar{
+    margin-bottom: auto;
+    margin-top: 5%;
+    height: 60px;
+    background-color: green;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+}
+
+
+
