@@ -11,12 +11,14 @@ logging.config.fileConfig(log_file_path)
 log = logging.getLogger(__name__)  # définition du logger pour la classe courante
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "tandiS_quE_leS_crachatS_rougeS";
 
 if __name__ == "__main__":  # python main.py
     import controleur
 
     app.add_url_rule('/', 'page_d_accueil', view_func=controleur.page_d_accueil)
-    app.add_url_rule('/authentification', 'authentification', view_func=controleur.authentification)
+    app.add_url_rule('/page_d_authentification', 'page_d_authentification', methods=['GET', 'POST'],
+                     view_func=controleur.page_d_authentification)
 
     try:
         log.info('démarrage de l\'application')
@@ -24,5 +26,5 @@ if __name__ == "__main__":  # python main.py
         # app.run(host='0.0.0.0', port=4001)
         log.info('arrêt normal de l\'application')
     except Exception as ex:
-        log.exception('l\'application s\'est arretée à cause d\'une exception')
+        log.exception('l\'application s\'est arretée à cause d\'une erreur inattendue')
         pass
