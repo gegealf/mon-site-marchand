@@ -22,11 +22,15 @@ def page_d_authentification():
         log.debug('tentative d\'authentification')
         mdp_utilisateur = request.form['mot_de_passe']
         email_utilisateur = request.form['email']
-        compte_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
-        if not compte_valide:
+        compte_utilisateur_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
+        if compte_utilisateur_valide != "vrai":
+            if compte_utilisateur_valide == "accès_admin":
+                return redirect(url_for('page_administrateur'))
+
             log.debug('erreur lors de l\'authentification')
             session['vous_etes_loggue'] = False
             message_d_erreur = 'erreur lors de l\'authentification, veuillez recommencer'
+
         else:
             log.debug('connexion à la page d\'accueil après authentification')
             session['vous_etes_loggue'] = True
@@ -35,15 +39,26 @@ def page_d_authentification():
     return render_template('page_d_authentification.html', message=message_d_erreur)
 
 
+def page_administrateur():
+    log.debug('connexion à la page administrateur')
+    message = "bienvenue"
+    return render_template('page_administrateur.html', message=message)
+
+
 def verifier_le_compte(email_utilisateur, mdp_utilisateur):
-    """ call hash function and class DbHandler method to verify account """
+    """ appel des méthodes de classe MaBaseDeDonnees permettant de vérifier le compte avec email/mot de passe """
     log.debug('verification email/mot de passe')
     mdp_hashe = __hashage_mdp__(mdp_utilisateur)
     db = MBDD()  # création d'une instance de ma base de données
-    access = db.verifier_si_compte_existe_deja(email_utilisateur, mdp_hashe)
-    if access == "vrais":
-        return True
-    return False
+    access1 = db.verifier_si_compte_utilisateur_existe_deja(email_utilisateur, mdp_hashe)
+    if access1 == "vrai":
+        return "vrai"
+    else:
+        access2 = db.verifier_si_compte_administrateur_existe_deja(email_utilisateur, mdp_hashe)
+        if access2 == "vrai":
+            return "accès_admin"
+
+    return "faux"
 
 
 def __hashage_mdp__(mot_de_passe_en_clair):

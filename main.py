@@ -19,6 +19,8 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/', 'page_d_accueil', view_func=controleur.page_d_accueil)
     app.add_url_rule('/page_d_authentification', 'page_d_authentification', methods=['GET', 'POST'],
                      view_func=controleur.page_d_authentification)
+    app.add_url_rule('/page_administrateur', 'page_administrateur', view_func=controleur.page_administrateur)
+
 
     try:
         log.info('démarrage de l\'application')
