@@ -41,6 +41,7 @@ def page_d_authentification():
 
 def page_administrateur():
     log.debug('connexion à la page administrateur')
+    session['vous_etes_loggue'] = False
     message = "bienvenue"
     return render_template('page_administrateur.html', message=message)
 
