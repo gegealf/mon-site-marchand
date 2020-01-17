@@ -675,3 +675,407 @@ information about how to avoid this problem.
 2020-01-16 15:51:45,118 controleur   DEBUG    connexion à la page d'accueil sans authentification
 2020-01-16 15:51:45,168 werkzeug     INFO     127.0.0.1 - - [16/Jan/2020 15:51:45] "GET / HTTP/1.1" 200 -
 2020-01-16 15:52:35,665 __main__     INFO     arrêt normal de l'application
+2020-01-17 10:16:03,430 __main__     INFO     démarrage de l'application
+2020-01-17 10:16:03,449 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 10:16:06,045 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 10:16:06,089 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET / HTTP/1.1" 200 -
+2020-01-17 10:16:06,202 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-17 10:16:06,205 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 304 -
+2020-01-17 10:16:06,206 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 304 -
+2020-01-17 10:16:06,207 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 304 -
+2020-01-17 10:16:06,220 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/singe.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,234 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/jungle1.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,266 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,286 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,334 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 304 -
+2020-01-17 10:16:06,352 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,365 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/fond_elephant.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:16,095 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:16:16,107 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:16] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 10:16:16,177 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:16] "GET /static/page_d_authentification.css HTTP/1.1" 200 -
+2020-01-17 10:16:23,480 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:16:23,480 controleur   DEBUG    tentative d'authentification
+2020-01-17 10:16:23,481 controleur   DEBUG    verification email/mot de passe
+2020-01-17 10:16:23,481 controleur   DEBUG    hashage du mot de passe
+2020-01-17 10:16:23,484 main         ERROR    Exception on /page_d_authentification [POST]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 25, in page_d_authentification
+    compte_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 43, in verifier_le_compte
+    access = db.verifier_si_compte_existe_deja(email_utilisateur, mdp_hashe)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\modele.py", line 40, in verifier_si_compte_existe_deja
+    WHERE email = '{}' AND mdp = '{}' """.format(email, mdp_hashe)
+sqlite3.OperationalError: no such table: utilisateurs
+2020-01-17 10:16:23,495 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:23] "POST /page_d_authentification HTTP/1.1" 500 -
+2020-01-17 10:18:03,547 __main__     INFO     arrêt normal de l'application
+2020-01-17 10:18:21,056 __main__     INFO     démarrage de l'application
+2020-01-17 10:18:21,072 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 10:18:23,296 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 10:18:23,362 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:23] "GET / HTTP/1.1" 200 -
+2020-01-17 10:18:27,141 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:18:27,150 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:27] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 10:18:31,868 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:18:31,872 controleur   DEBUG    tentative d'authentification
+2020-01-17 10:18:31,873 controleur   DEBUG    verification email/mot de passe
+2020-01-17 10:18:31,873 controleur   DEBUG    hashage du mot de passe
+2020-01-17 10:18:31,875 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 10:18:31,878 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:31] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 10:18:53,174 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:18:53,174 controleur   DEBUG    tentative d'authentification
+2020-01-17 10:18:53,174 controleur   DEBUG    verification email/mot de passe
+2020-01-17 10:18:53,175 controleur   DEBUG    hashage du mot de passe
+2020-01-17 10:18:53,178 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 10:18:53,180 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:53] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 10:18:53,190 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 10:18:53,195 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:53] "GET / HTTP/1.1" 200 -
+2020-01-17 10:19:39,218 __main__     INFO     arrêt normal de l'application
+2020-01-17 10:28:34,927 __main__     INFO     démarrage de l'application
+2020-01-17 10:28:34,952 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 10:28:36,581 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 10:28:36,657 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:28:36] "GET / HTTP/1.1" 200 -
+2020-01-17 10:29:44,143 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:11:13,539 __main__     INFO     démarrage de l'application
+2020-01-17 11:11:13,579 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:11:15,591 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:11:15,644 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:15] "GET / HTTP/1.1" 200 -
+2020-01-17 11:11:18,744 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:11:18,749 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:18] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:11:22,245 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:11:22,246 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:11:22,247 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:11:22,248 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:11:22,250 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:11:22,252 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:22] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:11:29,312 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:11:29,313 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:29] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:11:29,926 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:11:29,927 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:29] "GET / HTTP/1.1" 200 -
+2020-01-17 11:11:31,664 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:11:31,665 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:31] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:11:40,272 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:11:40,274 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:11:40,274 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:11:40,276 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:11:40,302 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:11:40,304 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:40] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:11:57,938 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:11:57,938 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:11:57,939 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:11:57,939 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:11:57,942 main         ERROR    Exception on /page_d_authentification [POST]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 25, in page_d_authentification
+    compte_utilisateur__valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 55, in verifier_le_compte
+    return redirect(url_for('page_d_administrateur'))
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'page_d_administrateur'. Did you mean 'page_d_accueil' instead?
+2020-01-17 11:11:57,970 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:11:57] "POST /page_d_authentification HTTP/1.1" 500 -
+2020-01-17 11:13:34,505 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:13:36,325 __main__     INFO     démarrage de l'application
+2020-01-17 11:13:36,341 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:13:37,735 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:13:37,785 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:13:37] "GET / HTTP/1.1" 200 -
+2020-01-17 11:13:42,832 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:13:42,838 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:13:42] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:13:47,047 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:13:47,048 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:13:47,049 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:13:47,051 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:13:47,078 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:13:47,079 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:13:47] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:13:49,229 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:13:49,229 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:13:49,230 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:13:49,230 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:13:49,231 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:13:49,233 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:13:49] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:13:57,739 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:13:57,739 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:13:57,740 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:13:57,740 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:13:57,741 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:13:57,743 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:13:57] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:13:59,219 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:13:59,220 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:13:59,221 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:13:59,222 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:13:59,252 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:13:59,254 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:13:59] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:14:26,511 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:14:26,512 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:14:26,513 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:14:26,515 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:14:26,541 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 11:14:26,543 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:14:26] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:14:26,552 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:14:26,553 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:14:26] "GET / HTTP/1.1" 200 -
+2020-01-17 11:14:31,135 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:14:31,136 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:14:31] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:14:37,568 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:14:37,569 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:14:37,570 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:14:37,571 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:14:37,595 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 11:14:37,597 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:14:37] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:14:37,610 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:14:37,611 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:14:37] "GET / HTTP/1.1" 200 -
+2020-01-17 11:15:22,712 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:15:22,712 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:15:22] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:15:32,745 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:15:32,746 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:15:32,747 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:15:32,747 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:15:32,749 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:15:32,751 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:15:32] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:15:38,715 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:15:38,716 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:15:38,716 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:15:38,717 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:15:38,721 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 11:15:38,723 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:15:38] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:15:38,730 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:15:38,731 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:15:38] "GET / HTTP/1.1" 200 -
+2020-01-17 11:17:58,825 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:25:20,563 __main__     INFO     démarrage de l'application
+2020-01-17 11:25:20,579 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:25:22,064 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:25:22,126 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:22] "GET / HTTP/1.1" 200 -
+2020-01-17 11:25:25,039 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:25:25,048 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:25] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:25:31,109 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:25:31,110 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:25:31,114 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:25:31,116 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:25:31,145 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 11:25:31,147 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:31] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:25:31,157 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:25:31,158 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:31] "GET / HTTP/1.1" 200 -
+2020-01-17 11:25:38,276 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:25:38,278 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:38] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:25:44,557 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:25:44,558 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:25:44,558 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:25:44,559 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:25:44,562 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:25:44,591 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:44] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:25:46,485 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:25:46,487 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:25:46,487 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:25:46,489 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:25:46,517 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:25:46,520 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:46] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:25:58,464 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:25:58,466 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:25:58,467 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:25:58,467 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:25:58,471 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 11:25:58,472 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:58] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:25:58,480 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:25:58,482 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:25:58] "GET / HTTP/1.1" 200 -
+2020-01-17 11:36:00,918 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:36:02,603 __main__     INFO     démarrage de l'application
+2020-01-17 11:36:02,666 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:36:03,702 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:36:03,816 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:36:03] "GET / HTTP/1.1" 200 -
+2020-01-17 11:36:08,374 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:36:08,378 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:36:08] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:36:15,459 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:36:15,459 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:36:15,460 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:36:15,460 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:36:15,462 main         ERROR    Exception on /page_d_authentification [POST]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 28, in page_d_authentification
+    return redirect(url_for('page_d_administrateur'))
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'page_d_administrateur'. Did you mean 'page_administrateur' instead?
+2020-01-17 11:36:15,473 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:36:15] "POST /page_d_authentification HTTP/1.1" 500 -
+2020-01-17 11:36:56,987 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:36:58,687 __main__     INFO     démarrage de l'application
+2020-01-17 11:36:58,734 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:37:03,050 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:37:03,093 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:03] "GET / HTTP/1.1" 200 -
+2020-01-17 11:37:06,179 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:37:06,186 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:06] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:37:12,187 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:37:12,190 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:37:12,191 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:37:12,192 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:37:12,223 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:12] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:37:12,231 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:37:12,232 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:12] "GET / HTTP/1.1" 200 -
+2020-01-17 11:37:21,737 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:37:21,739 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:21] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:37:26,496 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:37:26,497 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:37:26,498 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:37:26,498 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:37:26,501 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:37:26,503 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:26] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:37:40,787 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:37:40,787 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:37:40,788 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:37:40,788 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:37:40,791 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:40] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:37:40,819 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:37:40,820 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:37:40] "GET / HTTP/1.1" 200 -
+2020-01-17 11:40:01,933 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:40:03,221 __main__     INFO     démarrage de l'application
+2020-01-17 11:40:03,239 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:40:04,945 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:40:05,017 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:40:05] "GET / HTTP/1.1" 200 -
+2020-01-17 11:40:10,382 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:40:10,389 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:40:10] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:40:25,407 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:40:25,407 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:40:25,410 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:40:25,411 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:40:25,412 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:40:25,414 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:40:25] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:40:40,971 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:40:40,972 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:40:40,972 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:40:40,974 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:40:41,002 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:40:41] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:40:41,010 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:40:41,012 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:40:41] "GET / HTTP/1.1" 200 -
+2020-01-17 11:41:09,528 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:41:11,501 __main__     INFO     démarrage de l'application
+2020-01-17 11:41:11,516 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:41:17,042 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:41:17,110 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:41:17] "GET / HTTP/1.1" 200 -
+2020-01-17 11:41:24,881 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:41:24,886 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:41:24] "GET / HTTP/1.1" 200 -
+2020-01-17 11:41:27,613 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:41:27,619 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:41:27] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:41:34,655 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:41:34,657 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:41:34,658 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:41:34,659 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:41:34,687 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:41:34] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:41:34,700 controleur   DEBUG    connexion à la page administrateur
+2020-01-17 11:41:34,701 main         ERROR    Exception on /page_administrateur [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 45, in page_administrateur
+    return render_template('page_administratreur.html', message=message)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: page_administratreur.html
+2020-01-17 11:41:34,720 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:41:34] "GET /page_administrateur HTTP/1.1" 500 -
+2020-01-17 11:42:47,250 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:42:49,027 __main__     INFO     démarrage de l'application
+2020-01-17 11:42:49,070 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:42:50,755 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:42:50,824 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:42:50] "GET / HTTP/1.1" 200 -
+2020-01-17 11:43:06,264 __main__     INFO     arrêt normal de l'application
+2020-01-17 11:43:07,631 __main__     INFO     démarrage de l'application
+2020-01-17 11:43:07,647 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 11:43:08,811 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:43:08,860 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:08] "GET / HTTP/1.1" 200 -
+2020-01-17 11:43:13,366 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:43:13,371 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:13] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:43:19,627 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:43:19,630 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:43:19,635 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:43:19,639 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:43:19,643 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:19] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:43:19,663 controleur   DEBUG    connexion à la page administrateur
+2020-01-17 11:43:19,667 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:19] "GET /page_administrateur HTTP/1.1" 200 -
+2020-01-17 11:43:21,654 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 11:43:21,656 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:21] "GET / HTTP/1.1" 200 -
+2020-01-17 11:43:23,247 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:43:23,248 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:23] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:43:30,646 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:43:30,648 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:43:30,649 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:43:30,649 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:43:30,650 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 11:43:30,651 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:30] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 11:43:47,199 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 11:43:47,200 controleur   DEBUG    tentative d'authentification
+2020-01-17 11:43:47,200 controleur   DEBUG    verification email/mot de passe
+2020-01-17 11:43:47,201 controleur   DEBUG    hashage du mot de passe
+2020-01-17 11:43:47,204 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 11:43:47,205 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:47] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 11:43:47,214 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 11:43:47,216 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 11:43:47] "GET / HTTP/1.1" 200 -
+2020-01-17 11:43:52,715 __main__     INFO     arrêt normal de l'application
