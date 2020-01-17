@@ -675,3 +675,69 @@ information about how to avoid this problem.
 2020-01-16 15:51:45,118 controleur   DEBUG    connexion à la page d'accueil sans authentification
 2020-01-16 15:51:45,168 werkzeug     INFO     127.0.0.1 - - [16/Jan/2020 15:51:45] "GET / HTTP/1.1" 200 -
 2020-01-16 15:52:35,665 __main__     INFO     arrêt normal de l'application
+2020-01-17 10:16:03,430 __main__     INFO     démarrage de l'application
+2020-01-17 10:16:03,449 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 10:16:06,045 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 10:16:06,089 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET / HTTP/1.1" 200 -
+2020-01-17 10:16:06,202 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-17 10:16:06,205 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 304 -
+2020-01-17 10:16:06,206 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 304 -
+2020-01-17 10:16:06,207 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 304 -
+2020-01-17 10:16:06,220 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/singe.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,234 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/jungle1.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,266 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,286 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,334 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 304 -
+2020-01-17 10:16:06,352 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:06,365 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:06] "GET /static/images/fond_elephant.jpg HTTP/1.1" 304 -
+2020-01-17 10:16:16,095 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:16:16,107 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:16] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 10:16:16,177 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:16] "GET /static/page_d_authentification.css HTTP/1.1" 200 -
+2020-01-17 10:16:23,480 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:16:23,480 controleur   DEBUG    tentative d'authentification
+2020-01-17 10:16:23,481 controleur   DEBUG    verification email/mot de passe
+2020-01-17 10:16:23,481 controleur   DEBUG    hashage du mot de passe
+2020-01-17 10:16:23,484 main         ERROR    Exception on /page_d_authentification [POST]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 25, in page_d_authentification
+    compte_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 43, in verifier_le_compte
+    access = db.verifier_si_compte_existe_deja(email_utilisateur, mdp_hashe)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\modele.py", line 40, in verifier_si_compte_existe_deja
+    WHERE email = '{}' AND mdp = '{}' """.format(email, mdp_hashe)
+sqlite3.OperationalError: no such table: utilisateurs
+2020-01-17 10:16:23,495 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:16:23] "POST /page_d_authentification HTTP/1.1" 500 -
+2020-01-17 10:18:03,547 __main__     INFO     arrêt normal de l'application
+2020-01-17 10:18:21,056 __main__     INFO     démarrage de l'application
+2020-01-17 10:18:21,072 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-17 10:18:23,296 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-17 10:18:23,362 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:23] "GET / HTTP/1.1" 200 -
+2020-01-17 10:18:27,141 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:18:27,150 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:27] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 10:18:31,868 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:18:31,872 controleur   DEBUG    tentative d'authentification
+2020-01-17 10:18:31,873 controleur   DEBUG    verification email/mot de passe
+2020-01-17 10:18:31,873 controleur   DEBUG    hashage du mot de passe
+2020-01-17 10:18:31,875 controleur   DEBUG    erreur lors de l'authentification
+2020-01-17 10:18:31,878 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:31] "POST /page_d_authentification HTTP/1.1" 200 -
+2020-01-17 10:18:53,174 controleur   DEBUG    connexion à la page d'authentification
+2020-01-17 10:18:53,174 controleur   DEBUG    tentative d'authentification
+2020-01-17 10:18:53,174 controleur   DEBUG    verification email/mot de passe
+2020-01-17 10:18:53,175 controleur   DEBUG    hashage du mot de passe
+2020-01-17 10:18:53,178 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-17 10:18:53,180 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:53] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-17 10:18:53,190 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-17 10:18:53,195 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 10:18:53] "GET / HTTP/1.1" 200 -
+2020-01-17 10:19:39,218 __main__     INFO     arrêt normal de l'application

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="522c4c39-d246-4412-a9b1-7ae52c432fbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/page_d_authentification2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/page_d_authentification2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd_site_marchand" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controleur.py" beforeDir="false" afterPath="$PROJECT_DIR$/controleur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele.py" beforeDir="false" afterPath="$PROJECT_DIR$/modele.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spam.log" beforeDir="false" afterPath="$PROJECT_DIR$/spam.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/page_d_accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/page_d_accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/page_d_authentification.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/page_d_authentification.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page_d_accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_d_accueil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page_d_authentification.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_d_authentification.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,55 +15,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controleur.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-                  <folding>
-                    <element signature="e#0#33#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/page_d_authentification.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="80" lean-forward="true" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/static/page_d_authentification.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
-                  <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#46#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controleur.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modele.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,14 +72,14 @@
       <list>
         <option value="$PROJECT_DIR$/templates/authentification.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/modele.py" />
         <option value="$PROJECT_DIR$/templates/page_admin.html" />
         <option value="$PROJECT_DIR$/static/page_d_accueil.css" />
         <option value="$PROJECT_DIR$/templates/page_d_accueil.html" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/controleur.py" />
         <option value="$PROJECT_DIR$/templates/page_d_authentification.html" />
         <option value="$PROJECT_DIR$/static/page_d_authentification.css" />
+        <option value="$PROJECT_DIR$/controleur.py" />
+        <option value="$PROJECT_DIR$/modele.py" />
       </list>
     </option>
   </component>
@@ -124,16 +105,7 @@
             <path>
               <item name="memoire_d_elephant" type="b2602c69:ProjectViewProjectNode" />
               <item name="memoire_d_elephant" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="memoire_d_elephant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="memoire_d_elephant" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="memoire_d_elephant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -147,12 +119,12 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\x181417\workplace\memoire_d_elephant\static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\x181417\workplace\memoire_d_elephant\static\images" />
       <recent name="C:\Users\x181417\workplace\memoire_d_elephant" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\x181417\workplace\memoire_d_elephant\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,9 +303,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CREATE DATABASE IF NOT EXIST bdd_site_marchand">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CREATE DATABASE IF NOT EXIST bdd_site_marchand" />
     <entry file="file://$PROJECT_DIR$/bdd_site_marchand">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -369,13 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/page_d_accueil.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -385,8 +348,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="476">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#46#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -408,16 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controleur.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/page_d_authentification.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -429,6 +385,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
           <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
