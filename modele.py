@@ -9,16 +9,61 @@ request = socket.cursor()
 request.execute(
     """
         CREATE TABLE IF NOT EXISTS utilisateurs(
-        email TEXT PRIMARY KEY UNIQUE,
-        mdp TEXT)
+        email TEXT NOT NULL PRIMARY KEY UNIQUE,
+        mdp TEXT NOT NULL,
+        nom TEXT NOT NULL,
+        prenom TEXT NOT NULL,
+        date_de_naissance DATE NULL,
+        tel INT NOT NULL,
+        numero_voie TEXT NOT NULL,
+        nom_voie TEXT,
+        code_postal INT NOT NULL,
+        ville TEXT NOT NULL
+        )
     """
 )
 
 request.execute(
     """
         CREATE TABLE IF NOT EXISTS administrateurs(
-        email TEXT PRIMARY KEY UNIQUE,
-        mdp TEXT)
+        email TEXT NOT NULL PRIMARY KEY UNIQUE,
+        mdp TEXT NOT NULL
+        )
+    """
+)
+
+request.execute(
+    """
+        CREATE TABLE IF NOT EXISTS ventes(
+        numero_vente INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
+        date_vente DATE NOT NULL,
+        montant_vente NUM NOT NULL,
+        email TEXT,
+        FOREIGN KEY (email) REFERENCES utilisateurs(email)
+        )
+    """
+)
+
+request.execute(
+    """
+        CREATE TABLE IF NOT EXISTS produits(
+        numero_produit INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+        prix_produit_unite NUM NOT NULL,
+        categorie TEXT NOT NULL,
+        commentaire TEXT NOT NULL)
+    """
+)
+
+request.execute(
+    """
+        CREATE TABLE IF NOT EXISTS produits_vendus(
+        numero_produit_vendu  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+        quantite_produit INT NOT NULL,
+        numero_vente INTEGER,
+        numero_produit INTEGER,
+        FOREIGN KEY (numero_vente) REFERENCES ventes(numero_vente),
+        FOREIGN KEY (numero_produit) REFERENCES produits(numero_produit)
+        )
     """
 )
 
@@ -35,7 +80,8 @@ request.execute(
 request.execute(
     """
         INSERT INTO utilisateurs
-        SELECT "gege@gege.com", "46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203"
+        SELECT "gege@gege.com", "46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203", 
+        "gege", "alf", 08041969, 0600000000, 2, "rue machinchose", 75011, "paris"
         WHERE NOT EXISTS (SELECT * FROM utilisateurs WHERE email = 'gege@gege.com')
     """
 )
