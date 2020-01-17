@@ -33,8 +33,10 @@
                 <div class="image2" style="width:100%">
                     <img class=img-responsive src="{{ url_for('static', filename='images/singe.jpg') }}" alt="singe" style="width:100%;">
                     <div class="zone_login">
-                        <h1> {{ message }} </h1>
+                        <p> {{ message }} </p>
                         <a href="{{ url_for('page_d_authentification') }}"> Cliquez pour vous authentifier </a>
+                        <br>
+                        <a href="{{ url_for('page_creation_compte_utilisateur') }}"> Cliquez pour créer un compte </a>
                         <p> accès au panier </p>
                     </div>
                 </div>

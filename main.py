@@ -20,6 +20,9 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/page_d_authentification', 'page_d_authentification', methods=['GET', 'POST'],
                      view_func=controleur.page_d_authentification)
     app.add_url_rule('/page_administrateur', 'page_administrateur', view_func=controleur.page_administrateur)
+    app.add_url_rule('/page_creation_compte_utilisateur', 'page_creation_compte_utilisateur',
+                     view_func=controleur.page_creation_compte_utilisateur)
+
 
 
     try:

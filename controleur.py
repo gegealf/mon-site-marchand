@@ -46,6 +46,14 @@ def page_administrateur():
     return render_template('page_administrateur.html', message=message)
 
 
+def __hashage_mdp__(mot_de_passe_en_clair):
+    """ création d'un mot de passe hashé """
+    log.debug('hashage du mot de passe')
+    a = bytes(mot_de_passe_en_clair, "utf-8")
+    mdp_hashe = hashlib.sha256(a).hexdigest()
+    return mdp_hashe
+
+
 def verifier_le_compte(email_utilisateur, mdp_utilisateur):
     """ appel des méthodes de classe MaBaseDeDonnees permettant de vérifier le compte avec email/mot de passe """
     log.debug('verification email/mot de passe')
@@ -62,9 +70,6 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
     return "faux"
 
 
-def __hashage_mdp__(mot_de_passe_en_clair):
-    """ création d(un mot de passe hashé """
-    log.debug('hashage du mot de passe')
-    a = bytes(mot_de_passe_en_clair, "utf-8")
-    mdp_hashe = hashlib.sha256(a).hexdigest()
-    return mdp_hashe
+def page_creation_compte_utilisateur():
+    log.debug('connexion à la page de création de compte utilisateur')
+    return render_template('page_administrateur.html')
