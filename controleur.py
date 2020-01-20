@@ -82,4 +82,4 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
 
 def page_creation_compte_utilisateur():
     log.debug('connexion à la page de création de compte utilisateur')
-    return render_template('page_administrateur.html')
+    return render_template('page_creation_compte_utilisateur.html')
