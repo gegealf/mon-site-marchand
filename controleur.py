@@ -9,11 +9,12 @@ log = logging.getLogger(__name__)
 def page_d_accueil():
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil sans authentification')
-        message = ""
-        return render_template("page_d_accueil.html", message=message)
+        return render_template("page_d_accueil.html", message="")  # lien vers la page d'accueil
 
     log.debug('connexion à la page d\'accueil avec authentification')
-    return render_template("page_d_accueil.html", message="bienvenue")  # lien vers la page d'accueil
+    message1 = "bienvenue"
+    message2 = message1 + " " + session.get('utilisateur')
+    return render_template("page_d_accueil.html", message1=message1, message2=message2 )  # lien vers la page d'accueil
 
 
 def page_d_authentification():
@@ -35,6 +36,7 @@ def page_d_authentification():
         else:
             log.debug('connexion à la page d\'accueil après authentification')
             session['vous_etes_loggue'] = True
+
             return redirect(url_for('page_d_accueil'))
 
     return render_template('page_d_authentification.html', message=message_d_erreur)
@@ -68,6 +70,7 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
     db = MBDD()  # création d'une instance de ma base de données
     access1 = db.verifier_si_compte_utilisateur_existe_deja(email_utilisateur, mdp_hashe)
     if access1 == "vrai":
+        session['utilisateur'] = db.trouver_nom_prenom_utilisateur(email_utilisateur, mdp_hashe)
         return "vrai"
     else:
         access2 = db.verifier_si_compte_administrateur_existe_deja(email_utilisateur, mdp_hashe)

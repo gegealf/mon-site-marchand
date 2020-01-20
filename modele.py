@@ -119,3 +119,11 @@ class MaBaseDeDonnees:
             return "faux"
         else:
             return "vrai"
+
+    def trouver_nom_prenom_utilisateur(self, email, mdp_hashe):
+        self.request.execute(
+            """SELECT nom, prenom FROM utilisateurs 
+               WHERE email = '{}' AND mdp = '{}' """.format(email, mdp_hashe)
+        )
+        data = self.request.fetchone()
+        return data[0] + " " + data[1][0].upper() + "."
