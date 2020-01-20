@@ -9,10 +9,11 @@ log = logging.getLogger(__name__)
 def page_d_accueil():
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil sans authentification')
-        return render_template("page_d_accueil.html", message="Cliquez pour vous authentifier")
+        message = ""
+        return render_template("page_d_accueil.html", message=message)
 
     log.debug('connexion à la page d\'accueil avec authentification')
-    return render_template("page_d_accueil.html", message="bienvenue .....")  # lien vers la page d'accueil
+    return render_template("page_d_accueil.html", message="bienvenue")  # lien vers la page d'accueil
 
 
 def page_d_authentification():
@@ -37,6 +38,12 @@ def page_d_authentification():
             return redirect(url_for('page_d_accueil'))
 
     return render_template('page_d_authentification.html', message=message_d_erreur)
+
+
+def deconnexion():
+    log.debug('deconnexion du compte')
+    session['vous_etes_loggue'] = False
+    return render_template("page_d_accueil.html")
 
 
 def page_administrateur():

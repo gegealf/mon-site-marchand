@@ -1305,3 +1305,519 @@ jinja2.exceptions.TemplateNotFound: page_administratreur.html
 2020-01-17 16:07:22,878 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 16:07:22] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
 2020-01-17 16:07:23,208 werkzeug     INFO     127.0.0.1 - - [17/Jan/2020 16:07:23] "GET /favicon.ico HTTP/1.1" 404 -
 2020-01-17 16:07:34,714 __main__     INFO     arrêt normal de l'application
+2020-01-20 08:40:58,586 __main__     INFO     démarrage de l'application
+2020-01-20 08:40:58,604 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 08:41:02,890 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:41:02,977 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:02] "GET / HTTP/1.1" 200 -
+2020-01-20 08:41:03,195 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/jungle1.jpg HTTP/1.1" 304 -
+2020-01-20 08:41:03,219 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 304 -
+2020-01-20 08:41:03,225 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/singe.jpg HTTP/1.1" 304 -
+2020-01-20 08:41:03,256 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 304 -
+2020-01-20 08:41:03,271 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 304 -
+2020-01-20 08:41:03,317 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/page_d_accueil.css HTTP/1.1" 304 -
+2020-01-20 08:41:03,485 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 304 -
+2020-01-20 08:41:03,502 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 304 -
+2020-01-20 08:41:03,503 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 304 -
+2020-01-20 08:41:03,531 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 304 -
+2020-01-20 08:41:03,605 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:03] "GET /static/images/fond_elephant.jpg HTTP/1.1" 304 -
+2020-01-20 08:41:04,463 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:04] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 08:41:27,478 __main__     INFO     arrêt normal de l'application
+2020-01-20 08:41:29,370 __main__     INFO     démarrage de l'application
+2020-01-20 08:41:29,388 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 08:41:32,754 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:41:32,810 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:32] "GET / HTTP/1.1" 200 -
+2020-01-20 08:41:39,673 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:41:39,675 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET / HTTP/1.1" 200 -
+2020-01-20 08:41:39,756 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 08:41:39,756 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 08:41:39,769 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 08:41:39,770 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 08:41:39,787 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 08:41:39,838 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 08:41:39,907 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 08:41:39,909 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 08:41:39,913 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 08:41:39,921 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 08:41:39,985 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:39] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 08:41:40,348 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:41:40] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 08:43:35,938 __main__     INFO     arrêt normal de l'application
+2020-01-20 08:43:38,078 __main__     INFO     démarrage de l'application
+2020-01-20 08:43:38,129 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 08:43:39,270 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:43:39,326 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:39] "GET / HTTP/1.1" 200 -
+2020-01-20 08:43:44,272 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:43:44,275 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET / HTTP/1.1" 200 -
+2020-01-20 08:43:44,321 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 08:43:44,349 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 08:43:44,352 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 08:43:44,375 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 08:43:44,379 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 08:43:44,390 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 08:43:44,430 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 08:43:44,470 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 08:43:44,474 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 08:43:44,496 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 08:43:44,555 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 08:43:44,935 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:43:44] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 08:54:10,489 __main__     INFO     arrêt normal de l'application
+2020-01-20 08:54:12,251 __main__     INFO     démarrage de l'application
+2020-01-20 08:54:12,270 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 08:54:14,297 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:54:14,337 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:14] "GET / HTTP/1.1" 200 -
+2020-01-20 08:54:18,772 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:54:18,773 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET / HTTP/1.1" 200 -
+2020-01-20 08:54:18,830 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 08:54:18,856 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 08:54:18,859 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 08:54:18,867 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 08:54:18,871 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 08:54:18,871 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 08:54:18,930 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 08:54:18,963 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 08:54:18,970 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 08:54:18,975 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:18] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 08:54:19,083 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:19] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 08:54:19,401 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:54:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 08:55:00,933 __main__     INFO     arrêt normal de l'application
+2020-01-20 08:55:02,786 __main__     INFO     démarrage de l'application
+2020-01-20 08:55:02,879 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 08:55:04,206 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:55:04,265 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 13, in page_d_accueil
+    return render_template("page_d_accueil.html", message=message)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 36, in template
+    {% message %}
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'message'.
+2020-01-20 08:55:04,303 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:55:04] "GET / HTTP/1.1" 500 -
+2020-01-20 08:55:50,742 __main__     INFO     arrêt normal de l'application
+2020-01-20 08:55:52,568 __main__     INFO     démarrage de l'application
+2020-01-20 08:55:52,587 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 08:55:55,586 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 08:55:55,668 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 08:55:55] "GET / HTTP/1.1" 200 -
+2020-01-20 09:04:27,550 __main__     INFO     arrêt normal de l'application
+2020-01-20 09:04:29,142 __main__     INFO     démarrage de l'application
+2020-01-20 09:04:29,159 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 09:04:33,548 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:04:33,595 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:33] "GET / HTTP/1.1" 200 -
+2020-01-20 09:04:37,421 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:04:37,427 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET / HTTP/1.1" 200 -
+2020-01-20 09:04:37,487 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 09:04:37,507 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 09:04:37,508 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 09:04:37,508 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 09:04:37,534 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 09:04:37,539 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 09:04:37,569 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 09:04:37,616 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 09:04:37,620 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 09:04:37,622 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 09:04:37,682 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:37] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 09:04:38,032 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:04:38] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 09:17:53,996 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:17:54,000 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:53] "GET / HTTP/1.1" 200 -
+2020-01-20 09:17:54,062 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 09:17:54,083 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 09:17:54,084 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 09:17:54,086 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 09:17:54,089 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 09:17:54,089 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 09:17:54,153 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 09:17:54,190 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 09:17:54,192 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 09:17:54,193 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 09:17:54,433 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 09:17:54,786 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:17:54] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 09:21:38,978 __main__     INFO     arrêt normal de l'application
+2020-01-20 09:21:40,472 __main__     INFO     démarrage de l'application
+2020-01-20 09:21:40,493 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 09:21:41,627 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:21:41,676 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:41] "GET / HTTP/1.1" 200 -
+2020-01-20 09:21:46,361 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:21:46,362 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET / HTTP/1.1" 200 -
+2020-01-20 09:21:46,413 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 09:21:46,439 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 09:21:46,444 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 09:21:46,446 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 09:21:46,450 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 09:21:46,453 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 09:21:46,495 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 09:21:46,512 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 09:21:46,542 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 09:21:46,559 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 09:21:46,611 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 09:21:46,925 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:21:46] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 09:25:17,436 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:25:17,441 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET / HTTP/1.1" 200 -
+2020-01-20 09:25:17,502 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 09:25:17,504 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 09:25:17,549 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 09:25:17,561 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 09:25:17,567 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 09:25:17,585 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 09:25:17,620 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 09:25:17,634 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 09:25:17,673 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 09:25:17,676 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 09:25:17,738 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:17] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 09:25:18,063 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:18] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 09:25:20,175 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-20 09:25:20,184 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:20] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-20 09:25:22,124 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:25:22,127 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:25:22] "GET / HTTP/1.1" 200 -
+2020-01-20 09:25:41,139 __main__     INFO     arrêt normal de l'application
+2020-01-20 09:35:56,519 __main__     INFO     démarrage de l'application
+2020-01-20 09:35:56,537 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 09:36:00,364 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:36:00,431 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:00] "GET / HTTP/1.1" 200 -
+2020-01-20 09:36:19,879 __main__     INFO     arrêt normal de l'application
+2020-01-20 09:36:22,344 __main__     INFO     démarrage de l'application
+2020-01-20 09:36:22,360 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 09:36:24,301 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:36:24,391 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:24] "GET / HTTP/1.1" 200 -
+2020-01-20 09:36:30,257 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:36:30,258 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET / HTTP/1.1" 200 -
+2020-01-20 09:36:30,308 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 09:36:30,317 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 09:36:30,329 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 09:36:30,338 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 09:36:30,343 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 09:36:30,360 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 09:36:30,409 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 09:36:30,458 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 09:36:30,461 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 09:36:30,465 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 09:36:30,560 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 09:36:30,882 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:30] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 09:36:41,510 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-20 09:36:41,513 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:41] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-20 09:36:47,899 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:36:47,901 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:36:47] "GET / HTTP/1.1" 200 -
+2020-01-20 09:37:58,966 __main__     INFO     arrêt normal de l'application
+2020-01-20 09:38:00,134 __main__     INFO     démarrage de l'application
+2020-01-20 09:38:00,150 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 09:38:07,370 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 09:38:07,438 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:07] "GET / HTTP/1.1" 200 -
+2020-01-20 09:38:14,671 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 09:38:14,683 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:14] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-20 09:38:14,731 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:14] "GET /static/page_d_authentification.css HTTP/1.1" 304 -
+2020-01-20 09:38:27,705 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 09:38:27,706 controleur   DEBUG    tentative d'authentification
+2020-01-20 09:38:27,707 controleur   DEBUG    verification email/mot de passe
+2020-01-20 09:38:27,709 controleur   DEBUG    hashage du mot de passe
+2020-01-20 09:38:27,736 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-20 09:38:27,749 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:27] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-20 09:38:27,756 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 09:38:27,757 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:27] "GET / HTTP/1.1" 200 -
+2020-01-20 09:38:53,614 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-20 09:38:53,619 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:53] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-20 09:38:55,225 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 09:38:55,226 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 09:38:55] "GET / HTTP/1.1" 200 -
+2020-01-20 09:39:25,754 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:05:47,989 __main__     INFO     démarrage de l'application
+2020-01-20 10:05:48,006 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:05:49,466 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:05:49,558 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 16, in page_d_accueil
+    return render_template("page_d_accueil.html", message="bienvenue")  # lien vers la page d'accueil
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 44, in top-level template code
+    <a href="{{ url_for('deconnexion') }}"> Cliquez pour vous déconnecter </a>
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'deconnexion'. Did you mean 'page_d_accueil' instead?
+2020-01-20 10:05:49,596 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:05:49] "GET / HTTP/1.1" 500 -
+2020-01-20 10:07:00,508 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:07:02,410 __main__     INFO     démarrage de l'application
+2020-01-20 10:07:02,429 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:07:03,909 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:07:03,975 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 16, in page_d_accueil
+    return render_template("page_d_accueil.html", message="bienvenue")  # lien vers la page d'accueil
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 44, in top-level template code
+    <a href="{{ url_for('deconnexion') }}"> Cliquez pour vous déconnecter </a>
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'deconnexion'. Did you mean 'page_d_accueil' instead?
+2020-01-20 10:07:04,032 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:07:04] "GET / HTTP/1.1" 500 -
+2020-01-20 10:07:08,580 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:07:08,581 main         ERROR    Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\controleur.py", line 16, in page_d_accueil
+    return render_template("page_d_accueil.html", message="bienvenue")  # lien vers la page d'accueil
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\templates\page_d_accueil.html", line 44, in top-level template code
+    <a href="{{ url_for('deconnexion') }}"> Cliquez pour vous déconnecter </a>
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\x181417\workplace\memoire_d_elephant\venv\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'deconnexion'. Did you mean 'page_d_accueil' instead?
+2020-01-20 10:07:08,585 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:07:08] "GET / HTTP/1.1" 500 -
+2020-01-20 10:07:08,651 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:07:08] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 10:17:54,218 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:17:55,813 __main__     INFO     démarrage de l'application
+2020-01-20 10:17:55,833 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:17:57,824 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:17:57,873 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:17:57] "GET / HTTP/1.1" 200 -
+2020-01-20 10:18:05,597 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:18:05,600 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:05] "GET / HTTP/1.1" 200 -
+2020-01-20 10:18:54,138 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:18:55,533 __main__     INFO     démarrage de l'application
+2020-01-20 10:18:55,582 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:18:57,793 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:18:57,841 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:57] "GET / HTTP/1.1" 200 -
+2020-01-20 10:18:57,939 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:57] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 10:18:57,990 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:57] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 10:18:58,032 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 10:18:58,046 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 10:18:58,091 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 10:18:58,133 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 10:18:58,135 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 10:18:58,149 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 10:18:58,234 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 10:18:58,271 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 10:18:58,306 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 10:18:58,780 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:18:58] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 10:19:00,320 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:19:00,322 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:00] "GET / HTTP/1.1" 200 -
+2020-01-20 10:19:03,339 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:19:03,340 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET / HTTP/1.1" 200 -
+2020-01-20 10:19:03,393 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 10:19:03,419 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 10:19:03,422 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 10:19:03,423 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 10:19:03,442 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 10:19:03,451 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 10:19:03,470 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 10:19:03,503 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 10:19:03,528 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 10:19:03,569 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 10:19:03,593 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 10:19:03,957 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:19:03] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 10:19:13,465 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:21:26,280 __main__     INFO     démarrage de l'application
+2020-01-20 10:21:26,301 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:21:28,090 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:21:28,183 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:21:28] "GET / HTTP/1.1" 200 -
+2020-01-20 10:21:30,198 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:21:30,200 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:21:30] "GET / HTTP/1.1" 200 -
+2020-01-20 10:22:13,225 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:22:14,951 __main__     INFO     démarrage de l'application
+2020-01-20 10:22:14,971 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:22:16,614 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:22:16,694 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:22:16] "GET / HTTP/1.1" 200 -
+2020-01-20 10:22:20,486 controleur   DEBUG    logout
+2020-01-20 10:22:20,489 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:22:20] "GET /deconnexion HTTP/1.1" 200 -
+2020-01-20 10:23:11,021 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:23:12,488 __main__     INFO     démarrage de l'application
+2020-01-20 10:23:12,508 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:23:14,456 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 10:23:14,542 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:14] "GET / HTTP/1.1" 200 -
+2020-01-20 10:23:20,594 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 10:23:20,595 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET / HTTP/1.1" 200 -
+2020-01-20 10:23:20,654 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 10:23:20,684 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 10:23:20,711 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 10:23:20,733 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 10:23:20,741 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 10:23:20,753 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 10:23:20,756 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 10:23:20,771 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 10:23:20,778 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 10:23:20,796 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 10:23:20,942 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:20] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 10:23:21,266 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:21] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 10:23:23,205 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 10:23:23,213 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:23] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-20 10:23:31,619 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 10:23:31,621 controleur   DEBUG    tentative d'authentification
+2020-01-20 10:23:31,622 controleur   DEBUG    verification email/mot de passe
+2020-01-20 10:23:31,623 controleur   DEBUG    hashage du mot de passe
+2020-01-20 10:23:31,650 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-20 10:23:31,652 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:31] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-20 10:23:31,661 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:23:31,662 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:31] "GET / HTTP/1.1" 200 -
+2020-01-20 10:23:36,011 controleur   DEBUG    logout
+2020-01-20 10:23:36,015 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:36] "GET /deconnexion HTTP/1.1" 200 -
+2020-01-20 10:23:38,355 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-20 10:23:38,359 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:38] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-20 10:23:39,490 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 10:23:39,491 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:39] "GET / HTTP/1.1" 200 -
+2020-01-20 10:23:41,285 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 10:23:41,286 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:41] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-20 10:23:47,109 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 10:23:47,109 controleur   DEBUG    tentative d'authentification
+2020-01-20 10:23:47,111 controleur   DEBUG    verification email/mot de passe
+2020-01-20 10:23:47,112 controleur   DEBUG    hashage du mot de passe
+2020-01-20 10:23:47,116 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:47] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-20 10:23:47,126 controleur   DEBUG    connexion à la page administrateur
+2020-01-20 10:23:47,128 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:47] "GET /page_administrateur HTTP/1.1" 200 -
+2020-01-20 10:23:49,340 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-20 10:23:49,343 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:49] "GET / HTTP/1.1" 200 -
+2020-01-20 10:23:52,444 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 10:23:52,448 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:52] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-20 10:23:58,687 controleur   DEBUG    connexion à la page d'authentification
+2020-01-20 10:23:58,688 controleur   DEBUG    tentative d'authentification
+2020-01-20 10:23:58,688 controleur   DEBUG    verification email/mot de passe
+2020-01-20 10:23:58,689 controleur   DEBUG    hashage du mot de passe
+2020-01-20 10:23:58,690 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-20 10:23:58,692 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:58] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-20 10:23:58,700 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:23:58,701 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:23:58] "GET / HTTP/1.1" 200 -
+2020-01-20 10:28:04,733 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-20 10:28:04,736 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET / HTTP/1.1" 200 -
+2020-01-20 10:28:04,794 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/page_d_accueil.css HTTP/1.1" 200 -
+2020-01-20 10:28:04,825 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 200 -
+2020-01-20 10:28:04,826 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/jungle1.jpg HTTP/1.1" 200 -
+2020-01-20 10:28:04,828 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/singe.jpg HTTP/1.1" 200 -
+2020-01-20 10:28:04,828 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 200 -
+2020-01-20 10:28:04,858 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 200 -
+2020-01-20 10:28:04,918 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 200 -
+2020-01-20 10:28:04,972 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 200 -
+2020-01-20 10:28:04,978 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 200 -
+2020-01-20 10:28:04,994 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:04] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 200 -
+2020-01-20 10:28:05,042 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:05] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-20 10:28:05,419 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:05] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-20 10:28:08,717 controleur   DEBUG    logout
+2020-01-20 10:28:08,721 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 10:28:08] "GET /deconnexion HTTP/1.1" 200 -
+2020-01-20 10:28:17,725 __main__     INFO     arrêt normal de l'application
+2020-01-20 10:28:19,112 __main__     INFO     démarrage de l'application
+2020-01-20 10:28:19,134 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-20 10:28:21,638 __main__     INFO     arrêt normal de l'application
