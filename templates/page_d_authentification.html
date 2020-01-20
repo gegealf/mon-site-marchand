@@ -12,20 +12,56 @@
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <h1> page d'authentification </h1>
-        <br>
-        <form action="page_d_authentification" method="post">
-            <input type="text" placeholder="votre email" name="email" value="{{
-            request.form.email }}">
-            <input type="password" placeholder="mot de passe" name="mot_de_passe" value="{{
-            request.form.mot_de_passe }}">
-            <input class="btn btn-default" type="submit" value="s'authentifier">
-        </form>
-        {% if error %}
-            <p class="error"><strong>Erreur:</strong> {{ message_d_erreur }}
-        {% endif %}
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <br><h1 class="titre">authentification:</h1>
+                <div class="d-flex justify-content-end social_icon">
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span><i class="fab fa-google-plus-square"></i></span>
+                    <span><i class="fab fa-twitter-square"></i></span>
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="page_d_authentification" method="post">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="votre email" name="email" value="{{
+                        request.form.email }}">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="mot de passe" name="mot_de_passe" value="{{
+                        request.form.mot_de_passe }}">
+                    </div>
+                    <div class="form-group" style="text-align:center;">
+                        <input type="submit" value="authentification" class="button login_btn">
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-center link1">
+                    <a href="{{ url_for('page_creation_compte_utilisateur') }}"> Cliquez pour créer un compte </a>
+                </div>
+                <div class="d-flex justify-content-center link2">
+                    <a href="{{ url_for('page_d_accueil') }}"> j'ai changé d'avis </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#">mot de passe perdu?</a>
+                </div>
+            </div>
+            {% if message_d_erreur %}
+                <br>
+                <p class="error"> {{ message_d_erreur }} </p>
+            {% endif %}
+        </div>
     </div>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

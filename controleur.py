@@ -39,7 +39,7 @@ def page_d_authentification():
 
             return redirect(url_for('page_d_accueil'))
 
-    return render_template('page_d_authentification.html', message=message_d_erreur)
+    return render_template('page_d_authentification.html', message_d_erreur=message_d_erreur)
 
 
 def deconnexion():
