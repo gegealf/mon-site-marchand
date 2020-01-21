@@ -14,7 +14,7 @@ def page_d_accueil():
     log.debug('connexion à la page d\'accueil avec authentification')
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
-    return render_template("page_d_accueil.html", message1=message1, message2=message2 )  # lien vers la page d'accueil
+    return render_template("page_d_accueil.html", message1=message1, message2=message2)  # lien vers la page d'accueil
 
 
 def page_d_authentification():
@@ -82,4 +82,38 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
 
 def page_creation_compte_utilisateur():
     log.debug('connexion à la page de création de compte utilisateur')
+    message_d_erreur = ""
+    if request.method == 'POST':
+        email_utilisateur = request.form['email']
+        db = MBDD()
+        if not db.verifier_email(email_utilisateur):
+            mdp_utilisateur = request.form['mot_de_passe']
+            nom_utilisateur = request.form['nom']
+            prenom_utilisateur = request.form['prenom']
+            date_de_naissance_utilisateur = request.form['date_de_naissance']
+            numero_de_telephone_utilisateur = request.form['numero_de_telephone']
+            numero_de_voie = request.form['numero_de_voie']
+            nom_de_voie = request.form['nom_de_voie']
+            code_postal = request.form['code_postal']
+            ville = request.form['ville']
+            mdp_hashe = __hashage_mdp__(mdp_utilisateur)
+            utilisateur = [
+                email_utilisateur,
+                mdp_hashe,
+                nom_utilisateur,
+                prenom_utilisateur,
+                date_de_naissance_utilisateur,
+                numero_de_telephone_utilisateur,
+                numero_de_voie,
+                nom_de_voie,
+                code_postal,
+                ville
+            ]
+            db.ajouter_utilisateur(utilisateur)
+            message = "votre compte à bien été enregitré"
+            return render_template('page_creation_compte_utilisateur.html', message=message)
+
+        message_d_erreur = "erreur lors de l'authentification, veuillez recommencer"
+        return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
+
     return render_template('page_creation_compte_utilisateur.html')

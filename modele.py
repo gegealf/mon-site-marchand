@@ -121,9 +121,33 @@ class MaBaseDeDonnees:
             return "vrai"
 
     def trouver_nom_prenom_utilisateur(self, email, mdp_hashe):
+        """               """
         self.request.execute(
             """SELECT nom, prenom FROM utilisateurs 
                WHERE email = '{}' AND mdp = '{}' """.format(email, mdp_hashe)
         )
         data = self.request.fetchone()
         return data[0] + " " + data[1][0].upper() + "."
+
+    def verifier_email(self, email_utilisateur):
+        """               """
+        self.request.execute(
+            """SELECT count(*) FROM utilisateurs 
+               WHERE email = '{}' """.format(email_utilisateur)
+        )
+        data = self.request.fetchone()[0]
+        if data == 0:
+            return False
+        else:
+            return True
+
+    def ajouter_utilisateur(self, utilisateur):
+        """               """
+        self.request.execute(
+            """INSERT INTO utilisateurs (email, mdp, nom, prenom, date_de_naissance, tel, numero_voie, nom_voie,
+             code_postal, ville) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')""".format(
+                utilisateur[0], utilisateur[1], utilisateur[2], utilisateur[3],
+                utilisateur[4], utilisateur[5], utilisateur[6],
+                utilisateur[7], utilisateur[8], utilisateur[9])
+        )
+        self.socket.commit()

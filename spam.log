@@ -3326,3 +3326,158 @@ jinja2.exceptions.TemplateNotFound: page_creation_compte_utilisateur.html
 2020-01-20 16:02:20,052 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 16:02:20] "GET /favicon.ico HTTP/1.1" 404 -
 2020-01-20 16:02:23,029 werkzeug     INFO     127.0.0.1 - - [20/Jan/2020 16:02:23] "POST /page_creation_compte_utilisateur HTTP/1.1" 405 -
 2020-01-20 16:02:31,032 __main__     INFO     arrêt normal de l'application
+2020-01-21 08:44:48,668 __main__     INFO     démarrage de l'application
+2020-01-21 08:44:48,690 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 08:44:50,113 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 08:44:50,213 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET / HTTP/1.1" 200 -
+2020-01-21 08:44:50,333 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/page_d_accueil.css HTTP/1.1" 304 -
+2020-01-21 08:44:50,340 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/singe.jpg HTTP/1.1" 304 -
+2020-01-21 08:44:50,342 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/3223523-03a9f4.svg HTTP/1.1" 304 -
+2020-01-21 08:44:50,344 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/2gb_sandisk_sdcard.png HTTP/1.1" 304 -
+2020-01-21 08:44:50,346 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/jungle1.jpg HTTP/1.1" 304 -
+2020-01-21 08:44:50,347 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/16gb_sandisk_sdhc_card.png HTTP/1.1" 304 -
+2020-01-21 08:44:50,386 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/32gb_sandisk_sdhc.jpg HTTP/1.1" 304 -
+2020-01-21 08:44:50,388 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/64gb_noname_sdxc.jpg HTTP/1.1" 304 -
+2020-01-21 08:44:50,396 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/128gb_sandisk_extreme.png HTTP/1.1" 304 -
+2020-01-21 08:44:50,410 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/128gb_sandisk_sdxc_extremepro.jpg HTTP/1.1" 304 -
+2020-01-21 08:44:50,512 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:44:50] "GET /static/images/fond_elephant.jpg HTTP/1.1" 304 -
+2020-01-21 08:45:18,151 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 08:45:18,164 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:45:18] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-21 08:45:18,209 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:45:18] "GET /static/page_d_authentification.css HTTP/1.1" 304 -
+2020-01-21 08:45:56,576 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 08:45:56,596 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:45:56] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 08:45:56,645 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:45:56] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 304 -
+2020-01-21 08:58:28,357 __main__     INFO     arrêt normal de l'application
+2020-01-21 08:58:30,507 __main__     INFO     démarrage de l'application
+2020-01-21 08:58:30,524 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 08:58:32,266 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 08:58:32,336 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:32] "GET / HTTP/1.1" 200 -
+2020-01-21 08:58:39,100 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 08:58:39,121 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:39] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 08:58:39,201 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:39] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 08:58:39,336 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:39] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 08:58:39,639 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:39] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 08:58:46,806 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 08:58:46,807 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:46] "GET / HTTP/1.1" 200 -
+2020-01-21 08:58:49,047 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 08:58:49,059 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:49] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-21 08:58:51,265 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 08:58:51,266 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:51] "GET / HTTP/1.1" 200 -
+2020-01-21 08:58:53,062 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 08:58:53,066 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 08:58:53] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 08:58:59,564 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:30:36,465 __main__     INFO     démarrage de l'application
+2020-01-21 09:30:36,483 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:30:38,206 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 09:30:38,276 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:30:38] "GET / HTTP/1.1" 200 -
+2020-01-21 09:30:41,105 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 09:30:41,112 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:30:41] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-21 09:30:48,736 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 09:30:48,738 controleur   DEBUG    tentative d'authentification
+2020-01-21 09:30:48,739 controleur   DEBUG    verification email/mot de passe
+2020-01-21 09:30:48,740 controleur   DEBUG    hashage du mot de passe
+2020-01-21 09:30:48,766 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-21 09:30:48,770 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:30:48] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-21 09:30:48,777 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-21 09:30:48,779 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:30:48] "GET / HTTP/1.1" 200 -
+2020-01-21 09:31:05,860 controleur   DEBUG    deconnexion du compte
+2020-01-21 09:31:05,863 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:31:05] "GET /deconnexion HTTP/1.1" 200 -
+2020-01-21 09:31:07,734 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:31:07,747 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:31:07] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:31:49,466 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:31:49,471 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:31:49] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:32:27,802 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:32:27,807 controleur   DEBUG    hashage du mot de passe
+2020-01-21 09:32:27,825 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:32:27] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:33:43,111 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:33:43,112 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:33:43] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:33:43,165 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:33:43] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 09:33:43,326 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:33:43] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 09:33:43,654 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:33:43] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 09:33:47,319 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 09:33:47,324 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:33:47] "GET / HTTP/1.1" 200 -
+2020-01-21 09:37:22,528 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:45:23,032 __main__     INFO     démarrage de l'application
+2020-01-21 09:45:23,049 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:45:24,201 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 09:45:24,284 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:45:24] "GET / HTTP/1.1" 200 -
+2020-01-21 09:45:34,102 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:45:34,112 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:45:34] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:46:32,151 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:46:33,868 __main__     INFO     démarrage de l'application
+2020-01-21 09:46:33,883 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:46:35,616 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:46:35,673 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:35] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:46:35,748 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:35] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 09:46:35,899 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:35] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 09:46:36,255 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:36] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 09:46:38,409 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:46:38,411 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:38] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:46:38,449 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:38] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 09:46:38,555 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:38] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 09:46:38,843 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:46:38] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 09:47:25,384 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:47:27,295 __main__     INFO     démarrage de l'application
+2020-01-21 09:47:27,341 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:47:30,234 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:47:30,255 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:47:30] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:47:30,340 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:47:30] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 09:47:30,482 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:47:30] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 09:47:30,856 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:47:30] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 09:47:56,017 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:47:56,020 controleur   DEBUG    hashage du mot de passe
+2020-01-21 09:47:56,038 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:47:56] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:50:11,122 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:50:13,372 __main__     INFO     démarrage de l'application
+2020-01-21 09:50:13,394 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:50:14,644 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 09:50:14,724 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:50:14] "GET / HTTP/1.1" 200 -
+2020-01-21 09:50:23,531 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:50:23,546 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:50:23] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:51:36,593 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:51:38,936 __main__     INFO     démarrage de l'application
+2020-01-21 09:51:38,954 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:51:40,996 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:51:41,041 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:51:41] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:51:46,760 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:51:46,764 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:51:46] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:52:03,772 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:52:05,057 __main__     INFO     démarrage de l'application
+2020-01-21 09:52:05,079 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:52:08,390 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:52:08,411 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:52:08] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:52:08,468 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:52:08] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 09:52:08,610 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:52:08] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 09:52:08,953 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:52:08] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 09:53:27,015 __main__     INFO     arrêt normal de l'application
+2020-01-21 09:53:28,363 __main__     INFO     démarrage de l'application
+2020-01-21 09:53:28,407 werkzeug     INFO      * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2020-01-21 09:53:31,808 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:53:31,835 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:53:31] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:53:31,897 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:53:31] "GET /static/page_creation_compte_utilisateur.css HTTP/1.1" 200 -
+2020-01-21 09:53:32,025 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:53:32] "GET /static/images/fond_elephant.jpg HTTP/1.1" 200 -
+2020-01-21 09:53:32,328 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:53:32] "GET /favicon.ico HTTP/1.1" 404 -
+2020-01-21 09:55:17,017 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:55:17,020 controleur   DEBUG    hashage du mot de passe
+2020-01-21 09:55:17,035 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:55:17] "POST /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 09:55:25,373 controleur   DEBUG    connexion à la page d'accueil sans authentification
+2020-01-21 09:55:25,393 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:55:25] "GET / HTTP/1.1" 200 -
+2020-01-21 09:55:33,795 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 09:55:33,801 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:55:33] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-21 09:55:56,520 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 09:55:56,521 controleur   DEBUG    tentative d'authentification
+2020-01-21 09:55:56,521 controleur   DEBUG    verification email/mot de passe
+2020-01-21 09:55:56,522 controleur   DEBUG    hashage du mot de passe
+2020-01-21 09:55:56,525 controleur   DEBUG    connexion à la page d'accueil après authentification
+2020-01-21 09:55:56,529 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:55:56] "POST /page_d_authentification HTTP/1.1" 302 -
+2020-01-21 09:55:56,543 controleur   DEBUG    connexion à la page d'accueil avec authentification
+2020-01-21 09:55:56,557 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:55:56] "GET / HTTP/1.1" 200 -
+2020-01-21 09:56:06,495 controleur   DEBUG    deconnexion du compte
+2020-01-21 09:56:06,500 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:56:06] "GET /deconnexion HTTP/1.1" 200 -
+2020-01-21 09:56:09,068 controleur   DEBUG    connexion à la page d'authentification
+2020-01-21 09:56:09,071 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:56:09] "GET /page_d_authentification HTTP/1.1" 200 -
+2020-01-21 09:56:12,474 controleur   DEBUG    deconnexion du compte
+2020-01-21 09:56:12,476 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:56:12] "GET /deconnexion HTTP/1.1" 200 -
+2020-01-21 09:56:14,553 controleur   DEBUG    connexion à la page de création de compte utilisateur
+2020-01-21 09:56:14,556 werkzeug     INFO     127.0.0.1 - - [21/Jan/2020 09:56:14] "GET /page_creation_compte_utilisateur HTTP/1.1" 200 -
+2020-01-21 10:00:36,296 __main__     INFO     arrêt normal de l'application

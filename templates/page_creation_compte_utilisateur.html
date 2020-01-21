@@ -17,7 +17,7 @@
     <div class="d-flex justify-content-center h-100">
         <div class="card">
             <div class="card-header">
-                <h2 class="titre"> Page de création de comptes </h2>
+                <h5 class="titre"> Page de création de comptes </h5>
             </div>
             <div class="card-body">
                 <form action="page_creation_compte_utilisateur" method="post">
@@ -109,9 +109,14 @@
                     <a href="#">mot de passe perdu?</a>
                 </div>
             </div>
-            {% if message_d_erreur %}
+            {% if message_d_erreur == "erreur lors de l'authentification, veuillez recommencer" %}
             <br>
             <p class="error"> {{ message_d_erreur }} </p>
+            {% endif %}
+            {% if message == "votre compte à bien été enregitré" %}
+            <br>
+            <p class="error"> {{ message }} </p>
+            <a href="{{ url_for('page_d_accueil') }}"> retour à la page d'accueil </a>
             {% endif %}
         </div>
     </div>
