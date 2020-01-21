@@ -2,11 +2,13 @@ from flask import render_template, session, request, flash, redirect, url_for
 import logging
 import hashlib
 from modele import MaBaseDeDonnees as MBDD
+import re
 
 log = logging.getLogger(__name__)
 
 
 def page_d_accueil():
+    """                 """
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil sans authentification')
         return render_template("page_d_accueil.html", message="")  # lien vers la page d'accueil
@@ -18,6 +20,7 @@ def page_d_accueil():
 
 
 def page_d_authentification():
+    """          """
     log.debug('connexion à la page d\'authentification')
     message_d_erreur = None
     if request.method == 'POST':
@@ -43,12 +46,14 @@ def page_d_authentification():
 
 
 def deconnexion():
+    """                 """
     log.debug('deconnexion du compte')
     session['vous_etes_loggue'] = False
     return render_template("page_d_accueil.html")
 
 
 def page_administrateur():
+    """                  """
     log.debug('connexion à la page administrateur')
     session['vous_etes_loggue'] = False
     message = "bienvenue"
@@ -81,39 +86,62 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
 
 
 def page_creation_compte_utilisateur():
+    """                                     """
     log.debug('connexion à la page de création de compte utilisateur')
     message_d_erreur = ""
     if request.method == 'POST':
         email_utilisateur = request.form['email']
-        db = MBDD()
-        if not db.verifier_email(email_utilisateur):
-            mdp_utilisateur = request.form['mot_de_passe']
-            nom_utilisateur = request.form['nom']
-            prenom_utilisateur = request.form['prenom']
-            date_de_naissance_utilisateur = request.form['date_de_naissance']
-            numero_de_telephone_utilisateur = request.form['numero_de_telephone']
-            numero_de_voie = request.form['numero_de_voie']
-            nom_de_voie = request.form['nom_de_voie']
-            code_postal = request.form['code_postal']
-            ville = request.form['ville']
-            mdp_hashe = __hashage_mdp__(mdp_utilisateur)
-            utilisateur = [
-                email_utilisateur,
-                mdp_hashe,
-                nom_utilisateur,
-                prenom_utilisateur,
-                date_de_naissance_utilisateur,
-                numero_de_telephone_utilisateur,
-                numero_de_voie,
-                nom_de_voie,
-                code_postal,
-                ville
-            ]
-            db.ajouter_utilisateur(utilisateur)
-            message = "votre compte à bien été enregitré"
-            return render_template('page_creation_compte_utilisateur.html', message=message)
+        mdp_utilisateur = request.form['mot_de_passe']
+        nom_utilisateur = request.form['nom']
+        prenom_utilisateur = request.form['prenom']
+        numero_de_telephone_utilisateur = request.form['numero_de_telephone']
+        numero_de_voie = request.form['numero_de_voie']
+        nom_de_voie = request.form['nom_de_voie']
+        code_postal = request.form['code_postal']
+        ville = request.form['ville']
+        mdp_hashe = __hashage_mdp__(mdp_utilisateur)
+        utilisateur = [
+            email_utilisateur,
+            mdp_hashe,
+            nom_utilisateur,
+            prenom_utilisateur,
+            numero_de_telephone_utilisateur,
+            numero_de_voie,
+            nom_de_voie,
+            code_postal,
+            ville
+        ]
+        if verifer_format_email(email_utilisateur) and verifer_format_mdp(mdp_utilisateur) and \
+                verifer_format_donnees(utilisateur):
+            db = MBDD()
+            if not db.verifier_email(email_utilisateur):
+                db.ajouter_utilisateur(utilisateur)
+                message = "votre compte à bien été enregitré"
+                return render_template('page_creation_compte_utilisateur.html', message=message)
 
         message_d_erreur = "erreur lors de l'authentification, veuillez recommencer"
         return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
 
     return render_template('page_creation_compte_utilisateur.html')
+
+
+def verifer_format_email(email_utilisateur):
+    """                                     """
+    log.debug('vérification du format de l\'adresse mail')
+    if (re.search("^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$", email_utilisateur)):
+        return True
+    log.debug('erreur de format de l\'adresse mail')
+    return False
+
+
+def verifer_format_mdp(mdp_utilisateur):
+    log.debug('vérification du format du mdp')
+    if (re.search("^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,16}$", mdp_utilisateur)):
+        return True
+    log.debug('erreur de format du mdp')
+    return False
+
+
+def verifer_format_donnees(utilisateur):
+    """                                     """
+    return True

@@ -13,7 +13,6 @@ request.execute(
         mdp TEXT NOT NULL,
         nom TEXT NOT NULL,
         prenom TEXT NOT NULL,
-        date_de_naissance DATE NULL,
         tel INT NOT NULL,
         numero_voie TEXT NOT NULL,
         nom_voie TEXT,
@@ -81,7 +80,7 @@ request.execute(
     """
         INSERT INTO utilisateurs
         SELECT "gege@gege.com", "46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203", 
-        "gege", "alf", 08041969, 0600000000, 2, "rue machinchose", 75011, "paris"
+        "gege", "alf", 0600000000, 2, "rue machinchose", 75011, "paris"
         WHERE NOT EXISTS (SELECT * FROM utilisateurs WHERE email = 'gege@gege.com')
     """
 )
@@ -127,7 +126,7 @@ class MaBaseDeDonnees:
                WHERE email = '{}' AND mdp = '{}' """.format(email, mdp_hashe)
         )
         data = self.request.fetchone()
-        return data[0] + " " + data[1][0].upper() + "."
+        return data[1] + " " + data[0][0].upper() + "."
 
     def verifier_email(self, email_utilisateur):
         """               """
@@ -144,10 +143,10 @@ class MaBaseDeDonnees:
     def ajouter_utilisateur(self, utilisateur):
         """               """
         self.request.execute(
-            """INSERT INTO utilisateurs (email, mdp, nom, prenom, date_de_naissance, tel, numero_voie, nom_voie,
-             code_postal, ville) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')""".format(
-                utilisateur[0], utilisateur[1], utilisateur[2], utilisateur[3],
-                utilisateur[4], utilisateur[5], utilisateur[6],
-                utilisateur[7], utilisateur[8], utilisateur[9])
+            """INSERT INTO utilisateurs (email, mdp, nom, prenom, tel, numero_voie, nom_voie,
+             code_postal, ville) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')""".format(
+                utilisateur[0], utilisateur[1], utilisateur[2],
+                utilisateur[3], utilisateur[4], utilisateur[5],
+                utilisateur[6], utilisateur[7], utilisateur[8])
         )
         self.socket.commit()
