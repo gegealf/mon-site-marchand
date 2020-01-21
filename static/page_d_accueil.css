@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+
 body {
 	display: table;
 	width: 100%;
@@ -17,10 +21,11 @@ body {
 
 /* Container holding the image and the text */
 .image1 {
+    font-family: 'Lobster', Georgia, Times, serif;
     position: relative;
     text-align: center;
-    font-size: 3vw;
-    color: white;
+    font-size: 3.5vw;
+    color: cyan;
 }
 #logo1 {
     position: absolute;
@@ -46,7 +51,7 @@ body {
 .image2 {
     position: relative;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 /* Top left text */
@@ -100,6 +105,4 @@ body {
     color:white;
     text-decoration:none;
 }
-
-
 
