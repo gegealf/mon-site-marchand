@@ -14,8 +14,8 @@ request.execute(
         nom TEXT NOT NULL,
         prenom TEXT NOT NULL,
         tel INT NOT NULL,
-        numero_voie TEXT NOT NULL,
-        nom_voie TEXT,
+        numero_voie TEXT,
+        nom_voie TEXT NOT NULL,
         code_postal INT NOT NULL,
         ville TEXT NOT NULL
         )

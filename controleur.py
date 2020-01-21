@@ -24,22 +24,18 @@ def page_d_authentification():
     log.debug('connexion à la page d\'authentification')
     message_d_erreur = None
     if request.method == 'POST':
-        log.debug('tentative d\'authentification')
         mdp_utilisateur = request.form['mot_de_passe']
         email_utilisateur = request.form['email']
         compte_utilisateur_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
         if compte_utilisateur_valide != "vrai":
             if compte_utilisateur_valide == "accès_admin":
                 return redirect(url_for('page_administrateur'))
-
             log.debug('erreur lors de l\'authentification')
             session['vous_etes_loggue'] = False
             message_d_erreur = 'erreur lors de l\'authentification, veuillez recommencer'
-
         else:
             log.debug('connexion à la page d\'accueil après authentification')
             session['vous_etes_loggue'] = True
-
             return redirect(url_for('page_d_accueil'))
 
     return render_template('page_d_authentification.html', message_d_erreur=message_d_erreur)
@@ -47,7 +43,7 @@ def page_d_authentification():
 
 def deconnexion():
     """                 """
-    log.debug('deconnexion du compte')
+    log.debug('deconnexion du compte effectuée')
     session['vous_etes_loggue'] = False
     return render_template("page_d_accueil.html")
 
@@ -70,7 +66,7 @@ def __hashage_mdp__(mot_de_passe_en_clair):
 
 def verifier_le_compte(email_utilisateur, mdp_utilisateur):
     """ appel des méthodes de classe MaBaseDeDonnees permettant de vérifier le compte avec email/mot de passe """
-    log.debug('verification email/mot de passe')
+    log.debug('verification email et mot de passe')
     mdp_hashe = __hashage_mdp__(mdp_utilisateur)
     db = MBDD()  # création d'une instance de ma base de données
     access1 = db.verifier_si_compte_utilisateur_existe_deja(email_utilisateur, mdp_hashe)
@@ -114,12 +110,15 @@ def page_creation_compte_utilisateur():
         if verifer_format_email(email_utilisateur) and verifer_format_mdp(mdp_utilisateur) and \
                 verifer_format_donnees(utilisateur):
             db = MBDD()
+            log.debug('formats de l\'adresse mail, du mot de passe et des données valides')
             if not db.verifier_email(email_utilisateur):
+                log.debug('ajout du compte utilisateur à la base de données')
                 db.ajouter_utilisateur(utilisateur)
                 message = "votre compte à bien été enregitré"
                 return render_template('page_creation_compte_utilisateur.html', message=message)
 
-        message_d_erreur = "erreur lors de l'authentification, veuillez recommencer"
+        log.debug('erreur lors de la validation du compte utilisateur')
+        message_d_erreur = "erreur lors de la validation, veuillez recommencer"
         return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
 
     return render_template('page_creation_compte_utilisateur.html')
@@ -130,6 +129,7 @@ def verifer_format_email(email_utilisateur):
     log.debug('vérification du format de l\'adresse mail')
     if (re.search("^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$", email_utilisateur)):
         return True
+
     log.debug('erreur de format de l\'adresse mail')
     return False
 
@@ -138,10 +138,17 @@ def verifer_format_mdp(mdp_utilisateur):
     log.debug('vérification du format du mdp')
     if (re.search("^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,16}$", mdp_utilisateur)):
         return True
+
     log.debug('erreur de format du mdp')
     return False
 
 
 def verifer_format_donnees(utilisateur):
     """                                     """
-    return True
+    if utilisateur[2] and utilisateur[3] and utilisateur[4] and utilisateur[4].isdigit() \
+            and (len(utilisateur[4]) == 10 or len(utilisateur[4]) == 13) \
+            and utilisateur[6] and utilisateur[7] and utilisateur[8]:
+        return True
+
+    log.debug('erreur au niveau des données utilisateurs')
+    return False
