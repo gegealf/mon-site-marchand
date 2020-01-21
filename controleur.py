@@ -114,10 +114,10 @@ def page_creation_compte_utilisateur():
             if not db.verifier_email(email_utilisateur):
                 log.debug('ajout du compte utilisateur à la base de données')
                 db.ajouter_utilisateur(utilisateur)
-                message = "votre compte à bien été enregitré"
+                message = "votre compte à bien été enregistré"
                 return render_template('page_creation_compte_utilisateur.html', message=message)
+            log.debug('erreur lors de la validation del\'email: déjà utilisé')
 
-        log.debug('erreur lors de la validation du compte utilisateur')
         message_d_erreur = "erreur lors de la validation, veuillez recommencer"
         return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
 

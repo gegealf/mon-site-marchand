@@ -87,9 +87,7 @@ input:focus{
     color: white;
 }
 
-.error {
+.message {
     color: red;
     font-family: 'Lobster', sans-serif;
-    text-align: center;
-    font-size: 30px;
 }

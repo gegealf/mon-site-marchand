@@ -17,13 +17,13 @@
     <div class="d-flex justify-content-center h-100">
         <div class="card">
             <div class="card-header">
-                <h5 class="titre"> Page de création de comptes </h5>
+                <h2 class="titre"> Page de création de compte </h2>
             </div>
             <div class="card-body">
                 <form action="page_creation_compte_utilisateur" method="post">
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <span class="input-group-text"><i class="fas fa-at"></i></span>
                         </div>
                         <input type="email" class="form-control" placeholder="votre email" name="email" value="{{
                         request.form.email }}">
@@ -38,21 +38,21 @@
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="nom" name="nom" value="{{
                         request.form.nom }}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="prenom" name="prenom" value="{{
                         request.form.prenom }}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
                         </div>
                         <input type="tel" class="form-control" placeholder="numéro de téléphone"
                                name="numero_de_telephone"
@@ -61,7 +61,7 @@
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-rocket"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="numéro de la voie" name="numero_de_voie"
                                value="{{
@@ -69,21 +69,21 @@
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-road"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="nom de la voie" name="nom_de_voie" value="{{
                         request.form.nom_de_voie }}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-code"></i></span>
                         </div>
                         <input type="number" class="form-control" placeholder="code postal" name="code_postal" value="{{
                         request.form.code_postal }}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-building"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="ville" name="ville" value="{{
                         request.form.ville }}">
@@ -100,19 +100,20 @@
                 <div class="d-flex justify-content-center">
                     <a href="#">mot de passe perdu?</a>
                 </div>
+                <div class="d-flex justify-content-center">
+                    {% if message_d_erreur == "erreur lors de la validation, veuillez recommencer" %}
+                    <p class="message"> {{ message_d_erreur }} </p>
+                    {% endif %}
+                    {% if message == "votre compte à bien été enregistré" %}
+                    <p class="message"> {{ message }} </p>
+                    <a href="{{ url_for('page_d_accueil') }}"> retour à la page d'accueil </a>
+                    {% endif %}
+                </div>
             </div>
-            {% if message_d_erreur == "erreur lors de la validation, veuillez recommencer" %}
-            <br>
-            <p class="error"> {{ message_d_erreur }} </p>
-            {% endif %}
-            {% if message == "votre compte à bien été enregitré" %}
-            <br>
-            <p class="error"> {{ message }} </p>
-            <a href="{{ url_for('page_d_accueil') }}"> retour à la page d'accueil </a>
-            {% endif %}
         </div>
     </div>
 </div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
