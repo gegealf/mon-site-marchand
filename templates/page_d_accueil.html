@@ -33,11 +33,15 @@
                 <div class="image2" style="width:100%">
                     <img class=img-responsive src="{{ url_for('static', filename='images/singe.jpg') }}" alt="singe" style="width:100%;">
                     <div class="zone_login">
-                        <p> {{ message }} </p>
-                        <a href="{{ url_for('page_d_authentification') }}"> Cliquez pour vous authentifier </a>
-                        <br>
-                        <a href="{{ url_for('page_creation_compte_utilisateur') }}"> Cliquez pour créer un compte </a>
-                        <p> accès au panier </p>
+                        {% if message1 == "bienvenue" %}
+                            <p> {{ message2 }}</p>
+                            <p> accès au panier </p>
+                            <a href="{{ url_for('page_d_accueil/deconnexion') }}"> Cliquez pour vous déconnecter </a>
+                        {% else %}
+                            <a href="{{ url_for('page_d_authentification') }}"> Cliquez pour vous authentifier </a>
+                            <br>
+                            <a href="{{ url_for('page_creation_compte_utilisateur') }}"> Cliquez pour créer un compte </a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

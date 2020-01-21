@@ -20,10 +20,9 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/page_d_authentification', 'page_d_authentification', methods=['GET', 'POST'],
                      view_func=controleur.page_d_authentification)
     app.add_url_rule('/page_administrateur', 'page_administrateur', view_func=controleur.page_administrateur)
-    app.add_url_rule('/page_creation_compte_utilisateur', 'page_creation_compte_utilisateur',
+    app.add_url_rule('/page_creation_compte_utilisateur', 'page_creation_compte_utilisateur', methods=['GET', 'POST'],
                      view_func=controleur.page_creation_compte_utilisateur)
-
-
+    app.add_url_rule('/deconnexion', 'page_d_accueil/deconnexion', view_func=controleur.deconnexion)
 
     try:
         log.info('démarrage de l\'application')
