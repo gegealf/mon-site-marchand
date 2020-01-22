@@ -53,7 +53,7 @@ request.execute(
         lien_photo TEXT NOT NULL,
         en_stock NUMERIC DEFAULT 1,
         reapprovisionnement_en_cours NUMERIC DEFAULT 0,
-        baiise_de_prix NUMERIC DEFAULT 0,
+        baisse_de_prix NUMERIC DEFAULT 0,
         nouveaute NUMERIC DEFAULT 1        
         )
     """
@@ -97,8 +97,8 @@ request.execute(
     """
         INSERT INTO produits (prix_produit_unite, categorie ,
         commentaire , lien_photo)
-        VALUES ("20", "clés usb", "pour tester", "ici le lien vers photo"), 
-        ("10.99", "cartes mémoire", "pour tester", "ici le lien vers photo")
+        VALUES ("20", "Clés USB", "pour tester", "ici le lien vers photo"), 
+        ("10.99", "Cartes mémoire", "pour tester", "ici le lien vers photo")
     """
 )
 '''
@@ -168,3 +168,16 @@ class MaBaseDeDonnees:
                 utilisateur[6], utilisateur[7], utilisateur[8])
         )
         self.socket.commit()
+
+    def recuperer_liste_produits(self, liste_categories):
+        """               """
+        data = {}
+        for i in range(0, len(liste_categories)):
+            self.request.execute(
+                """SELECT prix_produit_unite, commentaire, lien_photo, en_stock,
+                reapprovisionnement_en_cours, baisse_de_prix, nouveaute 
+                from produits WHERE categorie = '{}' """.format(liste_categories[i])
+            )
+            data[liste_categories[i]] = self.request.fetchall()
+        print(data)
+        return data

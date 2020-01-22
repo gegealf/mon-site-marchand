@@ -10,6 +10,7 @@ log = logging.getLogger(__name__)
 def page_d_accueil():
     """                 """
     liste_categories = recuperer_categories()
+    liste_produits = recuperer_liste_produits()
 
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil sans authentification')
@@ -164,3 +165,11 @@ def recuperer_categories():
     """ pour définir les onglets et l'ordre d'apparition dans la page d'accueil """
     liste_categories = ["Nouveautés et baisse de prix", "Cartes mémoire", "Clés USB", "SSD", "HDD", "RAM"]
     return liste_categories
+
+
+def recuperer_liste_produits():
+    liste_categories = recuperer_categories()
+    db = MBDD()
+    db.recuperer_liste_produits(liste_categories)
+    pass
+

@@ -64,25 +64,17 @@
     </div>
     <!-- onglets -->
     <nav class="nav nav-pills">
-        <!--
-        <a class="nav-item nav-link active" href="#p0" data-toggle="tab">Nouveautés et baisse de prix</a>
-        <a class="nav-item nav-link" href="#p2" data-toggle="tab">cartes mémoire</a>
-        <a class="nav-item nav-link" href="#p3" data-toggle="tab">clés USB</a>
-        <a class="nav-item nav-link" href="#p4" data-toggle="tab">SSD</a>
-        <a class="nav-item nav-link" href="#p5" data-toggle="tab">HDD</a>
-        <a class="nav-item nav-link" href="#p6" data-toggle="tab">RAM</a>
-        -->
         {% for i in range(0, len) %}
         <script language="JavaScript">
          document.write("<a class='nav-item nav-link' href='#p{{i}}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
         </script>
         {% endfor %}
     </nav>
-    <!-- onglets -->
+    <!-- contenu des onglets -->
     <div class="tab-content">
+        <!--
         <div class="tab-pane fade show active" id="p0">
             <div class="row">
-                <!-- Gallery Item 1 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
                         <div>
@@ -94,7 +86,6 @@
                         <p>Info..</p>
                     </div>
                 </div>
-                <!-- Gallery Item 2 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
                         <div>
@@ -107,7 +98,6 @@
                         <p>Info..</p>
                     </div>
                 </div>
-                <!-- Gallery Item 3 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
                         <div>
@@ -120,7 +110,6 @@
                         <p>Info..</p>
                     </div>
                 </div>
-                <!-- Gallery Item 4 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
                         <div>
@@ -133,7 +122,6 @@
                         <p>Info..</p>
                     </div>
                 </div>
-                <!-- Gallery Item 5 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
                         <div>
@@ -145,7 +133,6 @@
                         <p>Info..</p>
                     </div>
                 </div>
-                <!-- Gallery Item 6 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
                         <div>
@@ -160,6 +147,8 @@
                 </div>
             </div>
         </div>
+        -->
+
         <div class="tab-pane" id="p1">Panneau 1</div>
         <div class="tab-pane" id="p2">Panneau 2</div>
         <div class="tab-pane" id="p3">Panneau 3</div>
