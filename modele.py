@@ -91,14 +91,17 @@ request.execute(
     """
 )
 
+'''
 # test ajout d'un produit dans la base de données:
 request.execute(
     """
         INSERT INTO produits (prix_produit_unite, categorie ,
         commentaire , lien_photo)
-        VALUES ("20", "clés usb", "pour tester", "ici le lien vers photo")
+        VALUES ("20", "clés usb", "pour tester", "ici le lien vers photo"), 
+        ("10.99", "cartes mémoire", "pour tester", "ici le lien vers photo")
     """
 )
+'''
 
 socket.commit()
 

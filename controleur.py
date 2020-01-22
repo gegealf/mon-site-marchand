@@ -9,14 +9,20 @@ log = logging.getLogger(__name__)
 
 def page_d_accueil():
     """                 """
+    liste_categories = recuperer_categories()
+
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil sans authentification')
-        return render_template("page_d_accueil.html", message="")  # lien vers la page d'accueil
+        return render_template("page_d_accueil.html", message="",
+                               liste_categories=liste_categories, len=len(liste_categories))
 
     log.debug('connexion à la page d\'accueil avec authentification')
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
-    return render_template("page_d_accueil.html", message1=message1, message2=message2)  # lien vers la page d'accueil
+    liste_categories = recuperer_categories()
+    return render_template("page_d_accueil.html", message1=message1, message2=message2,
+                           liste_categories=liste_categories, len=len(liste_categories)
+                           )  # lien vers la page d'accueil
 
 
 def page_d_authentification():
@@ -152,3 +158,9 @@ def verifer_format_donnees(utilisateur):
 
     log.debug('erreur au niveau des données utilisateurs')
     return False
+
+
+def recuperer_categories():
+    """ pour définir les onglets et l'ordre d'apparition dans la page d'accueil """
+    liste_categories = ["Nouveautés et baisse de prix", "Cartes mémoire", "Clés USB", "SSD", "HDD", "RAM"]
+    return liste_categories
