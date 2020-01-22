@@ -104,8 +104,9 @@
                     {% if message_d_erreur == "erreur lors de la validation, veuillez recommencer" %}
                     <p class="message"> {{ message_d_erreur }} </p>
                     {% endif %}
-                    {% if message == "votre compte à bien été enregistré" %}
+                    {% if message == "votre compte à bien été enregistré: " %}
                     <p class="message"> {{ message }} </p>
+                    <br>
                     <a href="{{ url_for('page_d_accueil') }}"> retour à la page d'accueil </a>
                     {% endif %}
                 </div>

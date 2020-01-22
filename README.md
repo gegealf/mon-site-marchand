@@ -4,3 +4,4 @@
 
 2- python main.py
 
+3- pour visualiser la base de données: https://inloop.github.io/sqlite-viewer/

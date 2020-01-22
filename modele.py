@@ -49,7 +49,13 @@ request.execute(
         numero_produit INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
         prix_produit_unite NUM NOT NULL,
         categorie TEXT NOT NULL,
-        commentaire TEXT NOT NULL)
+        commentaire TEXT NOT NULL,
+        lien_photo TEXT NOT NULL,
+        en_stock NUMERIC DEFAULT 1,
+        reapprovisionnement_en_cours NUMERIC DEFAULT 0,
+        baiise_de_prix NUMERIC DEFAULT 0,
+        nouveaute NUMERIC DEFAULT 1        
+        )
     """
 )
 
@@ -82,6 +88,15 @@ request.execute(
         SELECT "gege@gege.com", "46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203", 
         "gege", "alf", 0600000000, 2, "rue machinchose", 75011, "paris"
         WHERE NOT EXISTS (SELECT * FROM utilisateurs WHERE email = 'gege@gege.com')
+    """
+)
+
+# test ajout d'un produit dans la base de données:
+request.execute(
+    """
+        INSERT INTO produits (prix_produit_unite, categorie ,
+        commentaire , lien_photo)
+        VALUES ("20", "clés usb", "pour tester", "ici le lien vers photo")
     """
 )
 

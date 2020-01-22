@@ -114,7 +114,7 @@ def page_creation_compte_utilisateur():
             if not db.verifier_email(email_utilisateur):
                 log.debug('ajout du compte utilisateur à la base de données')
                 db.ajouter_utilisateur(utilisateur)
-                message = "votre compte à bien été enregistré"
+                message = "votre compte à bien été enregistré: "
                 return render_template('page_creation_compte_utilisateur.html', message=message)
             log.debug('erreur lors de la validation del\'email: déjà utilisé')
 
@@ -136,7 +136,7 @@ def verifer_format_email(email_utilisateur):
 
 def verifer_format_mdp(mdp_utilisateur):
     log.debug('vérification du format du mdp')
-    if (re.search("^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,16}$", mdp_utilisateur)):
+    if (re.search("^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,14}$", mdp_utilisateur)):
         return True
 
     log.debug('erreur de format du mdp')
