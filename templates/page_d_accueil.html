@@ -36,17 +36,17 @@
         <div class="col-3 col-sm-3 col-lg-2">
             <div class="d-flex flex-column text-center height100">
                 <div class="image2" style="width:100%">
-                    <img class=img-responsive src="{{ url_for('static', filename='images/singe.jpg') }}" alt="singe"
-                         style="width:100%;">
-                    <div class="zone_login">
+
+                    <div class="zone_liens_messages">
                         {% if message1 == "bienvenue" %}
                         <p> {{ message2 }}</p>
                         <p> accès au panier </p>
-                        <a href="{{ url_for('page_d_accueil/deconnexion') }}"> Cliquez pour vous déconnecter </a>
+                        <a href="{{ url_for('page_d_accueil/deconnexion') }}"> vous déconnecter </a>
                         {% else %}
-                        <a href="{{ url_for('page_d_authentification') }}"> Cliquez pour vous authentifier </a>
                         <br>
-                        <a href="{{ url_for('page_creation_compte_utilisateur') }}"> Cliquez pour créer un compte </a>
+                        <a href="{{ url_for('page_d_authentification') }}"> vous authentifier </a>
+                        <br>
+                        <a href="{{ url_for('page_creation_compte_utilisateur') }}"> créer un compte </a>
                         {% endif %}
                     </div>
                 </div>
@@ -88,7 +88,7 @@
         {% endif %}
         {% for el in value %}
         <script language="JavaScript">
-        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px; background-color: rgb(0, 128, 0, 0.6);'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
+        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px; background-color: rgb(0, 128, 0, 0.6); border-radius: 15px;'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
         </script>
         {% endfor %}
         <script language="JavaScript">document.write("</div></div>");</script>

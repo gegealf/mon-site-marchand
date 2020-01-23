@@ -55,7 +55,7 @@ def deconnexion():
     """                 """
     log.debug('deconnexion du compte effectuée')
     session['vous_etes_loggue'] = False
-    return render_template("page_d_accueil.html")
+    return redirect(url_for('page_d_accueil'))
 
 
 def page_administrateur():
