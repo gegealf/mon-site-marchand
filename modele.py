@@ -201,5 +201,4 @@ class MaBaseDeDonnees:
                 from produits WHERE categorie = '{}' """.format(liste_categories[i])
             )
             data[liste_categories[i]] = self.request.fetchall()
-        print(data)
         return data

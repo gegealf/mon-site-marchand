@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="522c4c39-d246-4412-a9b1-7ae52c432fbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/120go_samsung_ssd.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/128go_sandisk_cle_usb3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/16go_dtse_cle_usb2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1go_noname_ram.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1to_maxtor_hdd.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/240go_crucial_ssd.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2go_kingston_ram.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2to_wd-hdd.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/32go_sandisk_cle_usb3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/32go_transcend_cle_usb3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3to_noname_hdd.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/4go_noname_cle_usb2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/500go_samsung_hdd.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/8gox4_gskill_ram.jfif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controleur.py" beforeDir="false" afterPath="$PROJECT_DIR$/controleur.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele.py" beforeDir="false" afterPath="$PROJECT_DIR$/modele.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/128gb_sandisk_extreme.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/128go_sandisk_extreme.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/128gb_sandisk_sdxc_extremepro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/128go_sandisk_sdxc_extremepro.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/16gb_sandisk_sdhc_card.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/16go_sandisk_sdhc_card.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/2gb_sandisk_sdcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/2go_sandisk_sdcard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/32gb_sandisk_sdhc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/32go_sandisk_sdhc.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/64gb_noname_sdcard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/64go_noname_sdcard.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/64gb_noname_sdxc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/64go_noname_sdxc.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/page_d_accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_d_accueil.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.15536723">
+    <splitter split-orientation="horizontal" split-proportion="0.49293786">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -51,12 +29,12 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/controleur.py">
+            <entry file="file://$PROJECT_DIR$/templates/page_d_accueil.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="593">
-                  <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+                <state relative-caret-position="442">
+                  <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
                   <folding>
-                    <element signature="e#0#77#0" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -67,10 +45,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/modele.py">
+            <entry file="file://$PROJECT_DIR$/static/page_d_accueil.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+                <state relative-caret-position="1139">
+                  <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -314,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579696016781</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="page d'accueil: la page html devient dynamique les produits s'affichent via loop sur dictionnaire {categorie: liste des prosuits[]}">
+      <created>1579784139413</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1579784139413</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,7 +342,8 @@
     <MESSAGE value="base de données: ajout de champs dans la table produits + produit test et vérfication sqlite viewer" />
     <MESSAGE value="page d'accueil: les onglets sont créés dynamiquement (ajout de jinja+javascript dans page_d_accueil.html)" />
     <MESSAGE value="page d'accueil: ajout de la méthode qui récupère les produits dans la base de données par catégorie" />
-    <option name="LAST_COMMIT_MESSAGE" value="page d'accueil: ajout de la méthode qui récupère les produits dans la base de données par catégorie" />
+    <MESSAGE value="page d'accueil: la page html devient dynamique les produits s'affichent via loop sur dictionnaire {categorie: liste des prosuits[]}" />
+    <option name="LAST_COMMIT_MESSAGE" value="page d'accueil: la page html devient dynamique les produits s'affichent via loop sur dictionnaire {categorie: liste des prosuits[]}" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/log.config">
@@ -488,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/page_d_accueil.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -509,16 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="106" column="74" selection-start-line="106" selection-start-column="74" selection-end-line="106" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-          <folding>
-            <element signature="e#46#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,27 +508,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page_d_accueil.html">
+    <entry file="file://$PROJECT_DIR$/modele.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="74" column="54" lean-forward="true" selection-start-line="74" selection-start-column="54" selection-end-line="74" selection-end-column="54" />
+        <state relative-caret-position="151">
+          <caret line="161" column="63" lean-forward="true" selection-start-line="161" selection-start-column="63" selection-end-line="161" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controleur.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="440">
+          <caret line="155" column="40" lean-forward="true" selection-start-line="155" selection-start-column="40" selection-end-line="155" selection-end-column="40" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+        <state relative-caret-position="510">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding>
+            <element signature="e#46#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/page_d_accueil.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page_d_accueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

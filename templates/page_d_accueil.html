@@ -65,19 +65,30 @@
     <!-- onglets -->
     <nav class="nav nav-pills">
         {% for i in range(0, lenc) %}
+        {% if i == 0 %}
         <script language="JavaScript">
-         document.write("<a class='nav-item nav-link' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
+        document.write("<a class='nav-item nav-link active' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
         </script>
+        {% else %}
+        <script language="JavaScript">
+        document.write("<a class='nav-item nav-link' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
+        </script>
+        {% endif %}
         {% endfor %}
     </nav>
     <!-- contenu des onglets -->
     <div class="tab-content">
         {% for key, value in liste_produits.items() %}
+        {% if loop.index-1 == 0 %}
+        <script language="JavaScript">
+        document.write("<div class='tab-pane fade show active' id='p{{ loop.index-1 }}'><div class='row'>");</script>
+        {% else %}
         <script language="JavaScript">
         document.write("<div class='tab-pane fade' id='p{{ loop.index-1 }}'><div class='row'>");</script>
+        {% endif %}
         {% for el in value %}
         <script language="JavaScript">
-        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px;'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
+        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px; background-color: rgb(0, 128, 0, 0.6);'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
         </script>
         {% endfor %}
         <script language="JavaScript">document.write("</div></div>");</script>
