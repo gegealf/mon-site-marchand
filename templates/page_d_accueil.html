@@ -64,96 +64,24 @@
     </div>
     <!-- onglets -->
     <nav class="nav nav-pills">
-        {% for i in range(0, len) %}
+        {% for i in range(0, lenc) %}
         <script language="JavaScript">
-         document.write("<a class='nav-item nav-link' href='#p{{i}}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
+         document.write("<a class='nav-item nav-link' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
         </script>
         {% endfor %}
     </nav>
     <!-- contenu des onglets -->
     <div class="tab-content">
-        <!--
-        <div class="tab-pane fade show active" id="p0">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
-                        <div>
-                            <img class="image_galerie"
-                                 src="{{ url_for('static', filename='images/2gb_sandisk_sdcard.png') }}" width="auto"
-                                 height="250" alt="1111"/>
-                        </div>
-                        <h2>1111</h2>
-                        <p>Info..</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
-                        <div>
-                            <img class="image_galerie"
-                                 src="{{ url_for('static', filename='images/16gb_sandisk_sdhc_card.png') }}"
-                                 width="auto"
-                                 height="250" alt="2222"/>
-                        </div>
-                        <h2>2222</h2>
-                        <p>Info..</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
-                        <div>
-                            <img class="image_galerie"
-                                 src="{{ url_for('static', filename='images/32gb_sandisk_sdhc.jpg') }}" width="auto"
-                                 height="250"
-                                 alt="3333"/>
-                        </div>
-                        <h2>3333</h2>
-                        <p>Info..</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
-                        <div>
-                            <img class="image_galerie"
-                                 src="{{ url_for('static', filename='images/64gb_noname_sdxc.jpg') }}" width="auto"
-                                 height="250"
-                                 alt="4444"/>
-                        </div>
-                        <h2>4444</h2>
-                        <p>Info..</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
-                        <div>
-                            <img class="image_galerie"
-                                 src="{{ url_for('static', filename='images/128gb_sandisk_extreme.png') }}" width="auto"
-                                 height="250" alt="5555"/>
-                        </div>
-                        <h2>5555</h2>
-                        <p>Info..</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="d-flex flex-column text-center border height100" style="margin-top: 10px;">
-                        <div>
-                            <img class="image_galerie"
-                                 src="{{ url_for('static', filename='images/128gb_sandisk_sdxc_extremepro.jpg') }}"
-                                 width="auto"
-                                 height="250" alt="6666"/>
-                        </div>
-                        <h2>6666</h2>
-                        <p>Info..</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-
-        <div class="tab-pane" id="p1">Panneau 1</div>
-        <div class="tab-pane" id="p2">Panneau 2</div>
-        <div class="tab-pane" id="p3">Panneau 3</div>
-        <div class="tab-pane" id="p4">Panneau 4</div>
-        <div class="tab-pane" id="p5">Panneau 5</div>
+        {% for key, value in liste_produits.items() %}
+        <script language="JavaScript">
+        document.write("<div class='tab-pane fade' id='p{{ loop.index-1 }}'><div class='row'>");</script>
+        {% for el in value %}
+        <script language="JavaScript">
+        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px;'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
+        </script>
+        {% endfor %}
+        <script language="JavaScript">document.write("</div></div>");</script>
+        {% endfor %}
     </div>
 </div>
 <!-- Optional JavaScript -->

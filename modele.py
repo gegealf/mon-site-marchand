@@ -76,7 +76,7 @@ request.execute(
 request.execute(
     """
         INSERT INTO administrateurs
-        SELECT "admin@admin.gege", "46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203"
+        SELECT 'admin@admin.gege', '46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203'
         WHERE NOT EXISTS (SELECT * FROM administrateurs WHERE email = 'admin@admin.gege')
     """
 )
@@ -85,8 +85,8 @@ request.execute(
 request.execute(
     """
         INSERT INTO utilisateurs
-        SELECT "gege@gege.com", "46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203", 
-        "gege", "alf", 0600000000, 2, "rue machinchose", 75011, "paris"
+        SELECT 'gege@gege.com', '46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203', 
+        'gege', 'alf', 0600000000, 2, 'rue machinchose', 75011, 'paris'
         WHERE NOT EXISTS (SELECT * FROM utilisateurs WHERE email = 'gege@gege.com')
     """
 )
@@ -97,8 +97,30 @@ request.execute(
     """
         INSERT INTO produits (prix_produit_unite, categorie ,
         commentaire , lien_photo)
-        VALUES ("20", "Clés USB", "pour tester", "ici le lien vers photo"), 
-        ("10.99", "Cartes mémoire", "pour tester", "ici le lien vers photo")
+        VALUES ('3.20', 'Clés USB', 'pour tester', './static/images/4go_noname_cle_usb2.jpg'), 
+            ('10.99', 'Cartes mémoire', 'pour tester', './static/images/2go_sandisk_sdcard.png'),
+            ('10.99', 'Nouveautés et baisses de prix', 'pour tester', './static/images/2go_sandisk_sdcard.png'),
+            ('14.99', 'Cartes mémoire', 'pour tester', './static/images/16go_sandisk_sdhc_card.png'),
+            ('16.99', 'Cartes mémoire', 'pour tester', './static/images/32go_sandisk_sdhc.jpg'),
+            ('17.00', 'Cartes mémoire', 'pour tester', './static/images/64go_noname_sdxc.jpg'),
+            ('17.00', 'Nouveautés et baisses de prix', 'pour tester', './static/images/64go_noname_sdxc.jpg'),
+            ('32.50', 'Cartes mémoire', 'pour tester', './static/images/128go_sandisk_extreme.png'),
+            ('42.70', 'Cartes mémoire', 'pour tester', './static/images/128go_sandisk_sdxc_extremepro.jpg'),
+            ('42.70', 'Nouveautés et baisses de prix', 'pour tester', './static/images/128go_sandisk_sdxc_extremepro.jpg'),
+            ('12.99', 'Clés USB', 'pour tester', './static/images/32go_sandisk_cle_usb3.webp'),
+            ('7.99', 'Clés USB', 'pour tester', './static/images/16go_dtse_cle_usb2.webp'),
+            ('45.12', 'Clés USB', 'pour tester', './static/images/128go_sandisk_cle_usb3.webp'),
+            ('45.12', 'Nouveautés et baisses de prix', 'pour tester', './static/images/128go_sandisk_cle_usb3.webp'),
+            ('32.45', 'SSD', 'pour tester', './static/images/120go_samsung_ssd.webp'),
+            ('59.99', 'SSD', 'pour tester', './static/images/240go_crucial_ssd.webp'),
+            ('38.55', 'HDD', 'pour tester', './static/images/1to_maxtor_hdd.jfif'),
+            ('62.00', 'HDD', 'pour tester', './static/images/2to_wd-hdd.jfif'),
+            ('59.20', 'HDD', 'pour tester', './static/images/3to_noname_hdd.jfif'),
+            ('22.99', 'HDD', 'pour tester', './static/images/500go_samsung_hdd.jfif'),
+            ('59.20', 'Nouveautés et baisses de prix', 'pour tester', './static/images/3to_noname_hdd.jfif'),
+            ('9.99', 'RAM', 'pour tester', './static/images/2go_kingston_ram.jfif'),
+            ('7.10', 'RAM', 'pour tester', './static/images/1go_noname_ram.jfif'),
+            ('89.99', 'RAM', 'pour tester', './static/images/8gox4_gskill_ram.jfif')     
     """
 )
 '''
