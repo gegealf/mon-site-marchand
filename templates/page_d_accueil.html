@@ -6,9 +6,8 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_d_accueil.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
@@ -16,8 +15,8 @@
 <div class="container-fluid">
     <!-- titre -->
     <div class="row">
-        <!-- partie gauche -->
-        <div class="col-15 col-sm-9 col-lg-10">
+        <!-- partie gauche/haut -->
+        <div class="col-12 col-sm-9 col-lg-10">
             <div class="d-flex flex-column text-center height100">
                 <div class="image1">
                     <img class=img-responsive src="{{ url_for('static', filename='images/jungle1.jpg') }}" alt="jungle1"
@@ -32,21 +31,37 @@
                 </div>
             </div>
         </div>
-        <!-- partie droite -->
-        <div class="col-3 col-sm-3 col-lg-2">
+        <!-- partie droite/haut -->
+        <div class="col-12 col-sm-6 col-lg-2">
             <div class="d-flex flex-column text-center height100">
-                <div class="image2" style="width:100%">
-                    <img class=img-responsive src="{{ url_for('static', filename='images/singe.jpg') }}" alt="singe"
-                         style="width:100%;">
-                    <div class="zone_login">
+                <div class="image2">
+                    <div class="zone_liens_messages">
                         {% if message1 == "bienvenue" %}
-                        <p> {{ message2 }}</p>
-                        <p> accès au panier </p>
-                        <a href="{{ url_for('page_d_accueil/deconnexion') }}"> Cliquez pour vous déconnecter </a>
+                        <div class="button-group">
+                            <a class="btn btn-large btn-success" href="#">
+                            <i class="fas fa-thumbs-up"></i> {{ message2 }} </a>
+                        </div>
+                        <div class="button-group">
+                            <a class="btn btn-large btn-info" href="#">
+                            <i class="fas fa-shopping-cart"></i> mon panier <span class="badge badge-pill badge-secondary ml-2"> 5 </span></a>
+                        </div>
+                        <div class="button-group">
+                            <a class="btn btn-large btn-danger" href="{{ url_for('page_d_accueil/deconnexion') }}">
+                            <i class="fas fa-sign-out-alt"></i> vous déconnecter </a>
+                        </div>
                         {% else %}
-                        <a href="{{ url_for('page_d_authentification') }}"> Cliquez pour vous authentifier </a>
-                        <br>
-                        <a href="{{ url_for('page_creation_compte_utilisateur') }}"> Cliquez pour créer un compte </a>
+                        <div class="button-group">
+                            <a class="btn btn-large btn-success" href="{{ url_for('page_d_authentification') }}">
+                            <i class="fas fa-sign-in-alt"></i> mon compte </a>
+                        </div>
+                        <div class="button-group">
+                            <a class="btn btn-large btn-info" href="{{ url_for('page_creation_compte_utilisateur') }}">
+                            <i class="fas fa-sign-in-alt"></i> créer compte </a>
+                        </div>
+                        <div class="button-group">
+                            <a class="btn btn-large btn-danger disabled" href="#">
+                            <i class="fas fa-ban"></i> mon panier <span class="badge badge-pill badge-secondary ml-2"> 0 </span></a>
+                        </div>
                         {% endif %}
                     </div>
                 </div>
@@ -57,27 +72,38 @@
     <div class="container h-100">
         <div class="d-flex justify-content-center h-100">
             <div class="searchbar">
-                <input class="search_input" type="text" name="" placeholder="Search...">
+                <input class="search_input" type="text" name="" placeholder="recherche par marque et/ou prix">
                 <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
             </div>
         </div>
     </div>
     <!-- onglets -->
-    <nav class="nav nav-pills">
+    <nav class="nav nav-pills" style="font-family: 'Lobster', Georgia, Times, serif;">
         {% for i in range(0, lenc) %}
+        {% if i == 0 %}
         <script language="JavaScript">
-         document.write("<a class='nav-item nav-link' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
+        document.write("<a class='nav-item nav-link active' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
         </script>
+        {% else %}
+        <script language="JavaScript">
+        document.write("<a class='nav-item nav-link' href='#p{{ i }}' data-toggle='tab'>{{ liste_categories[i] }}</a>");
+        </script>
+        {% endif %}
         {% endfor %}
     </nav>
     <!-- contenu des onglets -->
     <div class="tab-content">
         {% for key, value in liste_produits.items() %}
+        {% if loop.index-1 == 0 %}
+        <script language="JavaScript">
+        document.write("<div class='tab-pane fade show active' id='p{{ loop.index-1 }}'><div class='row'>");</script>
+        {% else %}
         <script language="JavaScript">
         document.write("<div class='tab-pane fade' id='p{{ loop.index-1 }}'><div class='row'>");</script>
+        {% endif %}
         {% for el in value %}
         <script language="JavaScript">
-        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px;'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
+        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px; background-color: rgb(0, 128, 0, 0.6); border-radius: 15px;'><div><img class='image_galerie' src='{{el[2]}}' width='auto' height='250' alt='{{el[1]}}'/></div><h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");
         </script>
         {% endfor %}
         <script language="JavaScript">document.write("</div></div>");</script>

@@ -49,22 +49,26 @@ body {
 
 /* Container holding the image and the text */
 .image2 {
+    font-family: 'Lobster', Georgia, Times, serif;
     position: relative;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 20px;
+    color: white;
 }
 
 /* Top left text */
-.zone_login {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+.zone_liens_messages {
+
+}
+
+.button-group {
+    margin-top: 2%;
 }
 
 /* barre de recherche */
 .searchbar{
-    margin-bottom: auto;
-    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
     height: 60px;
     background-color: green;
     border-radius: 30px;
@@ -82,9 +86,13 @@ body {
     transition: width 0.4s linear;
 }
 
+.searchbar:hover{
+    width: 420px;
+}
+
 .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 450px;
+    width: 350px;
     caret-color:red;
     transition: width 0.4s linear;
 }
