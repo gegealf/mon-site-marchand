@@ -179,3 +179,4 @@ def recuperer_liste_produits():
     liste_categories = recuperer_categories()
     db = MBDD()
     return db.recuperer_liste_produits(liste_categories)
+
