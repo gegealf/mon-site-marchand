@@ -115,9 +115,9 @@
         {% elif el[6] == 1 %}
         <script language="JavaScript">document.write("<span class='product-discount-label'>NOUVEAUTE</span></div>");</script>
         {% else %}
-        <script language="JavaScript">document.write("<span class='product-discount-label'>***</span></div>");</script>
+        <script language="JavaScript">document.write("<span class='product-discount-label'></span></div>");</script>
         {% endif %}
-        <script language="JavaScript">document.write("<h2>{{el[0]}}</h2><p>{{el[1]}}</p></div></div>");</script>
+        <script language="JavaScript">document.write("<h2>{{el[0]}}<i class='fa fa-euro-sign'></i></h2><p style='height: 125px;'>{{el[1]}}</p></div></div>");</script>
         {% endfor %}
         <script language="JavaScript">document.write("</div></div>");</script>
         {% endfor %}
