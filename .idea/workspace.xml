@@ -4,6 +4,7 @@
     <list default="true" id="522c4c39-d246-4412-a9b1-7ae52c432fbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +19,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+
               <folding>
                 <element signature="e#46#90#0" expanded="true" />
               </folding>
@@ -30,6 +32,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
               <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
               </folding>
@@ -53,6 +56,7 @@
               <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -94,7 +98,11 @@
         <option value="$PROJECT_DIR$/static/page_d_accueil.css" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/controleur.py" />
+
         <option value="$PROJECT_DIR$/modele.py" />
+        <option value="$PROJECT_DIR$/controleur.py" />
+        <option value="$PROJECT_DIR$/templates/page_d_authentification.html" />
+        <option value="$PROJECT_DIR$/static/page_d_accueil.css" />
         <option value="$PROJECT_DIR$/templates/page_d_accueil.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
@@ -348,6 +356,7 @@
       <updated>1580211875960</updated>
     </task>
     <option name="localTasksCounter" value="22" />
+
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -355,6 +364,7 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13831478" />
+
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -399,6 +409,7 @@
     <MESSAGE value="page d'accueil: les drapeaux (en stock et baisse de prix) sont bien renseignés depuis la base de données" />
     <MESSAGE value="page d'accueil: prix et commentaires sont bien renseignés depuis la base de données" />
     <option name="LAST_COMMIT_MESSAGE" value="page d'accueil: prix et commentaires sont bien renseignés depuis la base de données" />
+
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/log.config">
@@ -491,6 +502,7 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/static/page_creation_compte_utlisateur.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="715">
@@ -543,6 +555,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+
         </state>
       </provider>
     </entry>
@@ -560,6 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+
           <folding>
             <element signature="e#0#77#0" expanded="true" />
           </folding>
@@ -581,9 +595,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bdd_site_marchand">
+
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="680">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -607,5 +622,6 @@
         </state>
       </provider>
     </entry>
+
   </component>
 </project>

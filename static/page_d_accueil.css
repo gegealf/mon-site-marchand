@@ -52,12 +52,14 @@ body {
     position: relative;
     text-align: center;
     font-size: 1.5vw;
+
     color: white;
 }
 
 /* Top left text */
 .zone_liens_messages {
         margin-top: 20px;
+
 }
 
 .button-group {
