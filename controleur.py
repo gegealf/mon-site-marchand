@@ -180,3 +180,6 @@ def recuperer_liste_produits():
     db = MBDD()
     return db.recuperer_liste_produits(liste_categories)
 
+
+def page_fiche_produit():
+    pass
