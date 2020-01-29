@@ -234,13 +234,8 @@ class MaBaseDeDonnees:
         for i in range(0, len(liste_categories)):
             self.request.execute(
                 """SELECT prix_produit_unite, commentaire, lien_photo, en_stock,
-                reapprovisionnement_en_cours, baisse_de_prix, nouveaute 
+                reapprovisionnement_en_cours, baisse_de_prix, nouveaute, numero_produit 
                 from produits WHERE categorie = '{}' """.format(liste_categories[i])
             )
             data[liste_categories[i]] = self.request.fetchall()
         return data
-
-    def nettoyer_commentaires(self, liste_produits):
-        """  certains caractères ne doivent pas apparaitre dans les commentaires (simples et double cotes)  """
-
-        return liste_produits

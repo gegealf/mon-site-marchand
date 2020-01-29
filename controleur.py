@@ -181,5 +181,5 @@ def recuperer_liste_produits():
     return db.recuperer_liste_produits(liste_categories)
 
 
-def page_fiche_produit():
-    pass
+def page_fiche_produit(numero_produit):
+    return render_template('page_fiche_produit.html', numero_produit=numero_produit)

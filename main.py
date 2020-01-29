@@ -23,7 +23,8 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/page_creation_compte_utilisateur', 'page_creation_compte_utilisateur', methods=['GET', 'POST'],
                      view_func=controleur.page_creation_compte_utilisateur)
     app.add_url_rule('/deconnexion', 'page_d_accueil/deconnexion', view_func=controleur.deconnexion)
-    app.add_url_rule('/page_fiche_produit', 'page_fiche_produit', view_func=controleur.page_fiche_produit)
+    app.add_url_rule('/page_fiche_produit/<int:numero_produit>', 'page_fiche_produit',
+                     view_func=controleur.page_fiche_produit)
 
     try:
         log.info('démarrage de l\'application')
