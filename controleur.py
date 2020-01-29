@@ -13,20 +13,20 @@ def page_d_accueil():
     liste_produits = recuperer_liste_produits()
 
     if not session.get('vous_etes_loggue'):
-        log.debug('connexion à la page d\'accueil sans authentification')
+        log.debug('connexion à la page d\'accueil SANS authentification')
         return render_template("page_d_accueil.html", message="",
                                liste_categories=liste_categories, lenc=len(liste_categories),
                                liste_produits=liste_produits
-                               )  # lien vers la page d'accueil
+                               )
 
-    log.debug('connexion à la page d\'accueil avec authentification')
+    log.debug('connexion à la page d\'accueil AVEC authentification')
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
     liste_categories = recuperer_categories()
     return render_template("page_d_accueil.html", message1=message1, message2=message2,
                            liste_categories=liste_categories, lenc=len(liste_categories),
                            liste_produits=liste_produits
-                           )  # lien vers la page d'accueil
+                           )
 
 
 def page_d_authentification():
@@ -94,7 +94,6 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
 def page_creation_compte_utilisateur():
     """                                     """
     log.debug('connexion à la page de création de compte utilisateur')
-    message_d_erreur = ''
     if request.method == 'POST':
         email_utilisateur = request.form['email']
         mdp_utilisateur = request.form['mot_de_passe']
@@ -184,5 +183,14 @@ def recuperer_liste_produits():
 
 def page_fiche_produit(numero_produit):
     """                   """
-    log.debug('connexion à la fiche du produit avec numero: %s', numero_produit)
-    return render_template('page_fiche_produit.html', numero_produit=numero_produit)
+    if not session.get('vous_etes_loggue'):
+        log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
+        return render_template('page_fiche_produit.html', numero_produit=numero_produit,
+                               message="")
+
+    log.debug('connexion AVEC authentification à la fiche du produit avec le numero: %s', numero_produit)
+    message1 = "bienvenue"
+    message2 = message1 + " " + session.get('utilisateur')
+    return render_template('page_fiche_produit.html', numero_produit=numero_produit,
+                           message1=message1, message2=message2
+                           )
