@@ -3,7 +3,6 @@
 .gallery-wrap .img-big-wrap img {
     height: 400px;
     width: 400px;
-    width: auto;
     display: inline-block;
     cursor: zoom-in;
 }
