@@ -1,4 +1,4 @@
-from flask import render_template, session, request, flash, redirect, url_for
+from flask import render_template, session, request, redirect, url_for
 import logging
 import hashlib
 from modele import MaBaseDeDonnees as MBDD
@@ -11,9 +11,11 @@ def page_d_accueil():
     """                 """
     liste_categories = recuperer_categories()
     liste_produits = recuperer_liste_produits()
+    session['page_precedente'] = request.referrer
 
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil SANS authentification')
+
         return render_template("page_d_accueil.html", message="",
                                liste_categories=liste_categories, lenc=len(liste_categories),
                                liste_produits=liste_produits
@@ -46,7 +48,7 @@ def page_d_authentification():
         else:
             log.debug('connexion à la page d\'accueil après authentification')
             session['vous_etes_loggue'] = True
-            return redirect(url_for('page_d_accueil'))
+            return redirect(session.get('page_precedente'))
 
     return render_template('page_d_authentification.html', message_d_erreur=message_d_erreur)
 
@@ -55,7 +57,7 @@ def deconnexion():
     """                 """
     log.debug('deconnexion du compte effectuée')
     session['vous_etes_loggue'] = False
-    return redirect(url_for('page_d_accueil'))
+    return redirect(redirect_url())
 
 
 def page_administrateur():
@@ -183,6 +185,7 @@ def recuperer_liste_produits():
 
 def page_fiche_produit(numero_produit):
     """                   """
+    session['page_precedente'] = request.referrer
     if not session.get('vous_etes_loggue'):
         log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
         return render_template('page_fiche_produit.html', numero_produit=numero_produit,
@@ -194,3 +197,8 @@ def page_fiche_produit(numero_produit):
     return render_template('page_fiche_produit.html', numero_produit=numero_produit,
                            message1=message1, message2=message2
                            )
+
+
+def redirect_url(default='index'):
+    """             """
+    return request.args.get('next') or request.referrer or url_for(default)
