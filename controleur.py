@@ -155,6 +155,7 @@ def verifer_format_mdp(mdp_utilisateur):
 
 def verifer_format_donnees(utilisateur):
     """                                     """
+    log.debug('vérification du format des données')
     if utilisateur[2] and utilisateur[3] and utilisateur[4] and utilisateur[4].isdigit() \
             and (len(utilisateur[4]) == 10 or len(utilisateur[4]) == 13) \
             and utilisateur[6] and utilisateur[7] and utilisateur[8]:
@@ -182,4 +183,6 @@ def recuperer_liste_produits():
 
 
 def page_fiche_produit(numero_produit):
+    """                   """
+    log.debug('connexion à la fiche du produit avec numero: %s', numero_produit)
     return render_template('page_fiche_produit.html', numero_produit=numero_produit)
