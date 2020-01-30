@@ -19,7 +19,11 @@
                 <article class="card-body m-0 pt-0 pl-5">
                     <h3 class="title text-uppercase">Nom du produit</h3>
                     <div class="mb-3 mt-3">
+                        {% if produit[5] == 1 %}
                         <span class="h7 text-success">En stock.</span>
+                        {% elif produit[6] == 1 %}
+                        <span class="h7 text-success">REAPPROVIONNEMENT</span>
+                        {% endif %}
                     </div>
                     <div class="mb-3 mt-3">
                         <span class="price-title">Prix :</span>
@@ -38,12 +42,12 @@
             <aside class="col-sm-3 m-0 pt-0 pl-5">
                 <br>
                 <div class="row ">
-                    <a class="btn btn-large btn-info" href="#">
+                    <a class="btn btn-large btn-success" href="#">
                         <i class="fas fa-shopping-cart"></i> ajouter au panier </a>
                 </div>
                 <br>
                 <div class="row mb-4 mt-4">
-                    <a class="btn btn-large btn-success" href="#">
+                    <a class="btn btn-large btn-info" href="#">
                         <i class="fas fa-credit-card"></i> Passer la commande </a>
                 </div>
                 <hr class="m-0 p-0">

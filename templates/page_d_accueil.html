@@ -96,31 +96,43 @@
     <div class="tab-content">
         {% for key, value in liste_produits.items() %}
         {% if loop.index-1 == 0 %}
-        <script language="JavaScript">
-        document.write("<div class='tab-pane fade show active' id='p{{ loop.index-1 }}'><div class='row'>");</script>
+        <div class='tab-pane fade show active' id='p{{ loop.index-1 }}'>
+            <div class='row'>
         {% else %}
         <script language="JavaScript">
         document.write("<div class='tab-pane fade' id='p{{ loop.index-1 }}'><div class='row'>");</script>
         {% endif %}
         {% for produit in value %}
-        <script language="JavaScript">
-        document.write("<div class='col-12 col-sm-6 col-md-4 col-lg-3'><div class='d-flex flex-column text-center border height100' style='margin-top: 10px; background-color: rgb(0, 128, 0, 0.6); border-radius: 15px;'><div><img class='image_galerie' src='./static/{{produit[2]}}' width='auto' height='250' alt='{{produit[1]}}'/><ul class='social'><li><a href='{{ url_for( 'page_fiche_produit', numero_produit=produit[7] ) }}' data-tip='voir la fiche du produit'><i class='fa fa-search'></i></a></li><li><a href='' data-tip='ajouter au panier'><i class='fa fa-shopping-cart'></i></a></li></ul>");
-        </script>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+                <div class='d-flex flex-column text-center border height100' style='margin-top: 10px; background-color: rgb(0, 128, 0, 0.6); border-radius: 15px;'>
+                    <div>
+                        <img class='image_galerie' src='./static/{{produit[2]}}' width='auto' height='250' alt='{{produit[1]}}'/>
+                        <ul class='social'>
+                            <li>
+                                <a href="{{ url_for( 'page_fiche_produit', numero_produit=produit[7] ) }}" data-tip='voir la fiche du produit'>
+                                    <i class='fa fa-search'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='' data-tip='ajouter au panier'><i class='fa fa-shopping-cart'></i></a>
+                            </li>
+                        </ul>
         {% if produit[3] == 1 %}
-        <script language="JavaScript">document.write("<span class='product-new-label'>EN STOCK</span>");</script>
+        <span class='product-new-label'>EN STOCK</span>
         {% elif produit[4] == 1 %}
-        <script language="JavaScript">document.write("<span class='product-new-label'>REAPPROVIONNEMENT</span>");</script>
+        <span class='product-new-label'>REAPPROVIONNEMENT</span>
         {% endif %}
         {% if produit[5] != 0 %}
-        <script language="JavaScript">document.write("<span class='product-discount-label'>{{produit[5]}}%</span></div>");</script>
+        <span class='product-discount-label'>{{produit[5]}}%</span></div>
         {% elif produit[6] == 1 %}
-        <script language="JavaScript">document.write("<span class='product-discount-label'>NOUVEAUTE</span></div>");</script>
+        <span class='product-discount-label'>NOUVEAUTE</span></div>
         {% else %}
-        <script language="JavaScript">document.write("<span class='product-discount-label'></span></div>");</script>
+        <span class='product-discount-label'></span></div>
         {% endif %}
-        <script language="JavaScript">document.write("<h2>{{produit[0]}}<i class='fa fa-euro-sign'></i></h2><p style='height: 125px;'>{{produit[1]}}</p></div></div>");</script>
+        <h2>{{produit[0]}}<i class='fa fa-euro-sign'></i></h2><p style='height: 125px;'>{{produit[1]}}</p>
+            </div></div>
         {% endfor %}
-        <script language="JavaScript">document.write("</div></div>");</script>
+        </div></div>
         {% endfor %}
     </div>
 </div>
