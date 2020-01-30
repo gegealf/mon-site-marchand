@@ -188,15 +188,25 @@ def page_fiche_produit(numero_produit):
     session['page_precedente'] = request.referrer
     db = MBDD()
     produit = db.recuperer_produit(numero_produit)
+    infos_produit = produit[4].split('_', 2)
+    infos = [
+        infos_produit[2].split('.', 1)[0].replace('_', ' '),
+        infos_produit[0].split('/', 1)[1],
+        infos_produit[1]
+    ]
+    print(infos)
+    # print(infos_produit[0].split('/', 1)[1])
+    # print(infos_produit[1])
+    # print(infos_produit[2].split('.', 1)[0].replace('_', ' '))
     if not session.get('vous_etes_loggue'):
         log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
-        return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit, message="")
+        return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
+                               message="", infos=infos
+                               )
 
     log.debug('connexion AVEC authentification à la fiche du produit avec le numero: %s', numero_produit)
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
-    return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit, message1=message1,
-                           message2=message2
+    return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
+                           message1=message1, message2=message2, infos=infos
                            )
-
-

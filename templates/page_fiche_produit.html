@@ -5,7 +5,7 @@
 
 <div class="container">
     <br>
-    <div class="card border-0">
+    <div class="card border-0" style="background-color: rgb(0, 128, 0, 0.7);">
         <div class="row">
             <aside class="col-sm-4">
                 <article class="gallery-wrap">
@@ -17,7 +17,7 @@
             <aside class="col-sm-5">
                 <br>
                 <article class="card-body m-0 pt-0 pl-5">
-                    <h3 class="title text-uppercase">Nom du produit</h3>
+                    <h3 class="title text-uppercase">{{ infos[0] }} {{ infos[1] }}</h3>
                     <div class="mb-3 mt-3">
                         {% if produit[5] == 1 %}
                         <span class="h7 text-success">En stock.</span>
@@ -34,8 +34,8 @@
                         <dd><p>{{ produit[3] }} </p></dd>
                     </dl>
                     <dl class="param param-feature">
-                        <dt>Capacité:</dt>
-                        <dd>16go</dd>
+                        <dt>Marque:</dt>
+                        <dd>{{ infos[2] }}</dd>
                     </dl>
                 </article>
             </aside>
