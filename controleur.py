@@ -57,7 +57,7 @@ def deconnexion():
     """                 """
     log.debug('deconnexion du compte effectuée')
     session['vous_etes_loggue'] = False
-    return redirect(redirect_url())
+    return redirect(request.referrer)
 
 
 def page_administrateur():
@@ -200,6 +200,3 @@ def page_fiche_produit(numero_produit):
                            )
 
 
-def redirect_url(default='index'):
-    """             """
-    return request.args.get('next') or request.referrer or url_for(default)

@@ -23,17 +23,15 @@
                     </div>
                     <div class="mb-3 mt-3">
                         <span class="price-title">Prix :</span>
-                        <span class="price color-price">5<sup>€</sup></span>
+                        <span class="price color-price">{{ produit[1] }}<sup>€</sup></span>
                     </div>
                     <dl class="item-property">
-                        <dt>Description</dt>
-                        <dd><p>Here goes description consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco </p></dd>
+                        <dt>Description:</dt>
+                        <dd><p>{{ produit[3] }} </p></dd>
                     </dl>
                     <dl class="param param-feature">
-                        <dt>Poids</dt>
-                        <dd>200g</dd>
+                        <dt>Capacité:</dt>
+                        <dd>16go</dd>
                     </dl>
                 </article>
             </aside>
@@ -51,6 +49,10 @@
                 <hr class="m-0 p-0">
                 <div class="row mb-4 mt-4">
                     il reste 3 exemplaires
+                </div>
+                <div class="row mb-4 mt-4">
+                    <a class="btn btn-large btn-danger" href="{{ url_for('page_d_accueil') }}">
+                        <i class="fas fa-home"></i> Retour à la page d'accueil </a>
                 </div>
             </aside>
         </div>
