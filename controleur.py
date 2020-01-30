@@ -1,4 +1,4 @@
-from flask import render_template, session, request, flash, redirect, url_for
+from flask import render_template, session, request, redirect, url_for
 import logging
 import hashlib
 from modele import MaBaseDeDonnees as MBDD
@@ -11,22 +11,24 @@ def page_d_accueil():
     """                 """
     liste_categories = recuperer_categories()
     liste_produits = recuperer_liste_produits()
+    session['page_precedente'] = request.referrer
 
     if not session.get('vous_etes_loggue'):
-        log.debug('connexion à la page d\'accueil sans authentification')
+        log.debug('connexion à la page d\'accueil SANS authentification')
+
         return render_template("page_d_accueil.html", message="",
                                liste_categories=liste_categories, lenc=len(liste_categories),
                                liste_produits=liste_produits
-                               )  # lien vers la page d'accueil
+                               )
 
-    log.debug('connexion à la page d\'accueil avec authentification')
+    log.debug('connexion à la page d\'accueil AVEC authentification')
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
     liste_categories = recuperer_categories()
     return render_template("page_d_accueil.html", message1=message1, message2=message2,
                            liste_categories=liste_categories, lenc=len(liste_categories),
                            liste_produits=liste_produits
-                           )  # lien vers la page d'accueil
+                           )
 
 
 def page_d_authentification():
@@ -46,7 +48,7 @@ def page_d_authentification():
         else:
             log.debug('connexion à la page d\'accueil après authentification')
             session['vous_etes_loggue'] = True
-            return redirect(url_for('page_d_accueil'))
+            return redirect(session.get('page_precedente'))
 
     return render_template('page_d_authentification.html', message_d_erreur=message_d_erreur)
 
@@ -55,7 +57,7 @@ def deconnexion():
     """                 """
     log.debug('deconnexion du compte effectuée')
     session['vous_etes_loggue'] = False
-    return redirect(url_for('page_d_accueil'))
+    return redirect(request.referrer)
 
 
 def page_administrateur():
@@ -94,7 +96,6 @@ def verifier_le_compte(email_utilisateur, mdp_utilisateur):
 def page_creation_compte_utilisateur():
     """                                     """
     log.debug('connexion à la page de création de compte utilisateur')
-    message_d_erreur = ''
     if request.method == 'POST':
         email_utilisateur = request.form['email']
         mdp_utilisateur = request.form['mot_de_passe']
@@ -155,6 +156,7 @@ def verifer_format_mdp(mdp_utilisateur):
 
 def verifer_format_donnees(utilisateur):
     """                                     """
+    log.debug('vérification du format des données')
     if utilisateur[2] and utilisateur[3] and utilisateur[4] and utilisateur[4].isdigit() \
             and (len(utilisateur[4]) == 10 or len(utilisateur[4]) == 13) \
             and utilisateur[6] and utilisateur[7] and utilisateur[8]:
@@ -180,3 +182,31 @@ def recuperer_liste_produits():
     db = MBDD()
     return db.recuperer_liste_produits(liste_categories)
 
+
+def page_fiche_produit(numero_produit):
+    """                   """
+    session['page_precedente'] = request.referrer
+    db = MBDD()
+    produit = db.recuperer_produit(numero_produit)
+    infos_produit = produit[4].split('_', 2)
+    infos = [
+        infos_produit[2].split('.', 1)[0].replace('_', ' '),
+        infos_produit[0].split('/', 1)[1],
+        infos_produit[1]
+    ]
+    print(infos)
+    # print(infos_produit[0].split('/', 1)[1])
+    # print(infos_produit[1])
+    # print(infos_produit[2].split('.', 1)[0].replace('_', ' '))
+    if not session.get('vous_etes_loggue'):
+        log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
+        return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
+                               message="", infos=infos
+                               )
+
+    log.debug('connexion AVEC authentification à la fiche du produit avec le numero: %s', numero_produit)
+    message1 = "bienvenue"
+    message2 = message1 + " " + session.get('utilisateur')
+    return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
+                           message1=message1, message2=message2, infos=infos
+                           )

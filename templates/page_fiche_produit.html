@@ -1,0 +1,67 @@
+{% extends "base_commune.html" %}
+
+{% block titre_page %}page fiche produit détails{% endblock %}
+{% block body %}
+
+<div class="container">
+    <br>
+    <div class="card border-0" style="background-color: rgb(0, 128, 0, 0.7);">
+        <div class="row">
+            <aside class="col-sm-4">
+                <article class="gallery-wrap">
+                    <div class="img-big-wrap">
+                        <div><a href="#"><img src="{{ url_for('static', filename=produit[4]) }}"></a></div>
+                    </div>
+                </article>
+            </aside>
+            <aside class="col-sm-5">
+                <br>
+                <article class="card-body m-0 pt-0 pl-5">
+                    <h3 class="title text-uppercase">{{ infos[0] }} {{ infos[1] }}</h3>
+                    <div class="mb-3 mt-3">
+                        {% if produit[5] == 1 %}
+                        <span class="h7 text-success">En stock.</span>
+                        {% elif produit[6] == 1 %}
+                        <span class="h7 text-success">REAPPROVIONNEMENT</span>
+                        {% endif %}
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <span class="price-title">Prix :</span>
+                        <span class="price color-price">{{ produit[1] }}<sup>€</sup></span>
+                    </div>
+                    <dl class="item-property">
+                        <dt>Description:</dt>
+                        <dd><p>{{ produit[3] }} </p></dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt>Marque:</dt>
+                        <dd>{{ infos[2] }}</dd>
+                    </dl>
+                </article>
+            </aside>
+            <aside class="col-sm-3 m-0 pt-0 pl-5">
+                <br>
+                <div class="row ">
+                    <a class="btn btn-large btn-success" href="#">
+                        <i class="fas fa-shopping-cart"></i> ajouter au panier </a>
+                </div>
+                <br>
+                <div class="row mb-4 mt-4">
+                    <a class="btn btn-large btn-info" href="#">
+                        <i class="fas fa-credit-card"></i> Passer la commande </a>
+                </div>
+                <hr class="m-0 p-0">
+                <div class="row mb-4 mt-4">
+                    il reste 3 exemplaires
+                </div>
+                <div class="row mb-4 mt-4">
+                    <a class="btn btn-large btn-danger" href="{{ url_for('page_d_accueil') }}">
+                        <i class="fas fa-home"></i> Retour à la page d'accueil </a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+body {
+	display: table;
+	width: 100%;
+	background: url('/static/images/fond_elephant.jpg') no-repeat center fixed;
+	background-size: cover;
+}
+
+.image1, .image2 {
+    margin-top: 10px;
+}
+
+.image_galerie {
+    margin-top: 2%;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Container holding the image and the text */
+.image1 {
+    font-family: 'Lobster', Georgia, Times, serif;
+    position: relative;
+    text-align: center;
+    font-size: 3.5vw;
+    color: cyan;
+}
+#logo1 {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+}
+
+/* Centered text */
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo2 {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+}
+
+/* Container holding the image and the text */
+.image2 {
+    font-family: 'Lobster', Georgia, Times, serif;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vw;
+
+    color: white;
+}
+
+/* Top left text */
+.zone_liens_messages {
+        margin-top: 20px;
+
+}
+
+.button-group {
+    margin-top: 2%;
+}
+
