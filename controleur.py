@@ -9,13 +9,12 @@ log = logging.getLogger(__name__)
 
 def page_d_accueil():
     """                 """
+    session['page_precedente'] = redirect_url()
+    # print('accueil:', session.get('page_precedente'))
     liste_categories = recuperer_categories()
     liste_produits = recuperer_liste_produits()
-    session['page_precedente'] = request.referrer
-
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil SANS authentification')
-
         return render_template("page_d_accueil.html", message="",
                                liste_categories=liste_categories, lenc=len(liste_categories),
                                liste_produits=liste_produits
@@ -35,19 +34,21 @@ def page_d_authentification():
     """          """
     log.debug('connexion à la page d\'authentification')
     message_d_erreur = None
+    # print('auth:', session.get('page_precedente'))
     if request.method == 'POST':
         mdp_utilisateur = request.form['mot_de_passe']
         email_utilisateur = request.form['email']
         compte_utilisateur_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
         if compte_utilisateur_valide != "vrai":
+            session['vous_etes_loggue'] = False
             if compte_utilisateur_valide == "accès_admin":
                 return redirect(url_for('page_administrateur'))
             log.debug('erreur lors de l\'authentification')
-            session['vous_etes_loggue'] = False
             message_d_erreur = 'erreur lors de l\'authentification, veuillez recommencer'
         else:
             log.debug('connexion à la page d\'accueil après authentification')
             session['vous_etes_loggue'] = True
+            session['panier'] = []
             return redirect(session.get('page_precedente'))
 
     return render_template('page_d_authentification.html', message_d_erreur=message_d_erreur)
@@ -57,6 +58,7 @@ def deconnexion():
     """                 """
     log.debug('deconnexion du compte effectuée')
     session['vous_etes_loggue'] = False
+    session['panier'] = []
     return redirect(request.referrer)
 
 
@@ -185,7 +187,8 @@ def recuperer_liste_produits():
 
 def page_fiche_produit(numero_produit):
     """                   """
-    session['page_precedente'] = request.referrer
+    session['page_precedente'] = redirect_url()
+    # print('fiche:', session.get('page_precedente'))
     db = MBDD()
     produit = db.recuperer_produit(numero_produit)
     infos_produit = produit[4].split('_', 2)
@@ -194,10 +197,6 @@ def page_fiche_produit(numero_produit):
         infos_produit[0].split('/', 1)[1],
         infos_produit[1]
     ]
-    print(infos)
-    # print(infos_produit[0].split('/', 1)[1])
-    # print(infos_produit[1])
-    # print(infos_produit[2].split('.', 1)[0].replace('_', ' '))
     if not session.get('vous_etes_loggue'):
         log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
         return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
@@ -210,3 +209,17 @@ def page_fiche_produit(numero_produit):
     return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
                            message1=message1, message2=message2, infos=infos
                            )
+
+
+def ajouter_au_panier(numero_produit):
+    """                 """
+    if not session.get('vous_etes_loggue'):
+        return redirect(session.get('page_precedente'))
+
+    log.debug('ajout du produit numero: %s dans le panier', numero_produit)
+    session['panier'] += [numero_produit]
+    return redirect(request.referrer)
+
+
+def redirect_url():
+    return request.args.get('next') or request.referrer or url_for('page_d_accueil')

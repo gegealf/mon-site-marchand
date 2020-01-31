@@ -25,6 +25,10 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/deconnexion', 'page_d_accueil/deconnexion', view_func=controleur.deconnexion)
     app.add_url_rule('/page_fiche_produit/<int:numero_produit>', 'page_fiche_produit',
                      view_func=controleur.page_fiche_produit)
+    app.add_url_rule('/page_d_accueil/ajouter_au_panier/<int:numero_produit>', 'page_d_accueil/ajouter_au_panier',
+                     view_func=controleur.ajouter_au_panier)
+    app.add_url_rule('/page_fiche_produit/<int:numero_produit>/ajouter_au_panier',
+                     'page_fiche_produit/ajouter_au_panier', view_func=controleur.ajouter_au_panier)
 
     try:
         log.info('démarrage de l\'application')

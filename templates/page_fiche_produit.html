@@ -35,14 +35,14 @@
                     </dl>
                     <dl class="param param-feature">
                         <dt>Marque:</dt>
-                        <dd>{{ infos[2] }}</dd>
+                        <dd class="title text-uppercase">{{ infos[2] }}</dd>
                     </dl>
                 </article>
             </aside>
             <aside class="col-sm-3 m-0 pt-0 pl-5">
                 <br>
                 <div class="row ">
-                    <a class="btn btn-large btn-success" href="#">
+                    <a class="btn btn-large btn-success" href="{{ url_for('page_fiche_produit/ajouter_au_panier', numero_produit=produit[0]) }}">
                         <i class="fas fa-shopping-cart"></i> ajouter au panier </a>
                 </div>
                 <br>
