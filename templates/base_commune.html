@@ -44,12 +44,12 @@
                                 <i class="fas fa-thumbs-up"></i> {{ message2 }} </a>
                         </div>
                         <div class="button-group">
-                            <a class="btn btn-large btn-info" href="#">
+                            <a class="btn btn-large btn-info" href="{{ url_for('page_panier') }}">
                                 <i class="fas fa-shopping-cart"></i> mon panier <span
                                     class="badge badge-pill badge-secondary ml-2"> 5 </span></a>
                         </div>
                         <div class="button-group">
-                            <a class="btn btn-large btn-danger" href="{{ url_for('page_d_accueil/deconnexion') }}">
+                            <a class="btn btn-large btn-danger" href="{{ url_for('deconnexion') }}">
                                 <i class="fas fa-sign-out-alt"></i> vous déconnecter </a>
                         </div>
                         {% else %}

@@ -9,12 +9,14 @@ log = logging.getLogger(__name__)
 
 def page_d_accueil():
     """                 """
-    session['page_precedente'] = redirect_url()
-    # print('accueil:', session.get('page_precedente'))
     liste_categories = recuperer_categories()
     liste_produits = recuperer_liste_produits()
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil SANS authentification')
+        print('page accueil sans auth1: ', session.get('page_precedente'))
+        session['page_precedente'] = redirect_url()
+        print('page accueil sans auth2: ', session.get('page_precedente'))
+
         return render_template("page_d_accueil.html", message="",
                                liste_categories=liste_categories, lenc=len(liste_categories),
                                liste_produits=liste_produits
@@ -24,6 +26,10 @@ def page_d_accueil():
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
     liste_categories = recuperer_categories()
+    print('page accueil avec auth1: ', session.get('page_precedente'))
+    session['page_precedente'] = redirect_url()
+    print('page accueil avec auth2: ', session.get('page_precedente'))
+
     return render_template("page_d_accueil.html", message1=message1, message2=message2,
                            liste_categories=liste_categories, lenc=len(liste_categories),
                            liste_produits=liste_produits
@@ -34,7 +40,6 @@ def page_d_authentification():
     """          """
     log.debug('connexion à la page d\'authentification')
     message_d_erreur = None
-    # print('auth:', session.get('page_precedente'))
     if request.method == 'POST':
         mdp_utilisateur = request.form['mot_de_passe']
         email_utilisateur = request.form['email']
@@ -46,7 +51,7 @@ def page_d_authentification():
             log.debug('erreur lors de l\'authentification')
             message_d_erreur = 'erreur lors de l\'authentification, veuillez recommencer'
         else:
-            log.debug('connexion à la page d\'accueil après authentification')
+            log.debug('connexion à la page d\'accueil/fiche_produit après authentification')
             session['vous_etes_loggue'] = True
             session['panier'] = []
             return redirect(session.get('page_precedente'))
@@ -56,10 +61,14 @@ def page_d_authentification():
 
 def deconnexion():
     """                 """
-    log.debug('deconnexion du compte effectuée')
+    log.debug('deconnexion du compte effectuée et panier vidé')
     session['vous_etes_loggue'] = False
     session['panier'] = []
-    return redirect(request.referrer)
+    print('page deconnexion1: ', session.get('page_precedente'))
+    session['page_precedente'] = redirect_url()
+    print('page deconnexion2: ', session.get('page_precedente'))
+
+    return redirect(session.get('page_precedente'))
 
 
 def page_administrateur():
@@ -187,8 +196,6 @@ def recuperer_liste_produits():
 
 def page_fiche_produit(numero_produit):
     """                   """
-    session['page_precedente'] = redirect_url()
-    # print('fiche:', session.get('page_precedente'))
     db = MBDD()
     produit = db.recuperer_produit(numero_produit)
     infos_produit = produit[4].split('_', 2)
@@ -199,6 +206,10 @@ def page_fiche_produit(numero_produit):
     ]
     if not session.get('vous_etes_loggue'):
         log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
+        print('page fiche sans auth1: ', session.get('page_precedente'))
+        session['page_precedente'] = redirect_url()
+        print('page fiche sans auth2: ', session.get('page_precedente'))
+
         return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
                                message="", infos=infos
                                )
@@ -206,6 +217,10 @@ def page_fiche_produit(numero_produit):
     log.debug('connexion AVEC authentification à la fiche du produit avec le numero: %s', numero_produit)
     message1 = "bienvenue"
     message2 = message1 + " " + session.get('utilisateur')
+    print('page fiche avec auth1: ', session.get('page_precedente'))
+    session['page_precedente'] = redirect_url()
+    print('page fiche avec auth2: ', session.get('page_precedente'))
+
     return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
                            message1=message1, message2=message2, infos=infos
                            )
@@ -214,11 +229,20 @@ def page_fiche_produit(numero_produit):
 def ajouter_au_panier(numero_produit):
     """                 """
     if not session.get('vous_etes_loggue'):
-        return redirect(session.get('page_precedente'))
+        return redirect(redirect_url())
 
     log.debug('ajout du produit numero: %s dans le panier', numero_produit)
     session['panier'] += [numero_produit]
-    return redirect(request.referrer)
+    return redirect(redirect_url())
+
+
+def page_panier():
+    """                 """
+    if not session.get('vous_etes_loggue'):
+        return redirect(redirect_url())
+
+    log.debug('accès à la page panier avec les produit numero: %s dans le panier', session['panier'])
+    return render_template('page_panier.html', liste_produits=session['panier'])
 
 
 def redirect_url():
