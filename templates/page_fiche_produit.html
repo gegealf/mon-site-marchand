@@ -46,10 +46,18 @@
                         <i class="fas fa-shopping-cart"></i> ajouter au panier </a>
                 </div>
                 <br>
+                {% if nombre_produits_dans_panier == 0 %}
+                <br>
+                <div class="row mb-4 mt-4">
+                    <a class="btn btn-large btn-info disabled" href="#">
+                        <i class="fas fa-credit-card"></i> Passer commande </a>
+                </div>
+                {% else %}
                 <div class="row mb-4 mt-4">
                     <a class="btn btn-large btn-info" href="#">
-                        <i class="fas fa-credit-card"></i> Passer la commande </a>
+                        <i class="fas fa-credit-card"></i> Passer commande </a>
                 </div>
+                {% endif %}
                 <hr class="m-0 p-0">
                 <div class="row mb-4 mt-4">
                     il reste 3 exemplaires
