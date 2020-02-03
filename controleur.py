@@ -241,8 +241,14 @@ def page_panier():
     if not session.get('vous_etes_loggue'):
         return redirect(redirect_url())
 
+    db = MBDD()
+    liste_produits = {}
+    for numero_produit in session['panier']:
+        liste_produits[numero_produit] = db.recuperer_produit(numero_produit)
+
+    print(liste_produits)
     log.debug('accès à la page panier avec les produit numero: %s dans le panier', session['panier'])
-    return render_template('page_panier.html', liste_produits=session['panier'])
+    return render_template('page_panier.html', liste_produits=liste_produits)
 
 
 def redirect_url():
