@@ -115,7 +115,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" data-tip='ajouter au panier'><i class='fa fa-shopping-cart'></i></a>
+                                {% if message == "" %}
+                                <a href="#" data-tip='vous devez être connecté' style="background-color:red;"><i class='fa fa-shopping-cart'></i></a>
+                                {% else %}
+                                <a href="{{ url_for('page_fiche_produit/ajouter_au_panier', numero_produit=produit[7]) }}"
+                                   data-tip='ajouter au panier'><i class='fa fa-shopping-cart'></i></a>
+                                {% endif %}
                             </li>
                         </ul>
         {% if produit[3] == 1 %}

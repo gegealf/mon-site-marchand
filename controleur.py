@@ -57,7 +57,7 @@ def deconnexion():
     log.debug('deconnexion du compte effectuée et panier vidé')
     session['vous_etes_loggue'] = False
     session['panier'] = []
-    return redirect(session.get('page_precedente'))
+    return redirect(redirect_url())
 
 
 def page_administrateur():
