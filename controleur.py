@@ -230,7 +230,7 @@ def recuperer_liste_produits():
     liste_categories = recuperer_categories()
     return db.recuperer_liste_produits(liste_categories)
 
-
+  
 def ajouter_au_panier(numero_produit):
     """                 """
     if not session.get('vous_etes_loggue'):
@@ -257,3 +257,4 @@ def supprimer_du_panier(numero_produit):
 
 def redirect_url():
     return request.args.get('next') or request.referrer or url_for('page_d_accueil')
+
