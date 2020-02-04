@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title> {% block titre_page %}{% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_d_accueil.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base_commune.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_fiche_produit.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
