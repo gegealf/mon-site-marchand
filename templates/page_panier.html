@@ -10,6 +10,10 @@
                     <img class='image_galerie' src='./static/{{produit[4]}}' width='auto' height='250' alt='{{produit[1]}}'/>
                     <h2>{{produit[1]}}<i class='fa fa-euro-sign'></i></h2><p style='height: 125px;'>{{produit[3]}}</p>
                     <!-- bouton pour supprimer le produit du panier -->
+                    <div class="row">
+                        <a class="btn btn-large btn-danger" href="{{ url_for('page_panier/supprimer_du_panier', numero_produit=key) }}">
+                            <i class="fas fa-shopping-cart"></i> supprimer du panier </a>
+                    </div><br>
                 </div>
             </div>
         </div>
