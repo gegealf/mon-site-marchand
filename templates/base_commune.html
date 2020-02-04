@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title> {% block titre_page %}{% endblock %} </title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_d_accueil.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base_commune.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_d_accueil.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_fiche_produit.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_d_erreur.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -35,7 +36,6 @@
         </div>
         <!-- partie droite/haut -->
         <div class="col-12 col-sm-8 col-lg-2">
-
             <div class="d-flex flex-column text-center height100">
                 <div class="image2">
                     <div class="zone_liens_messages">

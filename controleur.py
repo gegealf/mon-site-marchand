@@ -140,7 +140,7 @@ def page_fiche_produit(numero_produit):
 def page_panier():
     """                 """
     if not session.get('vous_etes_loggue'):
-        return redirect(redirect_url())
+        return render_template('page_d_erreur.html')
     db = MBDD()
     liste_produits = {}
     for numero_produit in session.get('panier'):
@@ -230,7 +230,7 @@ def recuperer_liste_produits():
     liste_categories = recuperer_categories()
     return db.recuperer_liste_produits(liste_categories)
 
-  
+
 def ajouter_au_panier(numero_produit):
     """                 """
     if not session.get('vous_etes_loggue'):
@@ -244,7 +244,7 @@ def ajouter_au_panier(numero_produit):
 def supprimer_du_panier(numero_produit):
     """                 """
     if not session.get('vous_etes_loggue'):
-        return redirect(redirect_url())
+        return render_template('page_d_erreur.html')
     log.debug('suppression du produit numero: %s dans le panier', numero_produit)
     ma_nouvelle_liste = session.get('panier')
     ma_nouvelle_liste.remove(numero_produit)
@@ -255,6 +255,9 @@ def supprimer_du_panier(numero_produit):
     return redirect(redirect_url())
 
 
+def page_d_erreur():
+    return render_template('page_d_erreur.html')
+
+
 def redirect_url():
     return request.args.get('next') or request.referrer or url_for('page_d_accueil')
-

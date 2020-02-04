@@ -32,6 +32,7 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/page_panier', 'page_panier', view_func=controleur.page_panier)
     app.add_url_rule('/page_panier/<int:numero_produit>/supprimer_du_panier', 'page_panier/supprimer_du_panier',
                      view_func=controleur.supprimer_du_panier)
+    app.add_url_rule('/page_d_erreur', 'page_d_erreur', view_func=controleur.page_d_erreur)
 
     try:
         log.info('démarrage de l\'application')
