@@ -87,7 +87,7 @@ request.execute(
     """
         INSERT INTO utilisateurs (email, mdp, nom, prenom, tel, numero_voie, nom_voie, code_postal, ville)
         SELECT 'gege@gege.com', '46d67f3083f7c097922e45295137d48e0827ca3484bb27749cbeca5743906203', 
-        'gege', 'alf', 0600000000, 2, 'rue machinchose', 75011, 'paris'
+        'alf', 'gege', 0600000000, 2, 'rue machinchose', 75011, 'paris'
         WHERE NOT EXISTS (SELECT * FROM utilisateurs WHERE email = 'gege@gege.com')
     """
 )

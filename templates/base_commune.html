@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title> {% block titre_page %}{% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_d_accueil.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base_commune.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_fiche_produit.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,15 +44,37 @@
                             <a class="btn btn-large btn-success" href="#">
                                 <i class="fas fa-thumbs-up"></i> {{ message2 }} </a>
                         </div>
-                        <div class="button-group">
-                            <a class="btn btn-large btn-info" href="#">
-                                <i class="fas fa-shopping-cart"></i> mon panier <span
-                                    class="badge badge-pill badge-secondary ml-2"> 5 </span></a>
-                        </div>
-                        <div class="button-group">
-                            <a class="btn btn-large btn-danger" href="{{ url_for('page_d_accueil/deconnexion') }}">
-                                <i class="fas fa-sign-out-alt"></i> vous déconnecter </a>
-                        </div>
+                            {% if message3 == "panier" %}
+                            <div class="button-group">
+                                <a class="btn btn-large btn-info" href="#}}">
+                                    <i class="fas fa-credit-card"></i> passer commande </a>
+                            </div>
+                            <div class="button-group">
+                                <a class="btn btn-large btn-danger" href="{{ url_for('page_d_accueil') }}">
+                                    <i class="fas fa-home"></i> page d'accueil </a>
+                            </div>
+                            {% else %}
+                                {% if nombre_produits_dans_panier == 0 %}
+                                <div class="button-group">
+                                    <a class="btn btn-large btn-info disabled" href="{{ url_for('page_panier') }}">
+                                        <i class="fas fa-shopping-cart"></i> mon panier <span
+                                            class="badge badge-pill badge-secondary ml-2">
+                                            0 </span></a>
+                                </div>
+
+                                {% else %}
+                                <div class="button-group">
+                                    <a class="btn btn-large btn-info" href="{{ url_for('page_panier') }}">
+                                        <i class="fas fa-shopping-cart"></i> mon panier <span
+                                            class="badge badge-pill badge-secondary ml-2">
+                                            {{ nombre_produits_dans_panier }} </span></a>
+                                </div>
+                                {% endif %}
+                            <div class="button-group">
+                                <a class="btn btn-large btn-danger" href="{{ url_for('deconnexion') }}">
+                                    <i class="fas fa-sign-out-alt"></i> vous déconnecter </a>
+                            </div>
+                            {% endif %}
                         {% else %}
                         <div class="button-group">
                             <a class="btn btn-large btn-success" href="{{ url_for('page_d_authentification') }}">

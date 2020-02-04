@@ -1,8 +1,8 @@
 from flask import render_template, session, request, redirect, url_for
 import logging
 import hashlib
-from modele import MaBaseDeDonnees as MBDD
 import re
+from modele import MaBaseDeDonnees as MBDD
 
 log = logging.getLogger(__name__)
 
@@ -11,11 +11,9 @@ def page_d_accueil():
     """                 """
     liste_categories = recuperer_categories()
     liste_produits = recuperer_liste_produits()
-    session['page_precedente'] = request.referrer
-
+    session['page_precedente'] = redirect_url()
     if not session.get('vous_etes_loggue'):
         log.debug('connexion à la page d\'accueil SANS authentification')
-
         return render_template("page_d_accueil.html", message="",
                                liste_categories=liste_categories, lenc=len(liste_categories),
                                liste_produits=liste_produits
@@ -27,7 +25,7 @@ def page_d_accueil():
     liste_categories = recuperer_categories()
     return render_template("page_d_accueil.html", message1=message1, message2=message2,
                            liste_categories=liste_categories, lenc=len(liste_categories),
-                           liste_produits=liste_produits
+                           liste_produits=liste_produits, nombre_produits_dans_panier=len(session.get('panier'))
                            )
 
 
@@ -40,14 +38,15 @@ def page_d_authentification():
         email_utilisateur = request.form['email']
         compte_utilisateur_valide = verifier_le_compte(email_utilisateur, mdp_utilisateur)
         if compte_utilisateur_valide != "vrai":
+            session['vous_etes_loggue'] = False
             if compte_utilisateur_valide == "accès_admin":
                 return redirect(url_for('page_administrateur'))
             log.debug('erreur lors de l\'authentification')
-            session['vous_etes_loggue'] = False
             message_d_erreur = 'erreur lors de l\'authentification, veuillez recommencer'
         else:
-            log.debug('connexion à la page d\'accueil après authentification')
+            log.debug('connexion à la page d\'accueil/fiche_produit après authentification')
             session['vous_etes_loggue'] = True
+            session['panier'] = []
             return redirect(session.get('page_precedente'))
 
     return render_template('page_d_authentification.html', message_d_erreur=message_d_erreur)
@@ -55,9 +54,10 @@ def page_d_authentification():
 
 def deconnexion():
     """                 """
-    log.debug('deconnexion du compte effectuée')
+    log.debug('deconnexion du compte effectuée et panier vidé')
     session['vous_etes_loggue'] = False
-    return redirect(request.referrer)
+    session['panier'] = []
+    return redirect(redirect_url())
 
 
 def page_administrateur():
@@ -66,31 +66,6 @@ def page_administrateur():
     session['vous_etes_loggue'] = False
     message = "bienvenue"
     return render_template('page_administrateur.html', message=message)
-
-
-def __hashage_mdp__(mot_de_passe_en_clair):
-    """ création d'un mot de passe hashé """
-    log.debug('hashage du mot de passe')
-    a = bytes(mot_de_passe_en_clair, "utf-8")
-    mdp_hashe = hashlib.sha256(a).hexdigest()
-    return mdp_hashe
-
-
-def verifier_le_compte(email_utilisateur, mdp_utilisateur):
-    """ appel des méthodes de classe MaBaseDeDonnees permettant de vérifier le compte avec email/mot de passe """
-    log.debug('verification email et mot de passe')
-    mdp_hashe = __hashage_mdp__(mdp_utilisateur)
-    db = MBDD()  # création d'une instance de ma base de données
-    access1 = db.verifier_si_compte_utilisateur_existe_deja(email_utilisateur, mdp_hashe)
-    if access1 == "vrai":
-        session['utilisateur'] = db.trouver_nom_prenom_utilisateur(email_utilisateur, mdp_hashe)
-        return "vrai"
-    else:
-        access2 = db.verifier_si_compte_administrateur_existe_deja(email_utilisateur, mdp_hashe)
-        if access2 == "vrai":
-            return "accès_admin"
-
-    return "faux"
 
 
 def page_creation_compte_utilisateur():
@@ -120,10 +95,11 @@ def page_creation_compte_utilisateur():
         ]
         if verifer_format_email(email_utilisateur) and verifer_format_mdp(mdp_utilisateur) and \
                 verifer_format_donnees(utilisateur):
-            db = MBDD()
             log.debug('formats de l\'adresse mail, du mot de passe et des données valides')
+            db = MBDD()
             if not db.verifier_email(email_utilisateur):
                 log.debug('ajout du compte utilisateur à la base de données')
+                db = MBDD()
                 db.ajouter_utilisateur(utilisateur)
                 message = "votre compte à bien été enregistré: "
                 return render_template('page_creation_compte_utilisateur.html', message=message)
@@ -133,6 +109,76 @@ def page_creation_compte_utilisateur():
         return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
 
     return render_template('page_creation_compte_utilisateur.html')
+
+
+def page_fiche_produit(numero_produit):
+    """                   """
+    db = MBDD()
+    produit = db.recuperer_produit(numero_produit)
+    infos_produit = produit[4].split('_', 2)
+    infos = [
+        infos_produit[2].split('.', 1)[0].replace('_', ' '),
+        infos_produit[0].split('/', 1)[1],
+        infos_produit[1]
+    ]
+    session['page_precedente'] = redirect_url()
+    if not session.get('vous_etes_loggue'):
+        log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
+        return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
+                               message="", infos=infos
+                               )
+
+    log.debug('connexion AVEC authentification à la fiche du produit avec le numero: %s', numero_produit)
+    message1 = "bienvenue"
+    message2 = message1 + " " + session.get('utilisateur')
+    return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
+                           message1=message1, message2=message2, infos=infos,
+                           nombre_produits_dans_panier=len(session.get('panier'))
+                           )
+
+
+def page_panier():
+    """                 """
+    if not session.get('vous_etes_loggue'):
+        return redirect(redirect_url())
+    db = MBDD()
+    liste_produits = {}
+    for numero_produit in session.get('panier'):
+        # TODO: prévoir cas plusieurs fois le même produit
+        liste_produits[numero_produit] = db.recuperer_produit(numero_produit)
+
+    log.debug('accès à la page panier avec les produit numero: %s dans le panier', session['panier'])
+    message1 = "bienvenue"
+    message2 = message1 + " " + session.get('utilisateur')
+    message3 = "panier"
+    return render_template('page_panier.html', liste_produits=liste_produits, message1=message1, message2=message2,
+                           message3=message3
+                           )
+
+
+def __hashage_mdp__(mot_de_passe_en_clair):
+    """ création d'un mot de passe hashé """
+    log.debug('hashage du mot de passe')
+    a = bytes(mot_de_passe_en_clair, "utf-8")
+    mdp_hashe = hashlib.sha256(a).hexdigest()
+    return mdp_hashe
+
+
+def verifier_le_compte(email_utilisateur, mdp_utilisateur):
+    """ appel des méthodes de classe MaBaseDeDonnees permettant de vérifier le compte avec email/mot de passe """
+    log.debug('verification email et mot de passe')
+    db = MBDD()
+    mdp_hashe = __hashage_mdp__(mdp_utilisateur)
+    access1 = db.verifier_si_compte_utilisateur_existe_deja(email_utilisateur, mdp_hashe)
+    if access1 == "vrai":
+        session['utilisateur'] = db.trouver_nom_prenom_utilisateur(email_utilisateur, mdp_hashe)
+        return "vrai"
+    else:
+        access2 = db.verifier_si_compte_administrateur_existe_deja(email_utilisateur, mdp_hashe)
+        if access2 == "vrai":
+            return "accès_admin"
+
+    return "faux"
 
 
 def verifer_format_email(email_utilisateur):
@@ -147,7 +193,9 @@ def verifer_format_email(email_utilisateur):
 
 def verifer_format_mdp(mdp_utilisateur):
     log.debug('vérification du format du mdp')
-    if (re.search("^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,14}$", mdp_utilisateur)):
+    if (
+            re.search("^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,14}$",
+                      mdp_utilisateur)):
         return True
 
     log.debug('erreur de format du mdp')
@@ -178,35 +226,35 @@ def recuperer_liste_produits():
         avec en clé la catégorie et en valeur la liste des produits de cette catégorie,
         pour permettre l'affichage par onglets catégories dans la page d'accueil
     """
-    liste_categories = recuperer_categories()
     db = MBDD()
+    liste_categories = recuperer_categories()
     return db.recuperer_liste_produits(liste_categories)
 
-
-def page_fiche_produit(numero_produit):
-    """                   """
-    session['page_precedente'] = request.referrer
-    db = MBDD()
-    produit = db.recuperer_produit(numero_produit)
-    infos_produit = produit[4].split('_', 2)
-    infos = [
-        infos_produit[2].split('.', 1)[0].replace('_', ' '),
-        infos_produit[0].split('/', 1)[1],
-        infos_produit[1]
-    ]
-    print(infos)
-    # print(infos_produit[0].split('/', 1)[1])
-    # print(infos_produit[1])
-    # print(infos_produit[2].split('.', 1)[0].replace('_', ' '))
+  
+def ajouter_au_panier(numero_produit):
+    """                 """
     if not session.get('vous_etes_loggue'):
-        log.debug('connexion SANS authentification à la fiche du produit avec le numero: %s', numero_produit)
-        return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
-                               message="", infos=infos
-                               )
+        return redirect(redirect_url())
 
-    log.debug('connexion AVEC authentification à la fiche du produit avec le numero: %s', numero_produit)
-    message1 = "bienvenue"
-    message2 = message1 + " " + session.get('utilisateur')
-    return render_template('page_fiche_produit.html', numero_produit=numero_produit, produit=produit,
-                           message1=message1, message2=message2, infos=infos
-                           )
+    log.debug('ajout du produit numero: %s dans le panier', numero_produit)
+    session['panier'] += [numero_produit]
+    return redirect(redirect_url())
+
+
+def supprimer_du_panier(numero_produit):
+    """                 """
+    if not session.get('vous_etes_loggue'):
+        return redirect(redirect_url())
+    log.debug('suppression du produit numero: %s dans le panier', numero_produit)
+    ma_nouvelle_liste = session.get('panier')
+    ma_nouvelle_liste.remove(numero_produit)
+    session['panier'] = ma_nouvelle_liste
+    if len(session.get('panier')) == 0:
+        return redirect(url_for('page_d_accueil'))
+
+    return redirect(redirect_url())
+
+
+def redirect_url():
+    return request.args.get('next') or request.referrer or url_for('page_d_accueil')
+

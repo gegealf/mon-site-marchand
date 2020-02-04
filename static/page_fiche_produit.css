@@ -1,10 +1,10 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 .gallery-wrap .img-big-wrap img {
-    height: 400px;
-    width: 400px;
-    display: inline-block;
-    cursor: zoom-in;
+    width: 300px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 50px;
 }
 
 .price-title{
