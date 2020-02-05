@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask  # pip install flask
+from flask import Flask, render_template  # pip install flask
 from os import path
 import logging.config
 import logging
@@ -12,6 +12,13 @@ log = logging.getLogger(__name__)  # définition du logger pour la classe couran
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "tandiS_quE_leS_crachatS_rougeS"
+
+
+@app.errorhandler(404)
+def erreur_404(e):
+    log.error(e)
+    return render_template('erreur_404.html')
+
 
 if __name__ == "__main__":  # python main.py
     import controleur

@@ -111,8 +111,7 @@ def page_creation_compte_utilisateur():
         message_d_erreur = "erreur lors de la validation, veuillez recommencer"
         return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
 
-    log.error('tentative frauduleuse de connexion à la page creation de compte')
-    return render_template('page_d_erreur.html')
+    return render_template('page_creation_compte_utilisateur.html')
 
 
 def page_fiche_produit(numero_produit):
