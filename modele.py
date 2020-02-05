@@ -247,3 +247,15 @@ class MaBaseDeDonnees:
                WHERE numero_produit = '{}' """.format(numero_produit)
         )
         return self.request.fetchall()[0]
+
+    def verifier_numero_produit(self, numero_produit):
+        """               """
+
+        self.request.execute(
+            """SELECT numero_produit FROM produits """
+        )
+        data = self.request.fetchall()
+        if numero_produit > len(data):
+            return False
+        return True
+

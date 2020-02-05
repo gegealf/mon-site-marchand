@@ -40,6 +40,7 @@ def page_d_authentification():
         if compte_utilisateur_valide != "vrai":
             session['vous_etes_loggue'] = False
             if compte_utilisateur_valide == "accès_admin":
+                session['vous_etes_loggue'] = 'jesuisadminpastoi'
                 return redirect(url_for('page_administrateur'))
             log.debug('erreur lors de l\'authentification')
             message_d_erreur = 'erreur lors de l\'authentification, veuillez recommencer'
@@ -57,13 +58,15 @@ def deconnexion():
     log.debug('deconnexion du compte effectuée et panier vidé')
     session['vous_etes_loggue'] = False
     session['panier'] = []
-    return redirect(redirect_url())
+    return redirect(session.get('page_precedente'))
 
 
 def page_administrateur():
     """                  """
+    if session.get('vous_etes_loggue') != 'jesuisadminpastoi':
+        log.error('tentative de connexion à la page administrateur sans autorisation')
+        return render_template('page_d_erreur.html')
     log.debug('connexion à la page administrateur')
-    session['vous_etes_loggue'] = False
     message = "bienvenue"
     return render_template('page_administrateur.html', message=message)
 
@@ -108,12 +111,17 @@ def page_creation_compte_utilisateur():
         message_d_erreur = "erreur lors de la validation, veuillez recommencer"
         return render_template('page_creation_compte_utilisateur.html', message_d_erreur=message_d_erreur)
 
-    return render_template('page_creation_compte_utilisateur.html')
+    log.error('tentative frauduleuse de connexion à la page creation de compte')
+    return render_template('page_d_erreur.html')
 
 
 def page_fiche_produit(numero_produit):
     """                   """
     db = MBDD()
+    if not db.verifier_numero_produit(numero_produit):
+        log.error('tentative de connexion à une fiche produit inexistante')
+        return render_template('page_d_erreur.html')
+
     produit = db.recuperer_produit(numero_produit)
     infos_produit = produit[4].split('_', 2)
     infos = [
@@ -140,6 +148,7 @@ def page_fiche_produit(numero_produit):
 def page_panier():
     """                 """
     if not session.get('vous_etes_loggue'):
+        log.error('tentative de connexion SANS authentification à la page panier')
         return render_template('page_d_erreur.html')
     db = MBDD()
     liste_produits = {}
@@ -154,6 +163,10 @@ def page_panier():
     return render_template('page_panier.html', liste_produits=liste_produits, message1=message1, message2=message2,
                            message3=message3
                            )
+
+
+def page_d_erreur():
+    return render_template('page_d_erreur.html')
 
 
 def __hashage_mdp__(mot_de_passe_en_clair):
@@ -253,10 +266,6 @@ def supprimer_du_panier(numero_produit):
         return redirect(url_for('page_d_accueil'))
 
     return redirect(redirect_url())
-
-
-def page_d_erreur():
-    return render_template('page_d_erreur.html')
 
 
 def redirect_url():
