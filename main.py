@@ -49,6 +49,7 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/test_500_html', 'test_500_html', view_func=controleur.test_500_html)
     app.add_url_rule('/test_500_serveur', 'test_500_serveur', view_func=controleur.test_500_serveur)
 
+
     try:
         log.info('démarrage de l\'application')
         SESSION_COOKIE_DOMAIN = '127.0.0.1'
