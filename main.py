@@ -53,7 +53,7 @@ if __name__ == "__main__":  # python main.py
     try:
         log.info('démarrage de l\'application')
         SESSION_COOKIE_DOMAIN = '127.0.0.1'
-        app.run(host='127.0.0.1', port=8000)  # lancement de l'application en local
+        app.run(ssl_context='adhoc', host='127.0.0.1', port=8000)  # lancement de l'application en local
 
         # app.run(host='0.0.0.0', port=4001)
         log.info('arrêt normal de l\'application')
