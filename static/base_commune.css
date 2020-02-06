@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
-body {
-	display: table;
-	width: 100%;
-	background: url('/static/images/fond_elephant.jpg') no-repeat center fixed;
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('/static/images/fond_elephant.jpg') no-repeat center fixed;
 	background-size: cover;
 }
 
@@ -52,14 +54,12 @@ body {
     position: relative;
     text-align: center;
     font-size: 1.5vw;
-
     color: white;
 }
 
 /* Top left text */
 .zone_liens_messages {
         margin-top: 20px;
-
 }
 
 .button-group {
