@@ -20,6 +20,12 @@ def erreur_404(e):
     return render_template('erreur_404.html')
 
 
+@app.errorhandler(500)
+def erreur_500(e):
+    log.error(e)
+    return render_template('erreur_500.html')
+
+
 if __name__ == "__main__":  # python main.py
     import controleur
 
@@ -40,6 +46,9 @@ if __name__ == "__main__":  # python main.py
     app.add_url_rule('/page_panier/<int:numero_produit>/supprimer_du_panier', 'page_panier/supprimer_du_panier',
                      view_func=controleur.supprimer_du_panier)
     app.add_url_rule('/page_d_erreur', 'page_d_erreur', view_func=controleur.page_d_erreur)
+    app.add_url_rule('/test_500_html', 'test_500_html', view_func=controleur.test_500_html)
+    app.add_url_rule('/test_500_serveur', 'test_500_serveur', view_func=controleur.test_500_serveur)
+
 
     try:
         log.info('démarrage de l\'application')

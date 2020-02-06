@@ -250,7 +250,6 @@ class MaBaseDeDonnees:
 
     def verifier_numero_produit(self, numero_produit):
         """               """
-
         self.request.execute(
             """SELECT numero_produit FROM produits """
         )
@@ -259,3 +258,9 @@ class MaBaseDeDonnees:
             return False
         return True
 
+    def mauvaise_requete(self):
+        """               """
+        self.request.execute(
+            """SELECT numero_prod FROM produits """
+        )
+        return 'rien'

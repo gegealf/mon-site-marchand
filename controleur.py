@@ -1,4 +1,5 @@
-from flask import render_template, session, request, redirect, url_for
+from flask import render_template, session, request, redirect, url_for, abort
+
 import logging
 import hashlib
 import re
@@ -166,6 +167,18 @@ def page_panier():
 
 def page_d_erreur():
     return render_template('page_d_erreur.html')
+
+
+def test_500_html():
+    """             """
+    render_template('page_qui_n_existe_pas.html')
+
+
+def test_500_serveur():
+    """             """
+    db = MBDD()
+    r = db.mauvaise_requete()
+    return r
 
 
 def __hashage_mdp__(mot_de_passe_en_clair):
