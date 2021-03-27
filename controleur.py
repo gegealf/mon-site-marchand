@@ -35,8 +35,10 @@ def page_d_authentification():
     log.debug('connexion à la page d\'authentification')
     message_d_erreur = None
     page_precedente = session.get('panier')
-    page_precedente.append(_redirect_url())
-    session['page_precedente'] = page_precedente
+    pp = page_precedente
+    if pp:
+        pp.append(_redirect_url())
+    session['page_precedente'] = pp
     if request.method == 'POST':
         mdp_utilisateur = request.form['mot_de_passe']
         email_utilisateur = request.form['email']
